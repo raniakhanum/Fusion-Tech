@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){try{var t=localStorage.getItem('ft-theme');if(!t){t=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}if(t==='dark'){document.documentElement.setAttribute('data-theme','dark');}}catch(e){}})();</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Search Engine Optimization (SEO) | Fusion Tech USA</title>
+<meta name="description" content="Premium SEO services from Fusion Tech USA: technical SEO, on-page and off-page optimization, local SEO, content, and link building, engineered for sustainable organic growth.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self';">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="assets/services-premium.css">
+<link rel="stylesheet" href="assets/collective-premium.css">
+<link rel="stylesheet" href="assets/seo-premium.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="social"><a href="#">FB</a><a href="#">X</a><a href="#">IN</a></div>
+    <div><span class="phone">1-307-445-3178</span> &nbsp;|&nbsp; <a href="mailto:fusiontechusa.1@gmail.com">fusiontechusa.1@gmail.com</a></div>
+  </div>
+</div>
+<header class="site-header">
+  <div class="nav-row">
+    <a href="index.html" class="logo"><img src="assets/fusiontech-logo.png" alt="Fusion Tech USA" class="logo-img" width="174" height="207"></a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <div class="nav-item">
+        <button class="nav-drop-trigger" type="button">Collective Tech Services <svg class="chev" width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"><path d="M1 3l4 4 4-4" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="dropdown-menu">
+          <a href="collective-tech-services.html" class="dropdown-overview">All Collective Tech Services</a>
+          <a href="website-development.html">Website Development</a>
+          <a href="logo-designing.html">Logo Designing</a>
+          <a href="video-editing.html">Video Editing</a>
+          <a href="social-media-marketing.html">Social Media Marketing</a>
+          <a href="seo.html" class="active">Search Engine Optimization (SEO)</a>
+        </div>
+      </div>
+      <a href="pricing.html">Prices</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+        <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.6"/><path d="M12 2.5V5M12 19V21.5M4.2 4.2L6 6M18 18L19.8 19.8M2.5 12H5M19 12H21.5M4.2 19.8L6 18M18 6L19.8 4.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+      </button>
+            <a href="open-ticket.html" class="btn btn--solid">Open a Ticket</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">&#9776;</button>
+    </div>
+  </div>
+</header>
+<script>
+document.getElementById('menuToggle').addEventListener('click', function(){
+  document.getElementById('mainNav').classList.toggle('open');
+});
+document.querySelectorAll('.nav-drop-trigger').forEach(function(btn){
+  btn.addEventListener('click', function(e){
+    e.stopPropagation();
+    var item = btn.closest('.nav-item');
+    var wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.nav-item.open').forEach(function(i){ i.classList.remove('open'); });
+    if(!wasOpen){ item.classList.add('open'); }
+  });
+});
+document.addEventListener('click', function(){
+  document.querySelectorAll('.nav-item.open').forEach(function(i){ i.classList.remove('open'); });
+});
+</script>
+
+<!-- ============================================================
+     CINEMATIC HERO
+============================================================ -->
+<section class="svc-hero" id="svcHero">
+  <div class="wrap">
+    <div class="svc-hero-copy">
+      <div class="breadcrumb"><a href="index.html">Home</a> / <a href="collective-tech-services.html">Collective Tech Services</a> / Search Engine Optimization (SEO)</div>
+      <span class="eyebrow hero-eyebrow" style="margin-top:16px;">Search Engine Optimization</span>
+      <h1 data-text="Rank higher. Get found. Grow organically." data-accent-from="Grow"></h1>
+      <p class="lead">
+        We turn search engines into a dependable growth channel, combining technical precision, content strategy, and authority
+        building into one system engineered to move you up the results
+        page and keep you there.
+      </p>
+      <div class="svc-hero-ctas">
+        <a href="open-ticket.html" class="btn btn--solid magnetic">Get a Free SEO Audit</a>
+        <a href="#process" class="btn btn--ghost magnetic">View Our Process</a>
+      </div>
+      <div class="svc-hero-trust hero-stats">
+        <div><div class="hero-stat-value">9 Disciplines</div><div class="hero-stat-label">Under one SEO program</div></div>
+        <div><div class="hero-stat-value">Monthly</div><div class="hero-stat-label">Transparent reporting</div></div>
+        <div><div class="hero-stat-value">White-Hat</div><div class="hero-stat-label">Only, always</div></div>
+      </div>
+    </div>
+
+    <div class="svc-hero-illo" id="svcHeroIllo">
+      <div class="svc-illo-glow"></div>
+      <div class="svc-illo-ring"></div>
+      <div class="svc-illo-stage" id="svcIlloStage">
+        <div class="svc-illo-panel svc-illo-panel--main">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="seoGradMain" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#7c3aed"/>
+                <stop offset="100%" stop-color="#c4b5fd"/>
+              </linearGradient>
+            </defs>
+            <rect x="20" y="18" width="160" height="34" rx="10" fill="#fff" stroke="url(#seoGradMain)" stroke-width="2.6"/>
+            <circle cx="36" cy="35" r="8" fill="none" stroke="#7c3aed" stroke-width="2.4"/>
+            <path d="M42 41l6 6" stroke="#7c3aed" stroke-width="2.4" stroke-linecap="round"/>
+            <rect x="56" y="30" width="90" height="6" rx="3" fill="#e8e1f7"/>
+            <rect x="56" y="40" width="60" height="5" rx="2.5" fill="#f0ebfa"/>
+            <rect x="20" y="66" width="160" height="112" rx="12" fill="rgba(124,58,237,0.06)" stroke="var(--line)" stroke-width="1"/>
+            <path d="M34 158l20-46 18 24 22-58 24 40 22-16" fill="none" stroke="url(#seoGradMain)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="54" cy="112" r="3.4" fill="#7c3aed"/>
+            <circle cx="94" cy="88" r="3.4" fill="#8b5cf6"/>
+            <circle cx="140" cy="128" r="3.4" fill="#7c3aed"/>
+            <rect x="30" y="168" width="26" height="4" rx="2" fill="#c4b5fd"/>
+            <rect x="60" y="168" width="18" height="4" rx="2" fill="#e8e1f7"/>
+          </svg>
+        </div>
+        <div class="svc-illo-panel svc-illo-panel--card1">
+          <div class="svc-mini-label">Avg. Ranking</div>
+          <div class="svc-mini-value">#3</div>
+        </div>
+        <div class="svc-illo-panel svc-illo-panel--card2">
+          <svg viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="40" r="26" fill="none" stroke="#8b5cf6" stroke-width="7" stroke-dasharray="138 163" stroke-linecap="round" transform="rotate(-90 50 40)"/>
+            <circle cx="50" cy="40" r="26" fill="none" stroke="#e8e1f7" stroke-width="7" stroke-dasharray="25 163" stroke-dashoffset="-138" stroke-linecap="round" transform="rotate(-90 50 40)"/>
+          </svg>
+          <div class="svc-mini-label" style="margin-top:8px;">Visibility</div>
+        </div>
+        <div class="svc-illo-panel svc-illo-panel--badge">
+          <span class="hero-badge-dot" style="position:static;"></span>
+          <span style="font-family:var(--font-body);font-size:0.78rem;font-weight:600;color:var(--text);">Crawling new keywords&hellip;</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     THE SHIFT - story intro
+============================================================ -->
+<section class="section">
+  <div class="wrap">
+    <p class="story-lead reveal">
+      Most websites are invisible for the exact searches that would
+      turn into customers, buried on page two, undone by slow
+      load times, or missing the content people are actually looking for.
+      <strong>SEO fixes that at the source:</strong> the technical
+      foundation, the on-page relevance, and the authority signals that
+      search engines reward, working together instead of in isolation.
+    </p>
+  </div>
+</section>
+
+<!-- ============================================================
+     WHY SEO MATTERS
+============================================================ -->
+<section class="section section--panel">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Why SEO Matters</span>
+      <h2>Traffic you don't have to keep paying for</h2>
+      <p>Every dollar spent on ads disappears the moment you stop paying. Organic rankings keep compounding long after the work is done.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card card reveal seo-why-card">
+        <div class="icon-box"><span class="svc-sweep"></span><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 20V10M10 20V4M16 20v-8M22 20V7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></div>
+        <h3>Increase Organic Traffic</h3>
+        <p>Rank for the searches your customers are already typing, and traffic keeps arriving without a media budget behind it.</p>
+      </div>
+      <div class="why-card card reveal seo-why-card">
+        <div class="icon-box"><span class="svc-sweep"></span><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 3l7 2.6v5.4c0 4.6-3 7.7-7 9-4-1.3-7-4.4-7-9V5.6L12 3z" stroke="currentColor" stroke-width="1.7"/></svg></div>
+        <h3>Build Authority</h3>
+        <p>Search engines reward sites that earn trust over time. Strong content and clean technical health build that trust deliberately.</p>
+      </div>
+      <div class="why-card card reveal seo-why-card">
+        <div class="icon-box"><span class="svc-sweep"></span><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="1.7"/><path d="M20 20l-4.3-4.3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></div>
+        <h3>Generate Qualified Leads</h3>
+        <p>People searching with intent convert differently than a cold ad click. They're already looking for what you offer.</p>
+      </div>
+      <div class="why-card card reveal seo-why-card">
+        <div class="icon-box"><span class="svc-sweep"></span><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 17l5-10 4 6 3-4 4 8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><circle cx="19" cy="7" r="2.2" stroke="currentColor" stroke-width="1.7"/></svg></div>
+        <h3>Improve Long-Term ROI</h3>
+        <p>Rankings built well don't reset every month. The return on the work keeps growing instead of starting over.</p>
+      </div>
+      <div class="why-card card reveal seo-why-card">
+        <div class="icon-box"><span class="svc-sweep"></span><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 9.5a11.5 11.5 0 0 1 16 0" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M7 13a7 7 0 0 1 10 0" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><circle cx="12" cy="17.5" r="1.3" fill="currentColor"/></svg></div>
+        <h3>Outrank Competitors</h3>
+        <p>If they're on page one and you're not, they're winning customers that were searching for you too.</p>
+      </div>
+      <div class="why-card card reveal seo-why-card">
+        <div class="icon-box"><span class="svc-sweep"></span><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M5 19V9l7-5 7 5v10" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9 19v-6h6v6" stroke="currentColor" stroke-width="1.7"/></svg></div>
+        <h3>Improve User Experience</h3>
+        <p>Good SEO fixes the same things that frustrate visitors: slow pages, broken links, confusing structure.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SERVICE CAPABILITIES
+============================================================ -->
+<section class="section" id="capabilities">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Our SEO Services</span>
+      <h2>Everything a real SEO program needs</h2>
+      <p>Nine disciplines, coordinated by one team and reported on in one place, not scattered across freelancers.</p>
+    </div>
+    <div class="svc-grid">
+
+      <div class="svc-card card reveal" data-target="feature-technical">
+        <div class="svc-card-icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M9 4l-5 8 5 8M15 4l5 8-5 8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="svc-sweep"></span>
+        </div>
+        <h3>Technical SEO</h3>
+        <p>Site speed, crawlability, indexing, and structured data fixed at the foundation so search engines can find and rank you.</p>
+      </div>
+
+      <div class="svc-card card reveal">
+        <div class="svc-card-icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M5 19V9l7-5 7 5v10" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9 19v-6h6v6" stroke="currentColor" stroke-width="1.7"/></svg>
+          <span class="svc-sweep"></span>
+        </div>
+        <h3>On-Page SEO</h3>
+        <p>Titles, headings, internal links, and content structure tuned page-by-page for both relevance and readability.</p>
+      </div>
+
+      <div class="svc-card card reveal">
+        <div class="svc-card-icon">
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="8" cy="9" r="3" stroke="currentColor" stroke-width="1.7"/><circle cx="17" cy="9" r="2.6" stroke="currentColor" stroke-width="1.7"/><path d="M3 19c0-3 2.4-5 5-5s5 2 5 5M14 19c0-2.4 1.6-4.4 4-4.8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+          <span class="svc-sweep"></span>
+        </div>
+        <h3>Off-Page SEO</h3>
+        <p>Authority signals built outside your site, the reputation work that convinces search engines you're worth ranking.</p>
+      </div>
+
+      <div class="svc-card card reveal">
+        <div class="svc-card-icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-5.2-7-11.4A5.4 5.4 0 0 1 12 4a5.4 5.4 0 0 1 7 5.6C19 15.8 12 21 12 21z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.4" stroke="currentColor" stroke-width="1.7"/></svg>
+          <span class="svc-sweep"></span>
+        </div>
+        <h3>Local SEO</h3>
+        <p>Map pack visibility, citations, and review strategy for businesses that live and die by nearby search traffic.</p>
+      </div>
+
+      <div class="svc-card card reveal">
+        <div class="svc-card-icon">
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="1.7"/><path d="M20 20l-4.3-4.3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+          <span class="svc-sweep"></span>
+        </div>
+        <h3>Keyword Research</h3>
+        <p>The exact terms your customers search, weighed by volume, intent, and how realistic it is to actually rank for them.</p>
+      </div>
+
+      <div class="svc-card card reveal">
+        <div class="svc-card-icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M4 18l5-9 4 5 3-4 4 8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="svc-sweep"></span>
+        </div>
+        <h3>Content Optimization</h3>
+        <p>Existing pages rewritten and restructured to match what's actually ranking, without losing your voice.</p>
+      </div>
+
+      <div class="svc-card card reveal">
+        <div class="svc-card-icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M8 12a4 4 0 0 1 4-4h2a4 4 0 1 1 0 8h-1M16 12a4 4 0 0 1-4 4H10a4 4 0 1 1 0-8h1" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+          <span class="svc-sweep"></span>
+        </div>
+        <h3>Link Building</h3>
+        <p>Earned, relevant backlinks from real sites, the single strongest authority signal, built the honest way.</p>
+      </div>
+
+      <div class="svc-card card reveal">
+        <div class="svc-card-icon">
+          <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.7"/><path d="M8 9l3 3-3 3M13 15h4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="svc-sweep"></span>
+        </div>
+        <h3>SEO Audits</h3>
+        <p>A full diagnostic of what's helping, what's hurting, and what to fix first, before any strategy work begins.</p>
+      </div>
+
+      <div class="svc-card card reveal">
+        <div class="svc-card-icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M4 20V10M10 20V4M16 20v-8M22 20V7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+          <span class="svc-sweep"></span>
+        </div>
+        <h3>Monthly Reporting</h3>
+        <p>Plain-English reports on rankings, traffic, and what's changing next, no jargon, no black box.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PERFORMANCE DASHBOARD - placeholder analytics mockup
+============================================================ -->
+<section class="section section--panel">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Performance Dashboard</span>
+      <h2>Every result, in one clear view</h2>
+      <p>A sample of the reporting you'll see, placeholder data built to be swapped for your live numbers.</p>
+    </div>
+
+    <div class="seo-dash reveal-scale">
+      <div class="seo-dash-top">
+        <div class="seo-dash-chrome">
+          <span class="seo-dash-dot"></span><span class="seo-dash-dot"></span><span class="seo-dash-dot"></span>
+          <span class="seo-dash-title">SEO Performance: Overview</span>
+        </div>
+        <span class="seo-dash-range">Last 90 Days</span>
+      </div>
+
+      <div class="seo-dash-grid">
+        <div class="seo-chart-card">
+          <div class="seo-chart-head">
+            <span class="seo-chart-label">Organic Traffic Growth</span>
+            <span class="seo-chart-value">18.4k <span>+62%</span></span>
+          </div>
+          <svg class="seo-chart-svg" viewBox="0 0 320 140" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="seoAreaFill" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.22"/>
+                <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <path d="M4 108 L44 112 L84 96 L124 100 L164 68 L204 74 L244 40 L284 30 L316 14 L316 136 L4 136 Z" fill="url(#seoAreaFill)"/>
+            <path class="seo-line" d="M4 108 L44 112 L84 96 L124 100 L164 68 L204 74 L244 40 L284 30 L316 14" fill="none" stroke="#7c3aed" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle class="seo-point" cx="164" cy="68" r="4" fill="#7c3aed"/>
+            <circle class="seo-point" cx="244" cy="40" r="4" fill="#7c3aed"/>
+            <circle class="seo-point" cx="316" cy="14" r="4.5" fill="#7c3aed"/>
+          </svg>
+        </div>
+
+        <div class="seo-rank-card">
+          <div class="seo-rank-head">Keyword Rankings</div>
+          <div class="seo-rank-row"><span class="seo-rank-kw">seo agency near me</span><span class="seo-rank-pos">#2</span><span class="seo-rank-move up"><svg viewBox="0 0 16 16" fill="none"><path d="M8 12V4M4 8l4-4 4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>+5</span></div>
+          <div class="seo-rank-row"><span class="seo-rank-kw">affordable web seo services</span><span class="seo-rank-pos">#4</span><span class="seo-rank-move up"><svg viewBox="0 0 16 16" fill="none"><path d="M8 12V4M4 8l4-4 4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>+9</span></div>
+          <div class="seo-rank-row"><span class="seo-rank-kw">local seo optimization</span><span class="seo-rank-pos">#6</span><span class="seo-rank-move up"><svg viewBox="0 0 16 16" fill="none"><path d="M8 12V4M4 8l4-4 4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>+3</span></div>
+          <div class="seo-rank-row"><span class="seo-rank-kw">technical site audit</span><span class="seo-rank-pos">#9</span><span class="seo-rank-move down"><svg viewBox="0 0 16 16" fill="none"><path d="M8 4v8M4 8l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>-1</span></div>
+        </div>
+      </div>
+
+      <div class="seo-dash-bottom">
+        <div class="seo-mini-card">
+          <div class="seo-mini-label">Search Visibility</div>
+          <svg class="seo-gauge-svg" viewBox="0 0 100 60">
+            <path d="M8 52a42 42 0 0 1 84 0" fill="none" stroke="#e8e1f7" stroke-width="9" stroke-linecap="round"/>
+            <path class="seo-gauge-fill" d="M8 52a42 42 0 0 1 84 0" fill="none" stroke="#7c3aed" stroke-width="9" stroke-linecap="round"/>
+          </svg>
+          <div class="seo-gauge-value">82%</div>
+        </div>
+        <div class="seo-mini-card">
+          <div class="seo-mini-label">Page Performance</div>
+          <div class="seo-mini-bars">
+            <div class="seo-mini-bar" style="height:38%;"></div>
+            <div class="seo-mini-bar" style="height:55%;"></div>
+            <div class="seo-mini-bar" style="height:44%;"></div>
+            <div class="seo-mini-bar" style="height:70%;"></div>
+            <div class="seo-mini-bar" style="height:60%;"></div>
+            <div class="seo-mini-bar" style="height:88%;"></div>
+            <div class="seo-mini-bar" style="height:95%;"></div>
+          </div>
+        </div>
+        <div class="seo-mini-card">
+          <div class="seo-mini-label">Conversion Trend</div>
+          <div class="seo-mini-stat">+34%<span>Qualified leads / mo.</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TECHNICAL SEO - alternating detail section
+============================================================ -->
+<section class="svc-detail" id="feature-technical">
+  <div class="wrap svc-detail__wrap">
+    <div class="svc-detail__media reveal-scale">
+      <span class="svc-shape svc-shape--1"></span>
+      <span class="svc-shape svc-shape--2"></span>
+      <span class="svc-shape svc-shape--3"></span>
+      <div class="svc-media-frame">
+        <div class="svc-media-glow"></div>
+        <div class="seo-serp" style="width:82%;position:relative;">
+          <span class="seo-serp-badge">#1</span>
+          <span class="seo-serp-url">www.yourbrand.com</span>
+          <span class="seo-serp-title">Your Business Name | Primary Keyword</span>
+          <span class="seo-serp-desc">A clean, crawlable page with fast load times, structured data, and clear signals search engines can trust.</span>
+        </div>
+      </div>
+    </div>
+    <div class="svc-detail__copy">
+      <span class="svc-badge reveal">Technical Foundation</span>
+      <h2 class="reveal">If search engines can't crawl it, it can't rank</h2>
+      <p class="svc-desc reveal">
+        Before content or links matter, the site itself has to be
+        readable, fast, and well-structured. We fix the technical
+        issues quietly holding pages back, the ones most site
+        owners never see.
+      </p>
+      <ul class="svc-checklist reveal">
+        <li><span class="check"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Site speed &amp; Core Web Vitals</li>
+        <li><span class="check"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Crawlability, indexing &amp; sitemap health</li>
+        <li><span class="check"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Structured data &amp; mobile usability</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     KEYWORD STRATEGY & CONTENT - alternating detail section
+============================================================ -->
+<section class="svc-detail svc-detail--reverse svc-detail--panel" id="feature-content">
+  <div class="wrap svc-detail__wrap">
+    <div class="svc-detail__copy">
+      <span class="svc-badge reveal">Keyword Strategy &amp; Content</span>
+      <h2 class="reveal">Rank for what people actually search</h2>
+      <p class="svc-desc reveal">
+        We map real search intent to real content, the terms
+        with volume worth chasing, matched to pages built to answer
+        the question behind the search, not just contain the keyword.
+      </p>
+      <ul class="svc-checklist reveal">
+        <li><span class="check"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Intent-mapped keyword research</li>
+        <li><span class="check"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Content built to match top-ranking pages</li>
+        <li><span class="check"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Ongoing refreshes as rankings shift</li>
+      </ul>
+    </div>
+    <div class="svc-detail__media reveal-scale">
+      <span class="svc-shape svc-shape--1"></span>
+      <span class="svc-shape svc-shape--2"></span>
+      <span class="svc-shape svc-shape--3"></span>
+      <div class="svc-media-frame">
+        <div class="svc-media-glow"></div>
+        <svg viewBox="0 0 240 220" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="gKeyword" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#c4b5fd"/>
+            </linearGradient>
+          </defs>
+          <circle cx="96" cy="96" r="42" fill="none" stroke="url(#gKeyword)" stroke-width="7"/>
+          <path d="M126 126l38 38" stroke="url(#gKeyword)" stroke-width="9" stroke-linecap="round"/>
+          <rect x="60" y="150" width="130" height="8" rx="4" fill="#e8e1f7"/>
+          <rect x="60" y="166" width="90" height="8" rx="4" fill="#f0ebfa"/>
+          <circle cx="82" cy="86" r="4" fill="#8b5cf6"/>
+          <circle cx="112" cy="70" r="4" fill="#7c3aed"/>
+          <circle cx="108" cy="112" r="4" fill="#c4b5fd"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PROCESS TIMELINE
+============================================================ -->
+<section class="section section--panel svc-timeline" id="process">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Our Process</span>
+      <h2>From audit to a scaled growth program</h2>
+      <p>Every account moves through the same eight stages, whether it's a single location or a national site.</p>
+    </div>
+    <div class="svc-timeline-track">
+      <div class="svc-timeline-line"><div class="svc-timeline-line-fill" id="svcTimelineFill"></div></div>
+      <div class="svc-timeline-step">
+        <div class="svc-timeline-dot">1</div>
+        <h4>Website Audit</h4>
+        <p>A full diagnostic of technical health, content, and existing rankings.</p>
+      </div>
+      <div class="svc-timeline-step">
+        <div class="svc-timeline-dot">2</div>
+        <h4>Competitor Research</h4>
+        <p>What's already ranking, and what it would take to outrank it.</p>
+      </div>
+      <div class="svc-timeline-step">
+        <div class="svc-timeline-dot">3</div>
+        <h4>Keyword Strategy</h4>
+        <p>Terms prioritized by volume, intent, and realistic opportunity.</p>
+      </div>
+      <div class="svc-timeline-step">
+        <div class="svc-timeline-dot">4</div>
+        <h4>Technical Optimization</h4>
+        <p>Speed, crawlability, and structure fixed at the foundation.</p>
+      </div>
+      <div class="svc-timeline-step">
+        <div class="svc-timeline-dot">5</div>
+        <h4>Content Optimization</h4>
+        <p>Pages rewritten and structured to match search intent.</p>
+      </div>
+      <div class="svc-timeline-step">
+        <div class="svc-timeline-dot">6</div>
+        <h4>Link Building</h4>
+        <p>Earned, relevant backlinks that build lasting authority.</p>
+      </div>
+      <div class="svc-timeline-step">
+        <div class="svc-timeline-dot">7</div>
+        <h4>Performance Tracking</h4>
+        <p>Rankings, traffic, and conversions monitored continuously.</p>
+      </div>
+      <div class="svc-timeline-step">
+        <div class="svc-timeline-dot">8</div>
+        <h4>Monthly Growth Reports</h4>
+        <p>Plain-English updates on what changed and what's next.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     BENEFITS - alternating layout
+============================================================ -->
+<section class="section" id="benefits">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Benefits</span>
+      <h2>What changes once SEO is done right</h2>
+    </div>
+    <div class="craft-grid">
+      <div class="craft-card card reveal">
+        <div class="logo-type-glyph"><svg viewBox="0 0 24 24" fill="none"><path d="M4 20V10M10 20V4M16 20v-8M22 20V7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></div>
+        <h3>Higher Google Rankings</h3>
+        <p>Consistent movement up the results page for the searches that matter to your business.</p>
+      </div>
+      <div class="craft-card card reveal">
+        <div class="logo-type-glyph"><svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="1.7"/><path d="M20 20l-4.3-4.3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></div>
+        <h3>More Qualified Traffic</h3>
+        <p>Visitors who arrive already searching for exactly what you offer.</p>
+      </div>
+      <div class="craft-card card reveal">
+        <div class="logo-type-glyph"><svg viewBox="0 0 24 24" fill="none"><path d="M5 19V9l7-5 7 5v10" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9 19v-6h6v6" stroke="currentColor" stroke-width="1.7"/></svg></div>
+        <h3>Better User Experience</h3>
+        <p>Faster, cleaner, easier-to-navigate pages that keep visitors around.</p>
+      </div>
+      <div class="craft-card card reveal">
+        <div class="logo-type-glyph"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l7 2.6v5.4c0 4.6-3 7.7-7 9-4-1.3-7-4.4-7-9V5.6L12 3z" stroke="currentColor" stroke-width="1.7"/></svg></div>
+        <h3>Increased Brand Credibility</h3>
+        <p>Ranking well is its own form of trust. People notice who shows up first.</p>
+      </div>
+      <div class="craft-card card reveal">
+        <div class="logo-type-glyph"><svg viewBox="0 0 24 24" fill="none"><path d="M4 9.5a11.5 11.5 0 0 1 16 0" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M7 13a7 7 0 0 1 10 0" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><circle cx="12" cy="17.5" r="1.3" fill="currentColor"/></svg></div>
+        <h3>Sustainable Long-Term Growth</h3>
+        <p>Results that compound instead of resetting the moment a budget runs out.</p>
+      </div>
+      <div class="craft-card card reveal">
+        <div class="logo-type-glyph"><svg viewBox="0 0 24 24" fill="none"><path d="M4 18l5-9 4 5 3-4 4 8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Stronger Conversion Rates</h3>
+        <p>Optimized pages don't just attract visitors. They're built to turn them into leads.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     WHY CHOOSE US - white-hat comparison
+============================================================ -->
+<section class="section section--panel">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Why Choose Us</span>
+      <h2>Rankings built to last, not to disappear</h2>
+      <p>Shortcuts can produce a quick spike, and an even faster penalty. We build the kind of SEO that keeps working.</p>
+    </div>
+    <div class="compare-grid">
+      <div class="compare-card card reveal compare-card--risky">
+        <span class="compare-tag">What We Avoid</span>
+        <h3>Risky, black-hat shortcuts</h3>
+        <ul class="compare-list">
+          <li><span class="mark"><svg viewBox="0 0 16 16" fill="none"><path d="M4 4l8 8M12 4l-8 8" stroke-linecap="round"/></svg></span>Purchased or spammy backlink networks</li>
+          <li><span class="mark"><svg viewBox="0 0 16 16" fill="none"><path d="M4 4l8 8M12 4l-8 8" stroke-linecap="round"/></svg></span>Hidden text or keyword stuffing</li>
+          <li><span class="mark"><svg viewBox="0 0 16 16" fill="none"><path d="M4 4l8 8M12 4l-8 8" stroke-linecap="round"/></svg></span>Cloaking or doorway pages</li>
+          <li><span class="mark"><svg viewBox="0 0 16 16" fill="none"><path d="M4 4l8 8M12 4l-8 8" stroke-linecap="round"/></svg></span>Fake guarantees of overnight rankings</li>
+        </ul>
+      </div>
+      <div class="compare-card card reveal compare-card--trusted">
+        <span class="compare-tag">How We Work</span>
+        <h3>Transparent, ethical, data-driven</h3>
+        <ul class="compare-list">
+          <li><span class="mark"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Earned links from relevant, real sites</li>
+          <li><span class="mark"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Content written for people first, engines second</li>
+          <li><span class="mark"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Personalized strategy, continuously optimized</li>
+          <li><span class="mark"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Full reporting on exactly what we did and why</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     AUDIT CHECKLIST STRIP
+============================================================ -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Included In Every Audit</span>
+      <h2>What we check before any strategy begins</h2>
+    </div>
+    <div class="audit-strip reveal">
+      <div class="audit-pill"><svg viewBox="0 0 24 24" fill="none"><path d="M13 2 3 14h7l-1 8 11-12h-7l0-8z" stroke-linecap="round" stroke-linejoin="round"/></svg>Site Speed</div>
+      <div class="audit-pill"><svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="6.5" stroke-linecap="round"/><path d="M20 20l-4.3-4.3" stroke-linecap="round"/></svg>Crawl Errors</div>
+      <div class="audit-pill"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 20h8" stroke-linecap="round"/></svg>Mobile Usability</div>
+      <div class="audit-pill"><svg viewBox="0 0 24 24" fill="none"><path d="M5 19V9l7-5 7 5v10" stroke-linejoin="round"/></svg>Structured Data</div>
+      <div class="audit-pill"><svg viewBox="0 0 24 24" fill="none"><path d="M4 18l5-9 4 5 3-4 4 8" stroke-linecap="round" stroke-linejoin="round"/></svg>Content Gaps</div>
+      <div class="audit-pill"><svg viewBox="0 0 24 24" fill="none"><path d="M8 12a4 4 0 0 1 4-4h2a4 4 0 1 1 0 8h-1M16 12a4 4 0 0 1-4 4H10a4 4 0 1 1 0-8h1" stroke-linecap="round"/></svg>Backlink Profile</div>
+      <div class="audit-pill"><svg viewBox="0 0 24 24" fill="none"><circle cx="8" cy="9" r="3"/><circle cx="17" cy="9" r="2.6"/><path d="M3 19c0-3 2.4-5 5-5s5 2 5 5" stroke-linecap="round"/></svg>Competitor Gaps</div>
+      <div class="audit-pill"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-5.2-7-11.4A5.4 5.4 0 0 1 12 4a5.4 5.4 0 0 1 7 5.6C19 15.8 12 21 12 21z" stroke-linejoin="round"/></svg>Local Listings</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TESTIMONIALS
+============================================================ -->
+<section class="section section--panel">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">What Clients Say</span>
+      <h2>Feedback from businesses we've helped rank</h2>
+    </div>
+    <div class="testi-track" id="testiTrack">
+      <div class="testi-card card reveal">
+        <span class="testi-quote-mark">&ldquo;</span>
+        <p class="testi-text">We went from invisible on Google to the first page for our top three keywords in under six months. The monthly reports actually made sense.</p>
+        <div class="testi-person">
+          <div class="testi-avatar">RD</div>
+          <div><div class="testi-name">Rachel D.</div><div class="testi-role">Clinic Owner</div></div>
+        </div>
+      </div>
+      <div class="testi-card card reveal">
+        <span class="testi-quote-mark">&ldquo;</span>
+        <p class="testi-text">Our site was fast to look at but invisible on search. The technical audit alone uncovered issues we had no idea existed.</p>
+        <div class="testi-person">
+          <div class="testi-avatar">MK</div>
+          <div><div class="testi-name">Marcus K.</div><div class="testi-role">E-commerce Founder</div></div>
+        </div>
+      </div>
+      <div class="testi-card card reveal">
+        <span class="testi-quote-mark">&ldquo;</span>
+        <p class="testi-text">Local search leads finally started coming in consistently once our map listing and local pages were cleaned up.</p>
+        <div class="testi-person">
+          <div class="testi-avatar">SP</div>
+          <div><div class="testi-name">Sofia P.</div><div class="testi-role">Contractor</div></div>
+        </div>
+      </div>
+      <div class="testi-card card reveal">
+        <span class="testi-quote-mark">&ldquo;</span>
+        <p class="testi-text">No inflated promises, just a clear plan and steady movement up the rankings every month since we started.</p>
+        <div class="testi-person">
+          <div class="testi-avatar">JT</div>
+          <div><div class="testi-name">Jordan T.</div><div class="testi-role">SaaS Marketing Lead</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-controls">
+      <button class="testi-arrow" id="testiPrev" aria-label="Previous testimonial"><svg viewBox="0 0 16 16" fill="none"><path d="M10 3 5 8l5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <button class="testi-arrow" id="testiNext" aria-label="Next testimonial"><svg viewBox="0 0 16 16" fill="none"><path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FAQ
+============================================================ -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">FAQ</span>
+      <h2>Good to know before you get started</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <button class="faq-q">How long does SEO take to show results? <span class="faq-icon"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">Most sites see meaningful movement within three to six months, SEO compounds rather than spikes, so early wins build toward larger gains the longer the program runs.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q">Do you guarantee rankings? <span class="faq-icon"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">No one honestly can. Search engines control their own algorithms. What we do guarantee is a transparent, white-hat strategy built around your best realistic opportunities.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q">What's included in monthly SEO? <span class="faq-icon"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">Ongoing technical monitoring, content and on-page updates, link building activity, and a plain-English report covering rankings, traffic, and what's changing next.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q">How do you measure success? <span class="faq-icon"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">Against the goals set at the start (keyword rankings, organic traffic, and qualified leads or sales), not vanity metrics that don't tie back to revenue.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q">Do you work with local businesses? <span class="faq-icon"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">Yes, local SEO, map pack visibility, and review strategy are core parts of what we do for businesses that rely on nearby customers.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q">Can you optimize an existing website? <span class="faq-icon"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">Almost always. We start with a full audit of what's there, keep what's already working, and rebuild the rest around a clearer technical and content strategy.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q">Will you use black-hat tactics for faster results? <span class="faq-icon"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">Never. Shortcuts like purchased links or hidden text can trigger penalties that undo months of progress. Every tactic we use is one we'd defend in a Google review.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q">Do I need to sign a long-term contract? <span class="faq-icon"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">SEO is inherently a longer-term investment, but we'll always be upfront about realistic timelines so you can decide what commitment makes sense for your goals.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FINAL CTA
+============================================================ -->
+<section class="svc-final-cta">
+  <span class="svc-final-shape svc-final-shape--1"></span>
+  <span class="svc-final-shape svc-final-shape--2"></span>
+  <span class="svc-final-shape svc-final-shape--3"></span>
+  <div class="wrap">
+    <span class="eyebrow reveal">Ready To Rank Higher?</span>
+    <h2 class="reveal">Let's build the search presence your business deserves.</h2>
+    <p class="reveal">Request a free consultation and get a real, plain-English look at where you stand today, before anything else happens.</p>
+    <div style="display:flex;gap:16px;flex-wrap:wrap;justify-content:center;" class="reveal">
+      <a href="open-ticket.html" class="btn btn--solid magnetic">Request a Free SEO Consultation</a>
+      <a href="tel:1-307-445-3178" class="btn btn--ghost magnetic">Call 1-307-445-3178</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>CONTACT US</h4>
+        <ul>
+          <li>Fusion Tech USA</li>
+          <li>Houston, TX</li>
+          <li>1-307-445-3178</li>
+          <li>fusiontechusa.1@gmail.com</li>
+        </ul>
+      </div>
+      <div>
+        <h4>NAVIGATE</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Provided Services</a></li>
+          <li><a href="open-ticket.html">Open A Ticket</a></li>
+          <li><a href="order-tools.html">Order Supplies</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>INFORMATION</h4>
+        <ul>
+          <li><a href="pricing.html">Prices</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms And Condition</a></li>
+          <li><a href="#">Join Our Team</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>FOLLOW US</h4>
+        <div class="footer-social">
+          <a href="#">FB</a><a href="#">X</a><a href="#">IN</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>&copy; 2026 Fusion Tech USA. All rights reserved. (placeholder contact details, update anytime)</div>
+    </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.16/dist/lenis.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+<script src="assets/motion.js" defer></script>
+<script src="assets/services-premium.js" defer></script>
+<script src="assets/collective-premium.js" defer></script>
+<script src="assets/seo-premium.js" defer></script>
+</body>
+</html>

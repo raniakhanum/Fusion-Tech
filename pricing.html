@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){try{var t=localStorage.getItem('ft-theme');if(!t){t=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}if(t==='dark'){document.documentElement.setAttribute('data-theme','dark');}}catch(e){}})();</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pricing | Fusion Tech USA</title>
+<meta name="description" content="Transparent pricing for website development, logo design, SEO, social media marketing, and video editing: plus bundled agency packages built to grow with you.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self';">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="assets/services-premium.css">
+<link rel="stylesheet" href="assets/pricing-premium.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="social"><a href="#">FB</a><a href="#">X</a><a href="#">IN</a></div>
+    <div><span class="phone">1-307-445-3178</span> &nbsp;|&nbsp; <a href="mailto:fusiontechusa.1@gmail.com">fusiontechusa.1@gmail.com</a></div>
+  </div>
+</div>
+<header class="site-header">
+  <div class="nav-row">
+    <a href="index.html" class="logo"><img src="assets/fusiontech-logo.png" alt="Fusion Tech USA" class="logo-img" width="174" height="207"></a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <div class="nav-item">
+        <button class="nav-drop-trigger" type="button">Collective Tech Services <svg class="chev" width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"><path d="M1 3l4 4 4-4" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="dropdown-menu">
+          <a href="collective-tech-services.html" class="dropdown-overview">All Collective Tech Services</a>
+          <a href="website-development.html">Website Development</a>
+          <a href="logo-designing.html">Logo Designing</a>
+          <a href="video-editing.html">Video Editing</a>
+          <a href="social-media-marketing.html">Social Media Marketing</a>
+          <a href="seo.html">Search Engine Optimization (SEO)</a>
+        </div>
+      </div>
+      <a href="pricing.html" class="active">Prices</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+        <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.6"/><path d="M12 2.5V5M12 19V21.5M4.2 4.2L6 6M18 18L19.8 19.8M2.5 12H5M19 12H21.5M4.2 19.8L6 18M18 6L19.8 4.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+      </button>
+            <a href="open-ticket.html" class="btn btn--solid">Open a Ticket</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">&#9776;</button>
+    </div>
+  </div>
+</header>
+<script>
+document.getElementById('menuToggle').addEventListener('click', function(){
+  document.getElementById('mainNav').classList.toggle('open');
+});
+document.querySelectorAll('.nav-drop-trigger').forEach(function(btn){
+  btn.addEventListener('click', function(e){
+    e.stopPropagation();
+    var item = btn.closest('.nav-item');
+    var wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.nav-item.open').forEach(function(i){ i.classList.remove('open'); });
+    if(!wasOpen){ item.classList.add('open'); }
+  });
+});
+document.addEventListener('click', function(){
+  document.querySelectorAll('.nav-item.open').forEach(function(i){ i.classList.remove('open'); });
+});
+</script>
+
+<!-- ============================================================
+     HERO
+============================================================ -->
+<section class="svc-hero" id="svcHero">
+  <div class="wrap">
+    <div class="svc-hero-copy">
+      <span class="eyebrow hero-eyebrow">Investment</span>
+      <h1 data-text="Pricing built to be understood, not decoded." data-accent-from="understood,"></h1>
+      <p class="lead">
+        Five core services, three bundled partnerships, and a calculator
+        that shows the real number before you ever open a ticket. No
+        hidden tiers, no asterisks, just what it costs and what
+        you get for it.
+      </p>
+      <div class="svc-hero-ctas">
+        <a href="#pricingGrid" class="btn btn--solid magnetic">Choose the Perfect Plan</a>
+        <a href="#calcSection" class="btn btn--ghost magnetic">Estimate My Project</a>
+      </div>
+      <div class="svc-hero-trust hero-stats">
+        <div><div class="hero-stat-value" data-count-to="5" data-suffix="">0</div><div class="hero-stat-label">Core services</div></div>
+        <div><div class="hero-stat-value" data-count-to="0" data-suffix="%">0</div><div class="hero-stat-label">Hidden fees</div></div>
+        <div><div class="hero-stat-value" data-count-to="48" data-suffix="hr">0</div><div class="hero-stat-label">Quote turnaround</div></div>
+      </div>
+      <div class="price-hero-note">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/></svg>
+        Flat-rate pricing, confirmed in writing before any work starts.
+      </div>
+    </div>
+
+    <div class="svc-hero-illo" id="svcHeroIllo">
+      <div class="svc-illo-glow"></div>
+      <div class="svc-illo-ring"></div>
+      <div class="svc-illo-stage" id="svcIlloStage">
+        <div class="svc-illo-panel svc-illo-panel--main price-illo-panel--ledger">
+          <div class="mini-row"><span class="mini-dot"></span><span class="mini-line" style="max-width:70%;"></span></div>
+          <div class="mini-row"><span class="mini-dot"></span><span class="mini-line" style="max-width:52%;"></span></div>
+          <div class="mini-row"><span class="mini-dot"></span><span class="mini-line" style="max-width:84%;"></span></div>
+          <div class="mini-row"><span class="mini-dot"></span><span class="mini-line" style="max-width:40%;"></span></div>
+          <div class="mini-total">
+            <span class="mini-total-label">Estimate</span>
+            <span class="mini-total-value">$630</span>
+          </div>
+        </div>
+        <div class="svc-illo-panel svc-illo-panel--card1">
+          <div class="svc-mini-label">Setup Time</div>
+          <div class="svc-mini-value">48 hrs</div>
+        </div>
+        <div class="svc-illo-panel svc-illo-panel--card2">
+          <svg viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="illoGradBars" x1="0" y1="1" x2="0" y2="0">
+                <stop offset="0%" stop-color="#c4b5fd"/>
+                <stop offset="100%" stop-color="#7c3aed"/>
+              </linearGradient>
+            </defs>
+            <rect x="10" y="46" width="14" height="26" rx="3" fill="url(#illoGradBars)" opacity="0.55"/>
+            <rect x="32" y="34" width="14" height="38" rx="3" fill="url(#illoGradBars)" opacity="0.75"/>
+            <rect x="54" y="20" width="14" height="52" rx="3" fill="url(#illoGradBars)"/>
+            <rect x="76" y="8" width="14" height="64" rx="3" fill="url(#illoGradBars)"/>
+          </svg>
+        </div>
+        <div class="svc-illo-panel svc-illo-panel--badge">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M8 12.5l2.5 2.5L16.5 9" stroke="#7c3aed" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="svc-mini-value" style="font-size:0.86rem;">No Hidden Fees</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SERVICE PRICING
+============================================================ -->
+<section class="section" id="pricingGrid">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Core Services</span>
+      <h2>One flat price per service</h2>
+      <p>Pick exactly what you need. Every package below can also be combined into a bundle further down the page.</p>
+    </div>
+    <div class="price-grid">
+
+      <div class="price-card card reveal">
+        <div class="price-card__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3.5" y="5" width="17" height="14" rx="2.2" stroke="currentColor" stroke-width="1.7"/><path d="M3.5 9h17" stroke="currentColor" stroke-width="1.7"/></svg></div>
+        <h3 class="price-card__name">Website Development</h3>
+        <p class="price-card__desc">A custom-built, fully responsive site designed around your brand.</p>
+        <div class="price-card__amount-row"><span class="price-card__amount">From $600</span><span class="price-card__unit">one-time</span></div>
+        <ul class="price-card__list">
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Custom design, up to 6 pages</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Mobile &amp; tablet optimized</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>30 days of post-launch support</li>
+        </ul>
+        <a href="open-ticket.html" class="btn btn--ghost magnetic">Get Started</a>
+      </div>
+
+      <div class="price-card card reveal">
+        <div class="price-card__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.7"/><path d="M12 3.5v17M3.5 12h17" stroke="currentColor" stroke-width="1.3" opacity="0.5"/></svg></div>
+        <h3 class="price-card__name">Logo Designing</h3>
+        <p class="price-card__desc">A distinct mark and a small brand kit to use it consistently.</p>
+        <div class="price-card__amount-row"><span class="price-card__amount">$80</span><span class="price-card__unit">one-time</span></div>
+        <ul class="price-card__list">
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>3 original concepts</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Unlimited revisions on the chosen mark</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Full file package, all formats</li>
+        </ul>
+        <a href="open-ticket.html" class="btn btn--ghost magnetic">Get Started</a>
+      </div>
+
+      <div class="price-card card reveal">
+        <div class="price-card__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="1.7"/><path d="M20 20l-4.3-4.3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></div>
+        <h3 class="price-card__name">Search Engine Optimization</h3>
+        <p class="price-card__desc">Ongoing technical and content work to rank for what your customers search.</p>
+        <div class="price-card__amount-row"><span class="price-card__amount">From $250</span><span class="price-card__unit">/ month</span></div>
+        <ul class="price-card__list">
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Keyword &amp; technical audit</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>On-page optimization, monthly</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Plain-language ranking report</li>
+        </ul>
+        <a href="open-ticket.html" class="btn btn--ghost magnetic">Get Started</a>
+      </div>
+
+      <div class="price-card card reveal">
+        <div class="price-card__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 9.5a11.5 11.5 0 0 1 16 0" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M7 13a7 7 0 0 1 10 0" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><circle cx="12" cy="17.5" r="1.3" fill="currentColor"/></svg></div>
+        <h3 class="price-card__name">Social Media Marketing</h3>
+        <p class="price-card__desc">Strategy, content, and community management across your platforms.</p>
+        <div class="price-card__amount-row"><span class="price-card__amount">From $300</span><span class="price-card__unit">/ month</span></div>
+        <ul class="price-card__list">
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Content calendar &amp; creation</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Community management</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Weekly performance reporting</li>
+        </ul>
+        <a href="open-ticket.html" class="btn btn--ghost magnetic">Get Started</a>
+      </div>
+
+      <div class="price-card card reveal">
+        <div class="price-card__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 7.5h11v9H4z" stroke="currentColor" stroke-width="1.7"/><path d="M15 10.5l5-2.6v8.2l-5-2.6" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></div>
+        <h3 class="price-card__name">Video Editing</h3>
+        <p class="price-card__desc">Clean, on-brand edits for promos, reels, and product footage.</p>
+        <div class="price-card__amount-row"><span class="price-card__amount">From $200</span><span class="price-card__unit">per project</span></div>
+        <ul class="price-card__list">
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Up to 3 minutes, finished runtime</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Color correction &amp; sound mix</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>2 rounds of revisions included</li>
+        </ul>
+        <a href="open-ticket.html" class="btn btn--ghost magnetic">Get Started</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     BUNDLES
+============================================================ -->
+<section class="section section--panel">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Agency Bundles</span>
+      <h2>Combine services, save on all of them</h2>
+      <p>Bundling isn't just a discount. It's one team keeping your brand, your rankings, and your content in sync.</p>
+    </div>
+    <div class="bundle-grid">
+
+      <div class="bundle-card card reveal">
+        <span class="bundle-card__services">Website + Logo</span>
+        <h3 class="bundle-card__name">Brand Foundation</h3>
+        <p class="bundle-card__desc">Everything a new brand needs to launch looking like it's been around for years.</p>
+        <div class="bundle-card__price-row"><span class="bundle-card__price">From $630</span><span class="bundle-card__unit">one-time</span></div>
+        <span class="bundle-card__save">Save $50 versus separate</span>
+        <ul class="bundle-card__list">
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Full custom website</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Logo &amp; starter brand kit</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Consistent visuals across both</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>30 days of post-launch support</li>
+        </ul>
+        <a href="open-ticket.html" class="btn btn--ghost magnetic">Start This Bundle</a>
+      </div>
+
+      <div class="bundle-card card reveal bundle-card--featured">
+        <span class="bundle-ribbon">Recommended</span>
+        <span class="bundle-card__services">SEO + Social Media</span>
+        <h3 class="bundle-card__name">Growth Engine</h3>
+        <p class="bundle-card__desc">The two channels that compound together, run by one team that talks to itself.</p>
+        <div class="bundle-card__price-row"><span class="bundle-card__price">From $500</span><span class="bundle-card__unit">/ month</span></div>
+        <span class="bundle-card__save">Save $50/mo versus separate</span>
+        <ul class="bundle-card__list">
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Full SEO program</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Full social media management</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Shared content &amp; keyword strategy</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Monthly joint performance review</li>
+        </ul>
+        <a href="open-ticket.html" class="btn btn--solid magnetic">Start This Bundle</a>
+      </div>
+
+      <div class="bundle-card card reveal">
+        <span class="bundle-card__services">All 5 Services</span>
+        <h3 class="bundle-card__name">Full Agency Partnership</h3>
+        <p class="bundle-card__desc">Every service under one roof, a single point of contact for your entire online presence.</p>
+        <div class="bundle-card__price-row"><span class="bundle-card__price">From $700</span><span class="bundle-card__unit">setup</span></div>
+        <div class="bundle-card__price-row" style="margin-top:-8px;"><span class="bundle-card__price" style="font-size:1.5rem;">From $500</span><span class="bundle-card__unit">/ month ongoing</span></div>
+        <span class="bundle-card__save">Save $180+ versus separate</span>
+        <ul class="bundle-card__list">
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Website, logo &amp; video included</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Ongoing SEO &amp; social management</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Dedicated account manager</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Priority turnaround on every request</li>
+        </ul>
+        <a href="open-ticket.html" class="btn btn--ghost magnetic">Start This Bundle</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FEATURE COMPARISON
+============================================================ -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Compare Bundles</span>
+      <h2>What's included, side by side</h2>
+      <p>A closer look at the three agency bundles, so you can see exactly where the value comes from.</p>
+    </div>
+
+    <div class="compare-wrap">
+      <div class="compare-scroll">
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th class="compare-feature-col">Included</th>
+              <th><span class="compare-plan-name">Brand Foundation</span><span class="compare-plan-price">From $630 one-time</span></th>
+              <th class="is-featured"><span class="compare-plan-name">Growth Engine</span><span class="compare-plan-price">From $500 / month</span></th>
+              <th><span class="compare-plan-name">Full Agency</span><span class="compare-plan-price">From $700 + $500/mo</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="compare-feature-col">Custom website</td>
+              <td><span class="compare-check"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></td>
+              <td><span class="compare-dash">&ndash;</span></td>
+              <td><span class="compare-check"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></td>
+            </tr>
+            <tr>
+              <td class="compare-feature-col">Logo &amp; brand kit</td>
+              <td><span class="compare-check"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></td>
+              <td><span class="compare-dash">&ndash;</span></td>
+              <td><span class="compare-check"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></td>
+            </tr>
+            <tr>
+              <td class="compare-feature-col">SEO program</td>
+              <td><span class="compare-dash">&ndash;</span></td>
+              <td><span class="compare-check"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></td>
+              <td><span class="compare-check"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></td>
+            </tr>
+            <tr>
+              <td class="compare-feature-col">Social media management</td>
+              <td><span class="compare-dash">&ndash;</span></td>
+              <td><span class="compare-check"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></td>
+              <td><span class="compare-check"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></td>
+            </tr>
+            <tr>
+              <td class="compare-feature-col">Video editing</td>
+              <td><span class="compare-dash">&ndash;</span></td>
+              <td><span class="compare-dash">&ndash;</span></td>
+              <td><span class="compare-check"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></td>
+            </tr>
+            <tr>
+              <td class="compare-feature-col">Dedicated account manager</td>
+              <td><span class="compare-dash">&ndash;</span></td>
+              <td><span class="compare-dash">&ndash;</span></td>
+              <td><span class="compare-check"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></td>
+            </tr>
+            <tr>
+              <td class="compare-feature-col">Monthly performance report</td>
+              <td><span class="compare-dash">&ndash;</span></td>
+              <td><span class="compare-check"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></td>
+              <td><span class="compare-check"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></td>
+            </tr>
+            <tr>
+              <td class="compare-feature-col">Priority turnaround</td>
+              <td><span class="compare-dash">&ndash;</span></td>
+              <td><span class="compare-dash">&ndash;</span></td>
+              <td><span class="compare-check"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="compare-mobile">
+        <div class="compare-mobile-card">
+          <h4>Brand Foundation</h4>
+          <span class="compare-mobile-price">From $630 one-time</span>
+          <ul>
+            <li>Custom website<span>&#10003;</span></li>
+            <li>Logo &amp; brand kit<span>&#10003;</span></li>
+            <li>SEO program<span>&ndash;</span></li>
+            <li>Social media management<span>&ndash;</span></li>
+            <li>Video editing<span>&ndash;</span></li>
+          </ul>
+        </div>
+        <div class="compare-mobile-card is-featured">
+          <h4>Growth Engine: Recommended</h4>
+          <span class="compare-mobile-price">From $500 / month</span>
+          <ul>
+            <li>SEO program<span>&#10003;</span></li>
+            <li>Social media management<span>&#10003;</span></li>
+            <li>Monthly performance report<span>&#10003;</span></li>
+            <li>Website / logo included<span>&ndash;</span></li>
+          </ul>
+        </div>
+        <div class="compare-mobile-card">
+          <h4>Full Agency Partnership</h4>
+          <span class="compare-mobile-price">From $700 + $500/mo</span>
+          <ul>
+            <li>Every core service<span>&#10003;</span></li>
+            <li>Dedicated account manager<span>&#10003;</span></li>
+            <li>Priority turnaround<span>&#10003;</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     INVESTMENT CALCULATOR
+============================================================ -->
+<section class="section section--panel" id="calcSection">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Build Your Own</span>
+      <h2>Estimate your project in real time</h2>
+      <p>Select the services you need and watch the investment update instantly, no email required to see a number.</p>
+    </div>
+
+    <div class="calc-panel reveal-scale" id="calcRoot">
+      <div class="calc-options">
+
+        <div class="calc-block">
+          <span class="calc-block-label">Select Services</span>
+          <div class="calc-service-grid">
+            <label class="calc-chip">
+              <input type="checkbox" data-calc-service="website">
+              <span class="calc-chip__box"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L19 7" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <span><span class="calc-chip__label">Website Development</span><span class="calc-chip__price">From $600 one-time</span></span>
+            </label>
+            <label class="calc-chip">
+              <input type="checkbox" data-calc-service="logo">
+              <span class="calc-chip__box"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L19 7" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <span><span class="calc-chip__label">Logo Designing</span><span class="calc-chip__price">$80 one-time</span></span>
+            </label>
+            <label class="calc-chip">
+              <input type="checkbox" data-calc-service="seo">
+              <span class="calc-chip__box"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L19 7" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <span><span class="calc-chip__label">SEO</span><span class="calc-chip__price">From $250 / month</span></span>
+            </label>
+            <label class="calc-chip">
+              <input type="checkbox" data-calc-service="social">
+              <span class="calc-chip__box"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L19 7" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <span><span class="calc-chip__label">Social Media Marketing</span><span class="calc-chip__price">From $300 / month</span></span>
+            </label>
+            <label class="calc-chip">
+              <input type="checkbox" data-calc-service="video">
+              <span class="calc-chip__box"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5L19 7" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <span><span class="calc-chip__label">Video Editing</span><span class="calc-chip__price">From $200 per project</span></span>
+            </label>
+          </div>
+        </div>
+
+        <div class="calc-block">
+          <span class="calc-block-label">Package Level</span>
+          <div class="calc-segmented">
+            <button type="button" data-calc-level="standard" class="is-active">Standard</button>
+            <button type="button" data-calc-level="priority">Priority (+15%)</button>
+          </div>
+        </div>
+
+        <div class="calc-block">
+          <span class="calc-block-label">Optional Extras</span>
+          <div class="calc-extras">
+            <label class="calc-extra-row">
+              <span class="calc-extra-info">
+                <input type="checkbox" data-calc-extra="revision">
+                <span>
+                  <span class="calc-extra-name">Extra Revision Round</span>
+                  <span class="calc-extra-desc">One additional round beyond what's included</span>
+                </span>
+              </span>
+              <span class="calc-extra-price">+$150</span>
+            </label>
+            <label class="calc-extra-row">
+              <span class="calc-extra-info">
+                <input type="checkbox" data-calc-extra="adspend">
+                <span>
+                  <span class="calc-extra-name">Paid Ad Management</span>
+                  <span class="calc-extra-desc">We manage your ad spend across platforms</span>
+                </span>
+              </span>
+              <span class="calc-extra-price">+$350/mo</span>
+            </label>
+            <label class="calc-extra-row">
+              <span class="calc-extra-info">
+                <input type="checkbox" data-calc-extra="manager">
+                <span>
+                  <span class="calc-extra-name">Dedicated Success Manager</span>
+                  <span class="calc-extra-desc">One person, always reachable, owns your account</span>
+                </span>
+              </span>
+              <span class="calc-extra-price">+$200/mo</span>
+            </label>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="calc-summary">
+        <span class="calc-summary-label">Estimated Investment</span>
+        <div class="calc-summary-total" id="calcOneTime">$0</div>
+        <div class="calc-summary-monthly" id="calcMonthly"></div>
+        <ul class="calc-summary-list" id="calcSummaryList"></ul>
+        <p class="calc-summary-empty" id="calcSummaryEmpty">Select a service to see your estimate build in real time.</p>
+        <a href="open-ticket.html" class="btn btn--solid magnetic">Request This Quote</a>
+        <p class="calc-summary-note">Final quote confirmed after a short discovery call.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PROCESS TIMELINE
+============================================================ -->
+<section class="section svc-timeline price-process">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">How It Works</span>
+      <h2>From first call to ongoing support</h2>
+      <p>Every package, individual or bundled, moves through the same seven-step process.</p>
+    </div>
+    <div class="svc-timeline-track">
+      <div class="svc-timeline-line"><div class="svc-timeline-line-fill" id="svcTimelineFill"></div></div>
+      <div class="svc-timeline-step">
+        <div class="svc-timeline-dot">1</div>
+        <h4>Discovery Call</h4>
+        <p>We learn your goals, audience, and current setup.</p>
+      </div>
+      <div class="svc-timeline-step">
+        <div class="svc-timeline-dot">2</div>
+        <h4>Proposal</h4>
+        <p>A written scope and flat price, confirmed before work starts.</p>
+      </div>
+      <div class="svc-timeline-step">
+        <div class="svc-timeline-dot">3</div>
+        <h4>Strategy</h4>
+        <p>We map the plan: content, keywords, or site structure.</p>
+      </div>
+      <div class="svc-timeline-step">
+        <div class="svc-timeline-dot">4</div>
+        <h4>Design</h4>
+        <p>Concepts and layouts come together for your review.</p>
+      </div>
+      <div class="svc-timeline-step">
+        <div class="svc-timeline-dot">5</div>
+        <h4>Development</h4>
+        <p>Approved work gets built, written, or edited in full.</p>
+      </div>
+      <div class="svc-timeline-step">
+        <div class="svc-timeline-dot">6</div>
+        <h4>Delivery</h4>
+        <p>Final files or a live launch, checked against the brief.</p>
+      </div>
+      <div class="svc-timeline-step">
+        <div class="svc-timeline-dot">7</div>
+        <h4>Ongoing Support</h4>
+        <p>Retainers continue; one-time projects get 30 days of fixes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     WHY CHOOSE US
+============================================================ -->
+<section class="section section--panel">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Why Clients Invest Here</span>
+      <h2>What that price actually gets you</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-card card reveal">
+        <div class="icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 3l7 2.6v5.4c0 4.6-3 7.7-7 9-4-1.3-7-4.4-7-9V5.6L12 3z" stroke="currentColor" stroke-width="1.7"/></svg></div>
+        <h3>Premium Quality</h3>
+        <p>Every deliverable is reviewed against the original brief before it reaches you.</p>
+      </div>
+      <div class="why-card card reveal">
+        <div class="icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="2.5" stroke="currentColor" stroke-width="1.7"/><path d="M8 10h8M8 14h5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></div>
+        <h3>Transparent Pricing</h3>
+        <p>The number you see is the number you pay, confirmed in writing first.</p>
+      </div>
+      <div class="why-card card reveal">
+        <div class="icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M13 3L4 14h6l-1 7 9-11h-6l1-7z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></div>
+        <h3>Fast Delivery</h3>
+        <p>Timelines are set upfront and built into the proposal, not left open-ended.</p>
+      </div>
+      <div class="why-card card reveal">
+        <div class="icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 9.5a11.5 11.5 0 0 1 16 0" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M7 13a7 7 0 0 1 10 0" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><circle cx="12" cy="17.5" r="1.3" fill="currentColor"/></svg></div>
+        <h3>Dedicated Support</h3>
+        <p>A real person you can reach, not a rotating queue of new contacts.</p>
+      </div>
+      <div class="why-card card reveal">
+        <div class="icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 7v5l3.5 2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.7"/></svg></div>
+        <h3>Long-Term Partnership</h3>
+        <p>Bundled clients keep the same team as their needs grow, not a new vendor every year.</p>
+      </div>
+      <div class="why-card card reveal">
+        <div class="icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 12h4l2-7 4 14 2-7h4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Results-Driven Process</h3>
+        <p>Every package is measured against the goals we agree on at the start.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TESTIMONIALS
+============================================================ -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">What Clients Say</span>
+      <h2>Feedback on the pricing experience itself</h2>
+    </div>
+    <div class="testi-track" id="testiTrack">
+      <div class="testi-card card reveal">
+        <span class="testi-quote-mark">&ldquo;</span>
+        <p class="testi-text">I've been quoted vague ranges by three other agencies. Fusion Tech told me a number and stuck to it. That alone earned the business.</p>
+        <div class="testi-person">
+          <div class="testi-avatar">JR</div>
+          <div><div class="testi-name">Jordan R.</div><div class="testi-role">E-Commerce Founder</div></div>
+        </div>
+      </div>
+      <div class="testi-card card reveal">
+        <span class="testi-quote-mark">&ldquo;</span>
+        <p class="testi-text">The calculator on their pricing page let me play with options before I even called. By the time we talked, I already knew roughly what to expect.</p>
+        <div class="testi-person">
+          <div class="testi-avatar">SK</div>
+          <div><div class="testi-name">Sara K.</div><div class="testi-role">Boutique Owner</div></div>
+        </div>
+      </div>
+      <div class="testi-card card reveal">
+        <span class="testi-quote-mark">&ldquo;</span>
+        <p class="testi-text">We bundled SEO and social from month one and it shows. The two teams were never actually two teams, which made everything move faster.</p>
+        <div class="testi-person">
+          <div class="testi-avatar">DP</div>
+          <div><div class="testi-name">Daniel P.</div><div class="testi-role">Restaurant Group Owner</div></div>
+        </div>
+      </div>
+      <div class="testi-card card reveal">
+        <span class="testi-quote-mark">&ldquo;</span>
+        <p class="testi-text">No surprise invoices, no scope creep fees. What we signed for at the start is what showed up on the bill every single month.</p>
+        <div class="testi-person">
+          <div class="testi-avatar">MT</div>
+          <div><div class="testi-name">Maya T.</div><div class="testi-role">Fitness Studio Founder</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-controls">
+      <button class="testi-arrow" id="testiPrev" aria-label="Previous testimonial"><svg viewBox="0 0 16 16" fill="none"><path d="M10 3 5 8l5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <button class="testi-arrow" id="testiNext" aria-label="Next testimonial"><svg viewBox="0 0 16 16" fill="none"><path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FAQ
+============================================================ -->
+<section class="section section--panel">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">FAQ</span>
+      <h2>Pricing questions, answered plainly</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <button class="faq-q">What's actually included at these prices? <span class="faq-icon"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">Everything listed on each card. There's no separate setup fee or platform charge added after the fact. Anything outside standard scope is quoted separately before it's added.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q">Do you require a deposit? <span class="faq-icon"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">Yes, one-time projects start with a 50% deposit, with the balance due at delivery. Monthly retainers are billed at the start of each service month.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q">Can I upgrade to a bundle later? <span class="faq-icon"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">Absolutely. Most clients start with one service and move into a bundle once they see the results. We'll credit what you've already paid toward the switch where it applies.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q">Are revisions included? <span class="faq-icon"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">Yes, each package includes a set number of revision rounds. Extra rounds beyond that are available through the calculator above at a flat add-on rate.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q">Do you offer monthly retainers? <span class="faq-icon"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">SEO and Social Media Marketing are both run as monthly retainers, since consistency is what makes them work. Website, logo, and video work are one-time projects.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q">How long do projects take? <span class="faq-icon"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">A quote is confirmed within 48 hours of your discovery call. From there, timelines depend on scope and are locked into your written proposal before anything begins.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FINAL CTA
+============================================================ -->
+<section class="svc-final-cta">
+  <span class="svc-final-shape svc-final-shape--1"></span>
+  <span class="svc-final-shape svc-final-shape--2"></span>
+  <span class="svc-final-shape svc-final-shape--3"></span>
+  <div class="wrap">
+    <span class="eyebrow reveal">Ready When You Are</span>
+    <h2 class="reveal">Let's find the right number for your project.</h2>
+    <p class="reveal">Open a ticket for a free discovery call, you'll leave with a confirmed price, not a vague estimate.</p>
+    <div style="display:flex;gap:16px;flex-wrap:wrap;justify-content:center;" class="reveal">
+      <a href="open-ticket.html" class="btn btn--solid magnetic">Open a Ticket</a>
+      <a href="tel:1-307-445-3178" class="btn btn--ghost magnetic">Call 1-307-445-3178</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>CONTACT US</h4>
+        <ul>
+          <li>Fusion Tech USA</li>
+          <li>Houston, TX</li>
+          <li>1-307-445-3178</li>
+          <li>fusiontechusa.1@gmail.com</li>
+        </ul>
+      </div>
+      <div>
+        <h4>NAVIGATE</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Provided Services</a></li>
+          <li><a href="open-ticket.html">Open A Ticket</a></li>
+          <li><a href="order-tools.html">Order Supplies</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>INFORMATION</h4>
+        <ul>
+          <li><a href="pricing.html">Prices</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms And Condition</a></li>
+          <li><a href="#">Join Our Team</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>FOLLOW US</h4>
+        <div class="footer-social">
+          <a href="#">FB</a><a href="#">X</a><a href="#">IN</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>&copy; 2026 Fusion Tech USA. All rights reserved. (placeholder contact details, update anytime)</div>
+    </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.16/dist/lenis.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+<script src="assets/motion.js" defer></script>
+<script src="assets/services-premium.js" defer></script>
+<script src="assets/pricing-premium.js" defer></script>
+</body>
+</html>

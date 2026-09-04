@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){try{var t=localStorage.getItem('ft-theme');if(!t){t=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}if(t==='dark'){document.documentElement.setAttribute('data-theme','dark');}}catch(e){}})();</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Social Media Marketing | Fusion Tech USA</title>
+<meta name="description" content="Strategic social media marketing from Fusion Tech USA: strategy, content, community, and paid growth, built into one system that turns attention into customers.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self';">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="assets/services-premium.css">
+<link rel="stylesheet" href="assets/collective-premium.css">
+<link rel="stylesheet" href="assets/social-marketing-premium.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="social"><a href="#">FB</a><a href="#">X</a><a href="#">IN</a></div>
+    <div><span class="phone">1-307-445-3178</span> &nbsp;|&nbsp; <a href="mailto:fusiontechusa.1@gmail.com">fusiontechusa.1@gmail.com</a></div>
+  </div>
+</div>
+<header class="site-header">
+  <div class="nav-row">
+    <a href="index.html" class="logo"><img src="assets/fusiontech-logo.png" alt="Fusion Tech USA" class="logo-img" width="174" height="207"></a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <div class="nav-item">
+        <button class="nav-drop-trigger" type="button">Collective Tech Services <svg class="chev" width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"><path d="M1 3l4 4 4-4" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="dropdown-menu">
+          <a href="collective-tech-services.html" class="dropdown-overview">All Collective Tech Services</a>
+          <a href="website-development.html">Website Development</a>
+          <a href="logo-designing.html">Logo Designing</a>
+          <a href="video-editing.html">Video Editing</a>
+          <a href="social-media-marketing.html" class="active">Social Media Marketing</a>
+          <a href="seo.html">Search Engine Optimization (SEO)</a>
+        </div>
+      </div>
+      <a href="pricing.html">Prices</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+        <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.6"/><path d="M12 2.5V5M12 19V21.5M4.2 4.2L6 6M18 18L19.8 19.8M2.5 12H5M19 12H21.5M4.2 19.8L6 18M18 6L19.8 4.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+      </button>
+            <a href="open-ticket.html" class="btn btn--solid">Open a Ticket</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">&#9776;</button>
+    </div>
+  </div>
+</header>
+<script>
+document.getElementById('menuToggle').addEventListener('click', function(){
+  document.getElementById('mainNav').classList.toggle('open');
+});
+document.querySelectorAll('.nav-drop-trigger').forEach(function(btn){
+  btn.addEventListener('click', function(e){
+    e.stopPropagation();
+    var item = btn.closest('.nav-item');
+    var wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.nav-item.open').forEach(function(i){ i.classList.remove('open'); });
+    if(!wasOpen){ item.classList.add('open'); }
+  });
+});
+document.addEventListener('click', function(){
+  document.querySelectorAll('.nav-item.open').forEach(function(i){ i.classList.remove('open'); });
+});
+</script>
+
+<!-- ============================================================
+     CINEMATIC HERO
+============================================================ -->
+<section class="svc-hero" id="svcHero">
+  <div class="wrap">
+    <div class="svc-hero-copy">
+      <div class="breadcrumb"><a href="index.html">Home</a> / <a href="collective-tech-services.html">Collective Tech Services</a> / Social Media Marketing</div>
+      <span class="eyebrow hero-eyebrow" style="margin-top:16px;">Social Media Marketing</span>
+      <h1 data-text="Turn scrolling into a real growth channel." data-accent-from="growth"></h1>
+      <p class="lead">
+        Posting isn't a strategy. We plan, create, and run social media
+        that's built around one goal: moving the right people from
+        a passing scroll to an actual customer.
+      </p>
+      <div class="svc-hero-ctas">
+        <a href="open-ticket.html" class="btn btn--solid magnetic">Start Your Strategy</a>
+        <a href="#showcase" class="btn btn--ghost magnetic">See Sample Work</a>
+      </div>
+      <div class="svc-hero-trust hero-stats">
+        <div><div class="hero-stat-value">9 Disciplines</div><div class="hero-stat-label">Under one team</div></div>
+        <div><div class="hero-stat-value">Weekly</div><div class="hero-stat-label">Reporting cadence</div></div>
+        <div><div class="hero-stat-value">Every Platform</div><div class="hero-stat-label">One coordinated voice</div></div>
+      </div>
+    </div>
+
+    <div class="svc-hero-illo" id="svcHeroIllo">
+      <div class="svc-illo-glow"></div>
+      <div class="svc-illo-ring"></div>
+      <div class="svc-illo-stage" id="svcIlloStage">
+        <div class="svc-illo-panel svc-illo-panel--main">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="smmGradMain" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#7c3aed"/>
+                <stop offset="100%" stop-color="#c4b5fd"/>
+              </linearGradient>
+            </defs>
+            <rect x="24" y="20" width="152" height="160" rx="14" fill="#fff" stroke="url(#smmGradMain)" stroke-width="3"/>
+            <circle cx="52" cy="46" r="10" fill="url(#smmGradMain)"/>
+            <rect x="70" y="40" width="70" height="7" rx="3.5" fill="#e8e1f7"/>
+            <rect x="70" y="52" width="46" height="6" rx="3" fill="#e8e1f7"/>
+            <rect x="40" y="76" width="120" height="62" rx="10" fill="rgba(124,58,237,0.07)"/>
+            <path d="M52 118l14-22 12 10 16-26 18 20" fill="none" stroke="#7c3aed" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="128" cy="100" r="3" fill="#8b5cf6"/>
+            <path d="M40 150h30M78 150h20M106 150h30" stroke="#c4b5fd" stroke-width="4" stroke-linecap="round"/>
+            <circle cx="150" cy="150" r="9" fill="none" stroke="#7c3aed" stroke-width="2.4"/>
+            <path d="M150 145v10M145 150h10" stroke="#7c3aed" stroke-width="2"/>
+            <path d="M40 166h60M110 166h30" stroke="#e8e1f7" stroke-width="4" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="svc-illo-panel svc-illo-panel--card1">
+          <div class="svc-mini-label">Reach</div>
+          <div class="svc-mini-value">+142%</div>
+        </div>
+        <div class="svc-illo-panel svc-illo-panel--card2">
+          <svg viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="40" r="26" fill="none" stroke="#8b5cf6" stroke-width="7" stroke-dasharray="120 163" stroke-linecap="round" transform="rotate(-90 50 40)"/>
+            <circle cx="50" cy="40" r="26" fill="none" stroke="#e8e1f7" stroke-width="7" stroke-dasharray="20 163" stroke-dashoffset="-120" stroke-linecap="round" transform="rotate(-90 50 40)"/>
+          </svg>
+          <div class="svc-mini-label" style="margin-top:8px;">Engagement</div>
+        </div>
+        <div class="svc-illo-panel svc-illo-panel--badge">
+          <span class="hero-badge-dot" style="position:static;"></span>
+          <span style="font-family:var(--font-body);font-size:0.78rem;font-weight:600;color:var(--text);">Publishing today's post&hellip;</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     THE SHIFT - story intro
+============================================================ -->
+<section class="section">
+  <div class="wrap">
+    <p class="story-lead reveal">
+      Most brands treat social media like a chore: a caption here,
+      a boosted post there, no thread connecting any of it.
+      <strong>The brands that actually grow treat it like a system:</strong>
+      a strategy behind every post, a plan behind every campaign, and a
+      number attached to every result, so the work compounds instead of
+      resetting every month.
+    </p>
+  </div>
+</section>
+
+<!-- ============================================================
+     WHY IT MATTERS - stats
+============================================================ -->
+<section class="section section--panel">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Why It Matters</span>
+      <h2>Attention that's actually earning its keep</h2>
+      <p>A social presence without a strategy behind it is just noise. Here's what changes once one exists.</p>
+    </div>
+    <div class="svc-stats-grid">
+      <div class="svc-stat-card card reveal">
+        <div class="svc-stat-number" data-count-to="3" data-suffix="s">0</div>
+        <div class="svc-stat-label">To earn a scroll-stopping first impression</div>
+      </div>
+      <div class="svc-stat-card card reveal">
+        <div class="svc-stat-number" data-count-to="70" data-suffix="%">0</div>
+        <div class="svc-stat-label">Of buyers research a brand's social presence first</div>
+      </div>
+      <div class="svc-stat-card card reveal">
+        <div class="svc-stat-number" data-count-to="6" data-suffix="x">0</div>
+        <div class="svc-stat-label">More consistent output with a real content calendar</div>
+      </div>
+      <div class="svc-stat-card card reveal">
+        <div class="svc-stat-number">Ongoing</div>
+        <div class="svc-stat-label">Optimization, not a one-time setup</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SERVICE CAPABILITIES
+============================================================ -->
+<section class="section" id="capabilities">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Service Capabilities</span>
+      <h2>Everything a real social program needs</h2>
+      <p>Nine disciplines, coordinated by one team instead of scattered across freelancers.</p>
+    </div>
+    <div class="svc-grid">
+
+      <div class="svc-card card reveal">
+        <div class="svc-card-icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M4 18l5-9 4 5 3-4 4 8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="svc-sweep"></span>
+        </div>
+        <h3>Social Media Strategy</h3>
+        <p>A documented plan tying every post back to a business goal, not just a posting habit.</p>
+      </div>
+
+      <div class="svc-card card reveal">
+        <div class="svc-card-icon">
+          <svg viewBox="0 0 24 24" fill="none"><rect x="4" y="5" width="7" height="7" rx="1.4" stroke="currentColor" stroke-width="1.7"/><rect x="13" y="5" width="7" height="7" rx="1.4" stroke="currentColor" stroke-width="1.7"/><rect x="4" y="14" width="7" height="7" rx="1.4" stroke="currentColor" stroke-width="1.7"/><rect x="13" y="14" width="7" height="7" rx="1.4" stroke="currentColor" stroke-width="1.7"/></svg>
+          <span class="svc-sweep"></span>
+        </div>
+        <h3>Content Planning</h3>
+        <p>A rolling calendar built around themes, campaigns, and key dates, so nothing gets improvised.</p>
+      </div>
+
+      <div class="svc-card card reveal">
+        <div class="svc-card-icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M5 19V9l7-5 7 5v10" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9 19v-6h6v6" stroke="currentColor" stroke-width="1.7"/></svg>
+          <span class="svc-sweep"></span>
+        </div>
+        <h3>Content Creation</h3>
+        <p>Graphics, short-form video, and copy produced in-house and built for how each platform is actually used.</p>
+      </div>
+
+      <div class="svc-card card reveal">
+        <div class="svc-card-icon">
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="8" cy="9" r="3" stroke="currentColor" stroke-width="1.7"/><circle cx="17" cy="9" r="2.6" stroke="currentColor" stroke-width="1.7"/><path d="M3 19c0-3 2.4-5 5-5s5 2 5 5M14 19c0-2.4 1.6-4.4 4-4.8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+          <span class="svc-sweep"></span>
+        </div>
+        <h3>Community Management</h3>
+        <p>Comments and DMs answered in your brand's voice, so engagement doesn't just sit there ignored.</p>
+      </div>
+
+      <div class="svc-card card reveal">
+        <div class="svc-card-icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M4 17l5-10 4 6 3-4 4 8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><circle cx="19" cy="7" r="2.2" stroke="currentColor" stroke-width="1.7"/></svg>
+          <span class="svc-sweep"></span>
+        </div>
+        <h3>Paid Advertising</h3>
+        <p>Targeted ad campaigns built and managed to bring in customers, not just impressions.</p>
+      </div>
+
+      <div class="svc-card card reveal">
+        <div class="svc-card-icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M4 20V10M10 20V4M16 20v-8M22 20V7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+          <span class="svc-sweep"></span>
+        </div>
+        <h3>Analytics &amp; Reporting</h3>
+        <p>Clear, plain-English reporting on what worked, what didn't, and what we're changing next.</p>
+      </div>
+
+      <div class="svc-card card reveal">
+        <div class="svc-card-icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 3l7 2.6v5.4c0 4.6-3 7.7-7 9-4-1.3-7-4.4-7-9V5.6L12 3z" stroke="currentColor" stroke-width="1.7"/></svg>
+          <span class="svc-sweep"></span>
+        </div>
+        <h3>Brand Positioning</h3>
+        <p>A consistent tone, look, and message so your brand is instantly recognizable in the feed.</p>
+      </div>
+
+      <div class="svc-card card reveal">
+        <div class="svc-card-icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M4 9.5a11.5 11.5 0 0 1 16 0" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M7 13a7 7 0 0 1 10 0" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><circle cx="12" cy="17.5" r="1.3" fill="currentColor"/></svg>
+          <span class="svc-sweep"></span>
+        </div>
+        <h3>Audience Growth</h3>
+        <p>Deliberate tactics for reaching new, relevant followers, not just chasing vanity numbers.</p>
+      </div>
+
+      <div class="svc-card card reveal">
+        <div class="svc-card-icon">
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="1.7"/><path d="M20 20l-4.3-4.3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+          <span class="svc-sweep"></span>
+        </div>
+        <h3>Conversion Optimization</h3>
+        <p>Bios, links, and calls-to-action tuned so interested visitors have a clear next step to take.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CAMPAIGN SHOWCASE - placeholder mockups
+============================================================ -->
+<section class="section section--panel" id="showcase">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Campaign Showcase</span>
+      <h2>What a coordinated campaign looks like</h2>
+      <p>Sample layouts across formats, placeholder concepts, ready to be swapped for your brand's own creative.</p>
+    </div>
+    <div class="campaign-grid">
+
+      <div class="campaign-card card reveal campaign-card--feed">
+        <div class="campaign-mock">
+          <div class="mock-chrome"><span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span></div>
+          <div class="mock-avatar-row">
+            <div class="mock-avatar"></div>
+            <div class="mock-lines"><div class="mock-line mock-line--40"></div><div class="mock-line mock-line--30"></div></div>
+          </div>
+          <div class="mock-media">
+            <svg viewBox="0 0 40 40" fill="none"><path d="M6 30l7-13 6 8 8-13 9 18" stroke="#7c3aed" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+        </div>
+        <div class="campaign-body">
+          <span class="campaign-format">Feed Post</span>
+          <h4>Product Spotlight</h4>
+          <p>A clean, on-brand grid post built to stop the scroll and hold it.</p>
+        </div>
+      </div>
+
+      <div class="campaign-card card reveal campaign-card--story">
+        <div class="campaign-mock">
+          <div class="mock-chrome"><span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span></div>
+          <div class="mock-media">
+            <svg viewBox="0 0 40 40" fill="none"><path d="M20 8v24M8 20h24" stroke="#7c3aed" stroke-width="2.6" stroke-linecap="round"/></svg>
+          </div>
+        </div>
+        <div class="campaign-body">
+          <span class="campaign-format">Story</span>
+          <h4>Behind-the-Scenes</h4>
+          <p>Full-screen, tap-through storytelling for daily audience touchpoints.</p>
+        </div>
+      </div>
+
+      <div class="campaign-card card reveal campaign-card--reel">
+        <div class="campaign-mock">
+          <div class="mock-chrome"><span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span></div>
+          <div class="mock-media">
+            <svg viewBox="0 0 40 40" fill="none"><path d="M16 12l14 8-14 8V12z" fill="#7c3aed"/></svg>
+          </div>
+        </div>
+        <div class="campaign-body">
+          <span class="campaign-format">Short-Form Video</span>
+          <h4>Quick-Cut Highlight</h4>
+          <p>Fast, sound-on-first video built for maximum watch-through.</p>
+        </div>
+      </div>
+
+      <div class="campaign-card card reveal campaign-card--carousel">
+        <div class="campaign-mock">
+          <div class="mock-chrome"><span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span></div>
+          <div class="mock-avatar-row">
+            <div class="mock-avatar"></div>
+            <div class="mock-lines"><div class="mock-line mock-line--65"></div></div>
+          </div>
+          <div class="mock-media-row">
+            <div class="mock-media"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="2" stroke="#7c3aed" stroke-width="1.8"/></svg></div>
+            <div class="mock-media"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="#8b5cf6" stroke-width="1.8"/></svg></div>
+            <div class="mock-media"><svg viewBox="0 0 24 24" fill="none"><path d="M4 18l6-12 4 8 3-5 5 9" stroke="#7c3aed" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+          </div>
+        </div>
+        <div class="campaign-body">
+          <span class="campaign-format">Carousel</span>
+          <h4>Step-by-Step Guide</h4>
+          <p>Multi-slide swipe content built to teach, then link back to you.</p>
+        </div>
+      </div>
+
+      <div class="campaign-card card reveal campaign-card--linkedin">
+        <div class="campaign-mock">
+          <div class="mock-chrome"><span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span></div>
+          <div class="mock-avatar-row">
+            <div class="mock-avatar"></div>
+            <div class="mock-lines"><div class="mock-line mock-line--40"></div><div class="mock-line mock-line--30"></div></div>
+          </div>
+          <div class="mock-media">
+            <svg viewBox="0 0 40 40" fill="none"><path d="M8 30V16M8 12v.01M16 30V18M16 18c2-3 8-3 8 2v10" stroke="#7c3aed" stroke-width="2.2" stroke-linecap="round"/></svg>
+          </div>
+        </div>
+        <div class="campaign-body">
+          <span class="campaign-format">Professional Network Post</span>
+          <h4>Thought Leadership</h4>
+          <p>Credibility-building posts written for decision-makers, not just followers.</p>
+        </div>
+      </div>
+
+      <div class="campaign-card card reveal campaign-card--analytics">
+        <div class="campaign-mock">
+          <div class="mock-chrome"><span class="mock-dot"></span><span class="mock-dot"></span><span class="mock-dot"></span></div>
+          <div class="mock-avatar-row"><div class="mock-lines"><div class="mock-line mock-line--40"></div></div></div>
+          <div class="mock-bars">
+            <div class="mock-bar" style="height:35%;"></div>
+            <div class="mock-bar" style="height:55%;"></div>
+            <div class="mock-bar" style="height:40%;"></div>
+            <div class="mock-bar" style="height:78%;"></div>
+            <div class="mock-bar" style="height:60%;"></div>
+            <div class="mock-bar" style="height:92%;"></div>
+          </div>
+        </div>
+        <div class="campaign-body">
+          <span class="campaign-format">Analytics Dashboard</span>
+          <h4>Weekly Performance Snapshot</h4>
+          <p>Reach, engagement, and conversion tracked in one clear view.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     STRATEGY & AUDIENCE - alternating detail section
+============================================================ -->
+<section class="svc-detail" id="feature-strategy">
+  <div class="wrap svc-detail__wrap">
+    <div class="svc-detail__media reveal-scale">
+      <span class="svc-shape svc-shape--1"></span>
+      <span class="svc-shape svc-shape--2"></span>
+      <span class="svc-shape svc-shape--3"></span>
+      <div class="svc-media-frame">
+        <div class="svc-media-glow"></div>
+        <svg viewBox="0 0 240 220" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="gStrategy" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#c4b5fd"/>
+            </linearGradient>
+          </defs>
+          <circle cx="120" cy="110" r="72" fill="none" stroke="url(#gStrategy)" stroke-width="3"/>
+          <circle cx="120" cy="110" r="46" fill="none" stroke="#8b5cf6" stroke-width="2.4" opacity="0.5"/>
+          <circle cx="120" cy="110" r="8" fill="url(#gStrategy)"/>
+          <circle cx="120" cy="64" r="6" fill="#c4b5fd"/>
+          <circle cx="164" cy="132" r="6" fill="#8b5cf6"/>
+          <circle cx="80" cy="140" r="6" fill="#c4b5fd"/>
+        </svg>
+      </div>
+    </div>
+    <div class="svc-detail__copy">
+      <span class="svc-badge reveal">Strategy &amp; Audience Research</span>
+      <h2 class="reveal">A plan before a single post goes out</h2>
+      <p class="svc-desc reveal">
+        We start by learning who you're actually trying to reach and what
+        moves them, then build a platform-by-platform plan around
+        that, instead of copying whatever a competitor happens to be
+        posting this week.
+      </p>
+      <ul class="svc-checklist reveal">
+        <li><span class="check"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Audience &amp; competitor research</li>
+        <li><span class="check"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Platform-specific strategy, not a copy-paste plan</li>
+        <li><span class="check"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Clear, measurable goals from day one</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PAID ADVERTISING & GROWTH - alternating detail section
+============================================================ -->
+<section class="svc-detail svc-detail--reverse svc-detail--panel" id="feature-paid">
+  <div class="wrap svc-detail__wrap">
+    <div class="svc-detail__copy">
+      <span class="svc-badge reveal">Paid Advertising &amp; Growth</span>
+      <h2 class="reveal">Ad spend that's held accountable</h2>
+      <p class="svc-desc reveal">
+        Organic reach only goes so far. We build and manage paid
+        campaigns that are targeted, tracked, and adjusted continuously
+        so every dollar is working toward a specific, measurable
+        outcome.
+      </p>
+      <ul class="svc-checklist reveal">
+        <li><span class="check"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Audience targeting &amp; retargeting</li>
+        <li><span class="check"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Creative testing to find what actually converts</li>
+        <li><span class="check"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Return on ad spend tracked weekly</li>
+      </ul>
+    </div>
+    <div class="svc-detail__media reveal-scale">
+      <span class="svc-shape svc-shape--1"></span>
+      <span class="svc-shape svc-shape--2"></span>
+      <span class="svc-shape svc-shape--3"></span>
+      <div class="svc-media-frame">
+        <div class="svc-media-glow"></div>
+        <svg viewBox="0 0 240 220" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="gPaid" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#c4b5fd"/>
+            </linearGradient>
+          </defs>
+          <path d="M50 150l30-40 26 22 40-58 34 30" fill="none" stroke="url(#gPaid)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="180" cy="104" r="7" fill="#7c3aed"/>
+          <path d="M40 168h160" stroke="#e8e1f7" stroke-width="3" stroke-linecap="round"/>
+          <path d="M40 168h64" stroke="#8b5cf6" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PROCESS TIMELINE
+============================================================ -->
+<section class="section section--panel svc-timeline">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Our Process</span>
+      <h2>From discovery to a scaled program</h2>
+      <p>Every account moves through the same seven stages, whether it's one platform or five.</p>
+    </div>
+    <div class="svc-timeline-track">
+      <div class="svc-timeline-line"><div class="svc-timeline-line-fill" id="svcTimelineFill"></div></div>
+      <div class="svc-timeline-step">
+        <div class="svc-timeline-dot">1</div>
+        <h4>Discovery</h4>
+        <p>We learn your business, goals, and current social footprint.</p>
+      </div>
+      <div class="svc-timeline-step">
+        <div class="svc-timeline-dot">2</div>
+        <h4>Brand Research</h4>
+        <p>Audience, competitors, and voice are mapped before anything is built.</p>
+      </div>
+      <div class="svc-timeline-step">
+        <div class="svc-timeline-dot">3</div>
+        <h4>Strategy</h4>
+        <p>A platform-by-platform plan tied to measurable outcomes.</p>
+      </div>
+      <div class="svc-timeline-step">
+        <div class="svc-timeline-dot">4</div>
+        <h4>Content Production</h4>
+        <p>Posts, video, and copy created against the calendar.</p>
+      </div>
+      <div class="svc-timeline-step">
+        <div class="svc-timeline-dot">5</div>
+        <h4>Campaign Launch</h4>
+        <p>Organic content and paid campaigns go live together.</p>
+      </div>
+      <div class="svc-timeline-step">
+        <div class="svc-timeline-dot">6</div>
+        <h4>Optimization</h4>
+        <p>Real performance data shapes what happens next.</p>
+      </div>
+      <div class="svc-timeline-step">
+        <div class="svc-timeline-dot">7</div>
+        <h4>Scaling</h4>
+        <p>What's working gets more budget and more attention.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CRAFT GRID - what great social marketing includes
+============================================================ -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">What's Behind Every Campaign</span>
+      <h2>The craft behind the calendar</h2>
+    </div>
+    <div class="craft-grid">
+      <div class="craft-card card reveal">
+        <div class="logo-type-glyph"><svg viewBox="0 0 24 24" fill="none"><path d="M4 18l5-9 4 5 3-4 4 8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <h3>Content Strategy</h3>
+        <p>Every post ties back to a theme and a purpose, not a blank calendar to fill.</p>
+      </div>
+      <div class="craft-card card reveal">
+        <div class="logo-type-glyph"><svg viewBox="0 0 24 24" fill="none"><circle cx="9" cy="9" r="3.2" stroke="currentColor" stroke-width="1.7"/><path d="M3 19c0-3.3 2.7-5 6-5s6 1.7 6 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><circle cx="18" cy="9" r="2.6" stroke="currentColor" stroke-width="1.7"/></svg></div>
+        <h3>Audience Research</h3>
+        <p>Understanding who's actually watching, and what makes them stop scrolling.</p>
+      </div>
+      <div class="craft-card card reveal">
+        <div class="logo-type-glyph"><svg viewBox="0 0 24 24" fill="none"><path d="M5 19V9l7-5 7 5v10" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9 19v-6h6v6" stroke="currentColor" stroke-width="1.7"/></svg></div>
+        <h3>Creative Production</h3>
+        <p>Design, video, and copywriting that actually match your brand's voice.</p>
+      </div>
+      <div class="craft-card card reveal">
+        <div class="logo-type-glyph"><svg viewBox="0 0 24 24" fill="none"><path d="M4 20V10M10 20V4M16 20v-8M22 20V7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></div>
+        <h3>Performance Tracking</h3>
+        <p>Every metric that matters, tracked continuously instead of checked once a quarter.</p>
+      </div>
+      <div class="craft-card card reveal">
+        <div class="logo-type-glyph"><svg viewBox="0 0 24 24" fill="none"><path d="M4 9.5a11.5 11.5 0 0 1 16 0" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M7 13a7 7 0 0 1 10 0" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><circle cx="12" cy="17.5" r="1.3" fill="currentColor"/></svg></div>
+        <h3>Growth Strategy</h3>
+        <p>Deliberate tactics for reaching new audiences, not just hoping the algorithm helps.</p>
+      </div>
+      <div class="craft-card card reveal">
+        <div class="logo-type-glyph"><svg viewBox="0 0 24 24" fill="none"><circle cx="8" cy="9" r="3" stroke="currentColor" stroke-width="1.7"/><circle cx="17" cy="9" r="2.6" stroke="currentColor" stroke-width="1.7"/><path d="M3 19c0-3 2.4-5 5-5s5 2 5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></div>
+        <h3>Community Engagement</h3>
+        <p>Real replies to real people, so followers turn into an actual relationship.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PORTFOLIO GALLERY - placeholder industry showcase
+============================================================ -->
+<section class="section section--panel">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Sample Campaigns</span>
+      <h2>Concepts across industries</h2>
+      <p>Placeholder campaign concepts (not real client work) showing how the approach adapts by industry.</p>
+    </div>
+    <div class="portfolio-grid">
+
+      <div class="portfolio-card card reveal">
+        <div class="portfolio-stage"><span class="portfolio-sweep"></span><span class="portfolio-glow"></span>
+          <svg viewBox="0 0 40 40" fill="none"><path d="M20 6l4 8 9 1-6.5 6.3L28 30l-8-4.5L12 30l1.5-8.7L7 15l9-1 4-8z" stroke="#7c3aed" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="portfolio-body"><span class="portfolio-tag">Luxury Brand</span><h4>Elevated, editorial-style content</h4></div>
+      </div>
+
+      <div class="portfolio-card card reveal">
+        <div class="portfolio-stage"><span class="portfolio-sweep"></span><span class="portfolio-glow"></span>
+          <svg viewBox="0 0 40 40" fill="none"><path d="M10 8v24M16 8v10a3 3 0 0 1-6 0M24 8l6 8-6 8" stroke="#7c3aed" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="portfolio-body"><span class="portfolio-tag">Restaurant</span><h4>Menu features &amp; local-audience growth</h4></div>
+      </div>
+
+      <div class="portfolio-card card reveal">
+        <div class="portfolio-stage"><span class="portfolio-sweep"></span><span class="portfolio-glow"></span>
+          <svg viewBox="0 0 40 40" fill="none"><path d="M12 32V14l8-6 8 6v18" stroke="#7c3aed" stroke-width="1.8" stroke-linejoin="round"/><path d="M16 32v-8h8v8" stroke="#7c3aed" stroke-width="1.8"/></svg>
+        </div>
+        <div class="portfolio-body"><span class="portfolio-tag">Fashion Brand</span><h4>Lookbook drops &amp; seasonal campaigns</h4></div>
+      </div>
+
+      <div class="portfolio-card card reveal">
+        <div class="portfolio-stage"><span class="portfolio-sweep"></span><span class="portfolio-glow"></span>
+          <svg viewBox="0 0 40 40" fill="none"><rect x="8" y="10" width="24" height="16" rx="2" stroke="#7c3aed" stroke-width="1.8"/><path d="M14 30h12" stroke="#7c3aed" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </div>
+        <div class="portfolio-body"><span class="portfolio-tag">Tech Startup</span><h4>Product launches &amp; founder-led content</h4></div>
+      </div>
+
+      <div class="portfolio-card card reveal">
+        <div class="portfolio-stage"><span class="portfolio-sweep"></span><span class="portfolio-glow"></span>
+          <svg viewBox="0 0 40 40" fill="none"><path d="M8 32V16l12-9 12 9v16" stroke="#7c3aed" stroke-width="1.8" stroke-linejoin="round"/><path d="M17 32v-9h6v9" stroke="#7c3aed" stroke-width="1.8"/></svg>
+        </div>
+        <div class="portfolio-body"><span class="portfolio-tag">Real Estate</span><h4>Listing showcases &amp; agent branding</h4></div>
+      </div>
+
+      <div class="portfolio-card card reveal">
+        <div class="portfolio-stage"><span class="portfolio-sweep"></span><span class="portfolio-glow"></span>
+          <svg viewBox="0 0 40 40" fill="none"><path d="M20 30s-10-6.2-10-13.6A5.4 5.4 0 0 1 20 13a5.4 5.4 0 0 1 10 3.4C30 23.8 20 30 20 30z" stroke="#7c3aed" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="portfolio-body"><span class="portfolio-tag">Healthcare</span><h4>Trust-building, compliant patient content</h4></div>
+      </div>
+
+      <div class="portfolio-card card reveal">
+        <div class="portfolio-stage"><span class="portfolio-sweep"></span><span class="portfolio-glow"></span>
+          <svg viewBox="0 0 40 40" fill="none"><path d="M8 14h24l-2 16H10L8 14z" stroke="#7c3aed" stroke-width="1.8" stroke-linejoin="round"/><path d="M14 14v-2a6 6 0 0 1 12 0v2" stroke="#7c3aed" stroke-width="1.8"/></svg>
+        </div>
+        <div class="portfolio-body"><span class="portfolio-tag">E-commerce</span><h4>Product-led content &amp; retargeting funnels</h4></div>
+      </div>
+
+      <div class="portfolio-card card reveal">
+        <div class="portfolio-stage"><span class="portfolio-sweep"></span><span class="portfolio-glow"></span>
+          <svg viewBox="0 0 40 40" fill="none"><path d="M10 30l6-14 6 10 4-8 4 12" stroke="#7c3aed" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="portfolio-body"><span class="portfolio-tag">Fitness Brand</span><h4>Progress-driven, community-led campaigns</h4></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TESTIMONIALS
+============================================================ -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">What Clients Say</span>
+      <h2>Feedback from brands we've helped grow</h2>
+    </div>
+    <div class="testi-track" id="testiTrack">
+      <div class="testi-card card reveal">
+        <span class="testi-quote-mark">&ldquo;</span>
+        <p class="testi-text">We went from posting whenever we remembered to having an actual calendar and a plan behind it. The difference in engagement was obvious within a month.</p>
+        <div class="testi-person">
+          <div class="testi-avatar">LM</div>
+          <div><div class="testi-name">Lena M.</div><div class="testi-role">Boutique Owner</div></div>
+        </div>
+      </div>
+      <div class="testi-card card reveal">
+        <span class="testi-quote-mark">&ldquo;</span>
+        <p class="testi-text">Our ad spend was going nowhere before. Now we get a straight answer every week on what's working and what isn't, no jargon required.</p>
+        <div class="testi-person">
+          <div class="testi-avatar">CB</div>
+          <div><div class="testi-name">Chris B.</div><div class="testi-role">Restaurant Owner</div></div>
+        </div>
+      </div>
+      <div class="testi-card card reveal">
+        <span class="testi-quote-mark">&ldquo;</span>
+        <p class="testi-text">They actually reply to our comments and messages like a real person would. Our audience noticed, and our engagement has kept climbing since.</p>
+        <div class="testi-person">
+          <div class="testi-avatar">AP</div>
+          <div><div class="testi-name">Ana P.</div><div class="testi-role">Fitness Studio Founder</div></div>
+        </div>
+      </div>
+      <div class="testi-card card reveal">
+        <span class="testi-quote-mark">&ldquo;</span>
+        <p class="testi-text">Consistent, on-brand content every week without us having to chase anyone for it. That alone was worth handing this off.</p>
+        <div class="testi-person">
+          <div class="testi-avatar">TW</div>
+          <div><div class="testi-name">Theo W.</div><div class="testi-role">Real Estate Agent</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-controls">
+      <button class="testi-arrow" id="testiPrev" aria-label="Previous testimonial"><svg viewBox="0 0 16 16" fill="none"><path d="M10 3 5 8l5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <button class="testi-arrow" id="testiNext" aria-label="Next testimonial"><svg viewBox="0 0 16 16" fill="none"><path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FAQ
+============================================================ -->
+<section class="section section--panel">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">FAQ</span>
+      <h2>Good to know before you get started</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <button class="faq-q">Which platforms do you manage? <span class="faq-icon"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">Whichever ones your audience actually uses, we'll recommend a focused set rather than spreading you thin across every platform at once.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q">Do you create the content, or just plan it? <span class="faq-icon"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">Both. Strategy and planning are only half the job. Our team also produces the graphics, video, and copy that go out under your name.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q">How is success measured? <span class="faq-icon"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">Against the goals we set together at the start (reach, engagement, leads, or sales), reported on plainly every week, not buried in a dashboard.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q">Can you take over an account that's already running? <span class="faq-icon"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">Yes, we'll audit what's there now, keep what's working, and rebuild the rest around a clearer strategy.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FINAL CTA
+============================================================ -->
+<section class="svc-final-cta">
+  <span class="svc-final-shape svc-final-shape--1"></span>
+  <span class="svc-final-shape svc-final-shape--2"></span>
+  <span class="svc-final-shape svc-final-shape--3"></span>
+  <div class="wrap">
+    <span class="eyebrow reveal">Ready To Turn Attention Into Growth?</span>
+    <h2 class="reveal">Let's build a social presence that actually earns its keep.</h2>
+    <p class="reveal">Open a ticket to start with a strategy session. A real person reviews your brand personally before anything goes live.</p>
+    <div style="display:flex;gap:16px;flex-wrap:wrap;justify-content:center;" class="reveal">
+      <a href="open-ticket.html" class="btn btn--solid magnetic">Start Your Strategy</a>
+      <a href="tel:1-307-445-3178" class="btn btn--ghost magnetic">Call 1-307-445-3178</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>CONTACT US</h4>
+        <ul>
+          <li>Fusion Tech USA</li>
+          <li>Houston, TX</li>
+          <li>1-307-445-3178</li>
+          <li>fusiontechusa.1@gmail.com</li>
+        </ul>
+      </div>
+      <div>
+        <h4>NAVIGATE</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Provided Services</a></li>
+          <li><a href="open-ticket.html">Open A Ticket</a></li>
+          <li><a href="order-tools.html">Order Supplies</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>INFORMATION</h4>
+        <ul>
+          <li><a href="pricing.html">Prices</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms And Condition</a></li>
+          <li><a href="#">Join Our Team</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>FOLLOW US</h4>
+        <div class="footer-social">
+          <a href="#">FB</a><a href="#">X</a><a href="#">IN</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>&copy; 2026 Fusion Tech USA. All rights reserved. (placeholder contact details, update anytime)</div>
+    </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.16/dist/lenis.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+<script src="assets/motion.js" defer></script>
+<script src="assets/services-premium.js" defer></script>
+<script src="assets/collective-premium.js" defer></script>
+<script src="assets/social-marketing-premium.js" defer></script>
+</body>
+</html>

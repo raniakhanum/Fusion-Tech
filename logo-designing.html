@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){try{var t=localStorage.getItem('ft-theme');if(!t){t=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}if(t==='dark'){document.documentElement.setAttribute('data-theme','dark');}}catch(e){}})();</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Logo Designing | Fusion Tech USA</title>
+<meta name="description" content="Custom logo and brand identity design from Fusion Tech USA: a distinct mark, a real design process, and full files ready to use everywhere.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self';">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="assets/services-premium.css">
+<link rel="stylesheet" href="assets/collective-premium.css">
+<link rel="stylesheet" href="assets/logo-portfolio.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="social"><a href="#">FB</a><a href="#">X</a><a href="#">IN</a></div>
+    <div><span class="phone">1-307-445-3178</span> &nbsp;|&nbsp; <a href="mailto:fusiontechusa.1@gmail.com">fusiontechusa.1@gmail.com</a></div>
+  </div>
+</div>
+<header class="site-header">
+  <div class="nav-row">
+    <a href="index.html" class="logo"><img src="assets/fusiontech-logo.png" alt="Fusion Tech USA" class="logo-img" width="174" height="207"></a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <div class="nav-item">
+        <button class="nav-drop-trigger" type="button">Collective Tech Services <svg class="chev" width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"><path d="M1 3l4 4 4-4" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="dropdown-menu">
+          <a href="collective-tech-services.html" class="dropdown-overview">All Collective Tech Services</a>
+          <a href="website-development.html">Website Development</a>
+          <a href="logo-designing.html" class="active">Logo Designing</a>
+          <a href="video-editing.html">Video Editing</a>
+          <a href="social-media-marketing.html">Social Media Marketing</a>
+          <a href="seo.html">Search Engine Optimization (SEO)</a>
+        </div>
+      </div>
+      <a href="pricing.html">Prices</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+        <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.6"/><path d="M12 2.5V5M12 19V21.5M4.2 4.2L6 6M18 18L19.8 19.8M2.5 12H5M19 12H21.5M4.2 19.8L6 18M18 6L19.8 4.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+      </button>
+            <a href="open-ticket.html" class="btn btn--solid">Open a Ticket</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">&#9776;</button>
+    </div>
+  </div>
+</header>
+<script>
+document.getElementById('menuToggle').addEventListener('click', function(){
+  document.getElementById('mainNav').classList.toggle('open');
+});
+document.querySelectorAll('.nav-drop-trigger').forEach(function(btn){
+  btn.addEventListener('click', function(e){
+    e.stopPropagation();
+    var item = btn.closest('.nav-item');
+    var wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.nav-item.open').forEach(function(i){ i.classList.remove('open'); });
+    if(!wasOpen){ item.classList.add('open'); }
+  });
+});
+document.addEventListener('click', function(){
+  document.querySelectorAll('.nav-item.open').forEach(function(i){ i.classList.remove('open'); });
+});
+</script>
+
+<!-- ============================================================
+     HERO
+============================================================ -->
+<section class="svc-hero" id="svcHero">
+  <div class="wrap">
+    <div class="svc-hero-copy">
+      <div class="breadcrumb"><a href="index.html">Home</a> / <a href="collective-tech-services.html">Collective Tech Services</a> / Logo Designing</div>
+      <span class="eyebrow hero-eyebrow" style="margin-top:16px;">Logo Designing</span>
+      <h1 data-text="A mark that actually looks like you." data-accent-from="actually"></h1>
+      <p class="lead">
+        Your logo is the one piece of your brand people see the most and
+        remember the longest. We design marks that hold up small on a
+        favicon and bold on a storefront, distinct, simple, and
+        genuinely yours.
+      </p>
+      <div class="svc-hero-ctas">
+        <a href="contact.html" class="btn btn--solid magnetic">Start Your Logo</a>
+        <a href="#process" class="btn btn--ghost magnetic">See The Process</a>
+      </div>
+      <div class="svc-hero-trust hero-stats">
+        <div><div class="hero-stat-value">3</div><div class="hero-stat-label">Initial concepts</div></div>
+        <div><div class="hero-stat-value">2</div><div class="hero-stat-label">Rounds of revisions included</div></div>
+        <div><div class="hero-stat-value">100%</div><div class="hero-stat-label">Ownership on delivery</div></div>
+      </div>
+    </div>
+
+    <div class="moodboard reveal-scale">
+      <div class="moodboard-tile">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <defs><linearGradient id="mbA" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#c4b5fd"/></linearGradient></defs>
+          <circle cx="50" cy="50" r="34" fill="none" stroke="url(#mbA)" stroke-width="5"/>
+          <circle cx="50" cy="50" r="12" fill="url(#mbA)"/>
+        </svg>
+      </div>
+      <div class="moodboard-tile">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <rect x="18" y="30" width="64" height="40" rx="10" fill="#8b5cf6"/>
+          <rect x="32" y="44" width="36" height="12" rx="6" fill="#fff" opacity="0.85"/>
+        </svg>
+      </div>
+      <div class="moodboard-tile moodboard-tile--wide">
+        <svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="30" cy="50" r="18" fill="#7c3aed"/>
+          <circle cx="66" cy="50" r="18" fill="#8b5cf6"/>
+          <circle cx="102" cy="50" r="18" fill="#c4b5fd"/>
+          <circle cx="138" cy="50" r="18" fill="#e8e1f7"/>
+          <circle cx="174" cy="50" r="18" fill="#faf8ff" stroke="#e8e1f7" stroke-width="2"/>
+        </svg>
+      </div>
+      <div class="moodboard-tile">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <text x="50" y="46" text-anchor="middle" font-family="Sora, sans-serif" font-weight="700" font-size="30" fill="#7c3aed">Aa</text>
+          <text x="50" y="76" text-anchor="middle" font-family="Sora, sans-serif" font-weight="500" font-size="16" fill="#c4b5fd">Bb Cc</text>
+        </svg>
+      </div>
+      <div class="moodboard-tile">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <path d="M50 18l10 22 24 3-18 16 5 24-21-12-21 12 5-24-18-16 24-3z" fill="none" stroke="#8b5cf6" stroke-width="4" stroke-linejoin="round"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TRUST MARQUEE - infinite client logo cloud
+============================================================ -->
+<section class="logo-cloud" aria-label="Brands we've designed identities for">
+  <div class="logo-cloud-dots" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="logo-cloud-head">Recent identity work, out in the wild</div>
+  </div>
+  <div class="logo-cloud-viewport">
+    <div class="logo-cloud-track">
+      <div class="logo-cloud-group">
+        <div class="logo-cloud-item"><img src="assets/logos/nova.png" alt="Nova" loading="lazy" width="262" height="131"></div>
+        <div class="logo-cloud-item"><img src="assets/logos/ashraf-loyals.png" alt="Ashraf &amp; Loyals" loading="lazy" width="396" height="181"></div>
+        <div class="logo-cloud-item"><img src="assets/logos/elixir-co.png" alt="Elixir &amp; Co." loading="lazy" width="167" height="200"></div>
+        <div class="logo-cloud-item"><img src="assets/logos/hausku.png" alt="Hausku" loading="lazy" width="328" height="171"></div>
+        <div class="logo-cloud-item"><img src="assets/logos/tuples-inc.png" alt="Tuples Inc." loading="lazy" width="201" height="240"></div>
+        <div class="logo-cloud-item"><img src="assets/logos/sasso-olive-oil.png" alt="Sasso Olive Oil" loading="lazy" width="287" height="106"></div>
+        <div class="logo-cloud-item"><img src="assets/logos/visional-shop.png" alt="Visional Shop" loading="lazy" width="361" height="220"></div>
+        <div class="logo-cloud-item"><img src="assets/logos/wild-woven-stitch.png" alt="Wild Woven Stitch" loading="lazy" width="280" height="190"></div>
+      </div>
+      <div class="logo-cloud-group">
+        <div class="logo-cloud-item"><img src="assets/logos/nova.png" alt="" loading="lazy" width="262" height="131"></div>
+        <div class="logo-cloud-item"><img src="assets/logos/ashraf-loyals.png" alt="" loading="lazy" width="396" height="181"></div>
+        <div class="logo-cloud-item"><img src="assets/logos/elixir-co.png" alt="" loading="lazy" width="167" height="200"></div>
+        <div class="logo-cloud-item"><img src="assets/logos/hausku.png" alt="" loading="lazy" width="328" height="171"></div>
+        <div class="logo-cloud-item"><img src="assets/logos/tuples-inc.png" alt="" loading="lazy" width="201" height="240"></div>
+        <div class="logo-cloud-item"><img src="assets/logos/sasso-olive-oil.png" alt="" loading="lazy" width="287" height="106"></div>
+        <div class="logo-cloud-item"><img src="assets/logos/visional-shop.png" alt="" loading="lazy" width="361" height="220"></div>
+        <div class="logo-cloud-item"><img src="assets/logos/wild-woven-stitch.png" alt="" loading="lazy" width="280" height="190"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     BRAND IDENTITY EXPLANATION
+============================================================ -->
+<section class="section">
+  <div class="wrap">
+    <p class="story-lead reveal">
+      A logo is more than a picture. It's shorthand for everything
+      your business stands for. <strong>Good identity design makes that
+      shorthand instant</strong>: the right shape, the right color, the
+      right weight of line, so people recognize you before they've even
+      read your name.
+    </p>
+  </div>
+</section>
+
+<!-- ============================================================
+     LOGO DESIGN PROCESS - ANIMATED TIMELINE
+============================================================ -->
+<section class="section section--panel svc-timeline" id="process">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Logo Design Process</span>
+      <h2>How your mark comes to life</h2>
+      <p>A structured process that still leaves plenty of room for your input at every stage.</p>
+    </div>
+    <div class="svc-timeline-track">
+      <div class="svc-timeline-line"><div class="svc-timeline-line-fill" id="svcTimelineFill"></div></div>
+      <div class="svc-timeline-step">
+        <div class="svc-timeline-dot">1</div>
+        <h4>Discovery</h4>
+        <p>We learn your story, audience, and any brand direction you already like.</p>
+      </div>
+      <div class="svc-timeline-step">
+        <div class="svc-timeline-dot">2</div>
+        <h4>Concept Sketching</h4>
+        <p>Rough directions explored on paper before any digital work starts.</p>
+      </div>
+      <div class="svc-timeline-step">
+        <div class="svc-timeline-dot">3</div>
+        <h4>Digital Design</h4>
+        <p>The strongest concepts are built out cleanly in vector form.</p>
+      </div>
+      <div class="svc-timeline-step">
+        <div class="svc-timeline-dot">4</div>
+        <h4>Refinement</h4>
+        <p>Your feedback shapes color, spacing, and small details.</p>
+      </div>
+      <div class="svc-timeline-step">
+        <div class="svc-timeline-dot">5</div>
+        <h4>Finalization</h4>
+        <p>The chosen mark is locked in and prepared for every use case.</p>
+      </div>
+      <div class="svc-timeline-step">
+        <div class="svc-timeline-dot">6</div>
+        <h4>Delivery</h4>
+        <p>Every file format you'll need, organized and ready to use.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider" aria-hidden="true"></div>
+
+<!-- ============================================================
+     PORTFOLIO SHOWCASE - premium logo grid
+============================================================ -->
+<section class="section logo-portfolio" id="portfolio">
+  <div class="lp-bg" aria-hidden="true">
+    <div class="lp-dotgrid"></div>
+    <span class="lp-blob lp-blob--1"></span>
+    <span class="lp-blob lp-blob--2"></span>
+    <span class="lp-line lp-line--1"></span>
+    <span class="lp-line lp-line--2"></span>
+  </div>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Selected Work</span>
+      <h2 class="lp-underline-wrap"><span class="lp-underline">Marks we've brought to life</span></h2>
+      <p>A small sample of recent identity work across industries, each one built from a blank page, the same way yours will be.</p>
+    </div>
+    <div class="lp-grid">
+      <div class="lp-card reveal">
+        <div class="lp-card-inner">
+          <span class="lp-card-spark"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2l2.2 6.2L20 10l-5.8 1.8L12 18l-2.2-6.2L4 10l5.8-1.8z" fill="#c4b5fd"/></svg></span>
+          <span class="lp-card-badge">Beauty &amp; Retail</span>
+          <div class="lp-card-logo"><img src="assets/logos/nova.png" alt="Nova logo mark" loading="lazy" width="262" height="131"></div>
+          <div class="lp-card-name">Nova</div>
+          <div class="lp-card-sub">Wordmark &amp; monogram</div>
+        </div>
+      </div>
+      <div class="lp-card reveal">
+        <div class="lp-card-inner">
+          <span class="lp-card-spark"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2l2.2 6.2L20 10l-5.8 1.8L12 18l-2.2-6.2L4 10l5.8-1.8z" fill="#c4b5fd"/></svg></span>
+          <span class="lp-card-badge">Fashion</span>
+          <div class="lp-card-logo"><img src="assets/logos/ashraf-loyals.png" alt="Ashraf &amp; Loyals logo mark" loading="lazy" width="396" height="181"></div>
+          <div class="lp-card-name">Ashraf &amp; Loyals</div>
+          <div class="lp-card-sub">Emblem lockup</div>
+        </div>
+      </div>
+      <div class="lp-card reveal">
+        <div class="lp-card-inner">
+          <span class="lp-card-spark"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2l2.2 6.2L20 10l-5.8 1.8L12 18l-2.2-6.2L4 10l5.8-1.8z" fill="#c4b5fd"/></svg></span>
+          <span class="lp-card-badge">Wellness</span>
+          <div class="lp-card-logo"><img src="assets/logos/elixir-co.png" alt="Elixir &amp; Co. logo mark" loading="lazy" width="167" height="200"></div>
+          <div class="lp-card-name">Elixir &amp; Co.</div>
+          <div class="lp-card-sub">Icon &amp; wordmark</div>
+        </div>
+      </div>
+      <div class="lp-card reveal">
+        <div class="lp-card-inner">
+          <span class="lp-card-spark"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2l2.2 6.2L20 10l-5.8 1.8L12 18l-2.2-6.2L4 10l5.8-1.8z" fill="#c4b5fd"/></svg></span>
+          <span class="lp-card-badge">Real Estate</span>
+          <div class="lp-card-logo"><img src="assets/logos/hausku.png" alt="Hausku logo mark" loading="lazy" width="328" height="171"></div>
+          <div class="lp-card-name">Hausku</div>
+          <div class="lp-card-sub">Combination mark</div>
+        </div>
+      </div>
+      <div class="lp-card reveal">
+        <div class="lp-card-inner">
+          <span class="lp-card-spark"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2l2.2 6.2L20 10l-5.8 1.8L12 18l-2.2-6.2L4 10l5.8-1.8z" fill="#c4b5fd"/></svg></span>
+          <span class="lp-card-badge">Technology</span>
+          <div class="lp-card-logo"><img src="assets/logos/tuples-inc.png" alt="Tuples Inc. logo mark" loading="lazy" width="201" height="240"></div>
+          <div class="lp-card-name">Tuples Inc.</div>
+          <div class="lp-card-sub">Wordmark &amp; symbol</div>
+        </div>
+      </div>
+      <div class="lp-card reveal">
+        <div class="lp-card-inner">
+          <span class="lp-card-spark"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2l2.2 6.2L20 10l-5.8 1.8L12 18l-2.2-6.2L4 10l5.8-1.8z" fill="#c4b5fd"/></svg></span>
+          <span class="lp-card-badge">Food &amp; Beverage</span>
+          <div class="lp-card-logo"><img src="assets/logos/sasso-olive-oil.png" alt="Sasso Olive Oil logo mark" loading="lazy" width="287" height="106"></div>
+          <div class="lp-card-name">Sasso Olive Oil</div>
+          <div class="lp-card-sub">Illustrative wordmark</div>
+        </div>
+      </div>
+      <div class="lp-card reveal">
+        <div class="lp-card-inner">
+          <span class="lp-card-spark"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2l2.2 6.2L20 10l-5.8 1.8L12 18l-2.2-6.2L4 10l5.8-1.8z" fill="#c4b5fd"/></svg></span>
+          <span class="lp-card-badge">E-Commerce</span>
+          <div class="lp-card-logo"><img src="assets/logos/visional-shop.png" alt="Visional Shop logo mark" loading="lazy" width="361" height="220"></div>
+          <div class="lp-card-name">Visional Shop</div>
+          <div class="lp-card-sub">Abstract symbol</div>
+        </div>
+      </div>
+      <div class="lp-card reveal">
+        <div class="lp-card-inner">
+          <span class="lp-card-spark"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2l2.2 6.2L20 10l-5.8 1.8L12 18l-2.2-6.2L4 10l5.8-1.8z" fill="#c4b5fd"/></svg></span>
+          <span class="lp-card-badge">Lifestyle</span>
+          <div class="lp-card-logo"><img src="assets/logos/wild-woven-stitch.png" alt="Wild Woven Stitch logo mark" loading="lazy" width="280" height="190"></div>
+          <div class="lp-card-name">Wild Woven Stitch</div>
+          <div class="lp-card-sub">Emblem &amp; wordmark</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider" aria-hidden="true"></div>
+
+<!-- ============================================================
+     TYPES OF LOGOS
+============================================================ -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Types Of Logos</span>
+      <h2>Finding the right format for your brand</h2>
+      <p>We'll recommend a direction based on your industry and name: here's what's on the table.</p>
+    </div>
+    <div class="logo-types-grid">
+      <div class="logo-type-card card reveal">
+        <div class="logo-type-glyph"><svg viewBox="0 0 24 24" fill="none"><path d="M4 15h16M6 9h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+        <h3>Wordmark</h3>
+        <p>The full business name, styled with distinct custom typography.</p>
+      </div>
+      <div class="logo-type-card card reveal">
+        <div class="logo-type-glyph"><svg viewBox="0 0 24 24" fill="none"><text x="12" y="17" text-anchor="middle" font-family="Sora, sans-serif" font-weight="700" font-size="16" fill="currentColor">Aa</text></svg></div>
+        <h3>Lettermark</h3>
+        <p>Initials, monogram-style, compact and easy to recognize.</p>
+      </div>
+      <div class="logo-type-card card reveal">
+        <div class="logo-type-glyph"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="2"/></svg></div>
+        <h3>Icon / Symbol</h3>
+        <p>A standalone graphic mark that can work independent of the name.</p>
+      </div>
+      <div class="logo-type-card card reveal">
+        <div class="logo-type-glyph"><svg viewBox="0 0 24 24" fill="none"><circle cx="8" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M14 8h6M14 16h6M14 12h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+        <h3>Combination Mark</h3>
+        <p>Icon and wordmark paired together, usable together or apart.</p>
+      </div>
+      <div class="logo-type-card card reveal">
+        <div class="logo-type-glyph"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l7 2.6v5.4c0 4.6-3 7.7-7 9-4-1.3-7-4.4-7-9V5.6L12 3z" stroke="currentColor" stroke-width="2"/></svg></div>
+        <h3>Emblem</h3>
+        <p>Name and symbol contained within a single badge-like shape.</p>
+      </div>
+      <div class="logo-type-card card reveal">
+        <div class="logo-type-glyph"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3c4 3 7 6 7 10a7 7 0 1 1-14 0c0-4 3-7 7-10z" stroke="currentColor" stroke-width="2"/></svg></div>
+        <h3>Abstract Mark</h3>
+        <p>A unique geometric form built purely for your brand, tied to no letter.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     WHAT'S INCLUDED
+============================================================ -->
+<section class="svc-detail svc-detail--panel">
+  <div class="wrap svc-detail__wrap">
+    <div class="svc-detail__media reveal-scale">
+      <span class="svc-shape svc-shape--1"></span>
+      <span class="svc-shape svc-shape--2"></span>
+      <span class="svc-shape svc-shape--3"></span>
+      <div class="svc-media-frame">
+        <div class="svc-media-glow"></div>
+        <svg viewBox="0 0 240 220" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="gIncl" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#c4b5fd"/>
+            </linearGradient>
+          </defs>
+          <circle cx="95" cy="105" r="42" fill="none" stroke="url(#gIncl)" stroke-width="3.4"/>
+          <circle cx="95" cy="105" r="14" fill="url(#gIncl)"/>
+          <rect x="150" y="60" width="60" height="16" rx="8" fill="#8b5cf6"/>
+          <rect x="150" y="84" width="44" height="16" rx="8" fill="#c4b5fd"/>
+          <rect x="150" y="108" width="52" height="16" rx="8" fill="#e8e1f7"/>
+          <circle cx="45" cy="160" r="9" fill="#7c3aed"/>
+          <circle cx="68" cy="160" r="9" fill="#8b5cf6"/>
+          <circle cx="91" cy="160" r="9" fill="#c4b5fd"/>
+        </svg>
+      </div>
+    </div>
+    <div class="svc-detail__copy">
+      <span class="svc-badge reveal">What's Included</span>
+      <h2 class="reveal">A complete starter identity, not just a mark</h2>
+      <p class="svc-desc reveal">
+        Every project includes the logo plus the essential pieces you
+        need to use it consistently, so your brand looks like
+        itself on every platform.
+      </p>
+      <ul class="svc-checklist reveal">
+        <li><span class="check"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Primary logo, plus alternate layouts</li>
+        <li><span class="check"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Curated brand color palette</li>
+        <li><span class="check"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Recommended typography pairing</li>
+        <li><span class="check"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Simple usage guidelines</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     REVISION PROCESS
+============================================================ -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Revision Process</span>
+      <h2>Getting to a mark you love</h2>
+      <p>Two full rounds of revisions are included, with clear steps in between.</p>
+    </div>
+    <div class="revision-track">
+      <div class="revision-step card reveal">
+        <div class="revision-step-num">1</div>
+        <h4>Initial Concepts</h4>
+        <p>You review 3 distinct directions and tell us what's working.</p>
+        <span class="revision-arrow"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </div>
+      <div class="revision-step card reveal">
+        <div class="revision-step-num">2</div>
+        <h4>Feedback &amp; Refinement</h4>
+        <p>We narrow to one direction and refine color, type, and spacing.</p>
+        <span class="revision-arrow"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </div>
+      <div class="revision-step card reveal">
+        <div class="revision-step-num">3</div>
+        <h4>Final Delivery</h4>
+        <p>Once approved, every file format is packaged and handed off.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider" aria-hidden="true"></div>
+
+<!-- ============================================================
+     DELIVERABLES
+============================================================ -->
+<section class="section section--panel">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Deliverables</span>
+      <h2>Everything you'll walk away with</h2>
+    </div>
+    <div class="deliverables-grid">
+      <div class="deliverable-item card reveal">
+        <div class="icon-box"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M6 3.5h9l5 5v12h-14z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></div>
+        <span class="deliverable-label">Vector &amp; raster logo files</span>
+      </div>
+      <div class="deliverable-item card reveal">
+        <div class="icon-box"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.7"/></svg></div>
+        <span class="deliverable-label">Color palette with hex codes</span>
+      </div>
+      <div class="deliverable-item card reveal">
+        <div class="icon-box"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><text x="12" y="17" text-anchor="middle" font-family="Sora, sans-serif" font-weight="700" font-size="14" fill="currentColor">Aa</text></svg></div>
+        <span class="deliverable-label">Typography recommendations</span>
+      </div>
+      <div class="deliverable-item card reveal">
+        <div class="icon-box"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3.5" y="4.5" width="17" height="11" rx="1.6" stroke="currentColor" stroke-width="1.6"/></svg></div>
+        <span class="deliverable-label">Favicon &amp; app icon set</span>
+      </div>
+      <div class="deliverable-item card reveal">
+        <div class="icon-box"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="4" stroke="currentColor" stroke-width="1.7"/></svg></div>
+        <span class="deliverable-label">Social media profile kit</span>
+      </div>
+      <div class="deliverable-item card reveal">
+        <div class="icon-box"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 12h4l2-7 4 14 2-7h4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <span class="deliverable-label">Simple usage guidelines</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FAQ
+============================================================ -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">FAQ</span>
+      <h2>Questions we hear often</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <button class="faq-q">How many logo concepts will I see? <span class="faq-icon"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">You'll see 3 distinct initial directions, then we refine your favorite through two rounds of revisions until it's right.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q">What if I want more than two revision rounds? <span class="faq-icon"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">Additional rounds are available at a small add-on rate. Most projects land within the two included rounds.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q">Do I own the final logo outright? <span class="faq-icon"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">Yes. Full ownership and usage rights transfer to you once the final invoice is settled and files are delivered.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q">Can you match an existing brand color I already use? <span class="faq-icon"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">Definitely, share your existing palette or materials and we'll design around them, or refine them if you're open to it.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q">Will the logo work for both print and digital use? <span class="faq-icon"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">Yes, every delivery includes both vector files for print and web-ready formats for digital use.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q">I don't have a name or tagline yet, can you still help? <span class="faq-icon"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">We typically design around a confirmed name, but can point you toward naming resources first if you need that step sorted out.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FINAL CTA
+============================================================ -->
+<section class="svc-final-cta">
+  <span class="svc-final-shape svc-final-shape--1"></span>
+  <span class="svc-final-shape svc-final-shape--2"></span>
+  <span class="svc-final-shape svc-final-shape--3"></span>
+  <div class="wrap">
+    <span class="eyebrow reveal">Let's Design It</span>
+    <h2 class="reveal">Ready for a logo that actually feels like you?</h2>
+    <p class="reveal">Tell us about your business and where you're taking it. We'll start sketching from there.</p>
+    <div style="display:flex;gap:16px;flex-wrap:wrap;justify-content:center;" class="reveal">
+      <a href="contact.html" class="btn btn--solid magnetic">Start Your Logo</a>
+      <a href="website-development.html" class="btn btn--ghost magnetic">Explore Website Development</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>CONTACT US</h4>
+        <ul>
+          <li>Fusion Tech USA</li>
+          <li>Houston, TX</li>
+          <li>1-307-445-3178</li>
+          <li>fusiontechusa.1@gmail.com</li>
+        </ul>
+      </div>
+      <div>
+        <h4>NAVIGATE</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Provided Services</a></li>
+          <li><a href="open-ticket.html">Open A Ticket</a></li>
+          <li><a href="order-tools.html">Order Supplies</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>INFORMATION</h4>
+        <ul>
+          <li><a href="pricing.html">Prices</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms And Condition</a></li>
+          <li><a href="#">Join Our Team</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>FOLLOW US</h4>
+        <div class="footer-social">
+          <a href="#">FB</a><a href="#">X</a><a href="#">IN</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>&copy; 2026 Fusion Tech USA. All rights reserved. (placeholder contact details, update anytime)</div>
+    </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.16/dist/lenis.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+<script src="assets/motion.js" defer></script>
+<script src="assets/services-premium.js" defer></script>
+<script src="assets/collective-premium.js" defer></script>
+<script src="assets/logo-portfolio.js" defer></script>
+</body>
+</html>

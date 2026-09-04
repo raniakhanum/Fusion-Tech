@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){try{var t=localStorage.getItem('ft-theme');if(!t){t=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}if(t==='dark'){document.documentElement.setAttribute('data-theme','dark');}}catch(e){}})();</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Collective Tech Services | Fusion Tech USA</title>
+<meta name="description" content="Website Development and Logo Designing: two creative services, delivered with the same craft as our tech repair work. Explore each in depth.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self';">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="assets/services-premium.css">
+<link rel="stylesheet" href="assets/collective-premium.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="social"><a href="#">FB</a><a href="#">X</a><a href="#">IN</a></div>
+    <div><span class="phone">1-307-445-3178</span> &nbsp;|&nbsp; <a href="mailto:fusiontechusa.1@gmail.com">fusiontechusa.1@gmail.com</a></div>
+  </div>
+</div>
+<header class="site-header">
+  <div class="nav-row">
+    <a href="index.html" class="logo"><img src="assets/fusiontech-logo.png" alt="Fusion Tech USA" class="logo-img" width="174" height="207"></a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <div class="nav-item">
+        <button class="nav-drop-trigger" type="button">Collective Tech Services <svg class="chev" width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"><path d="M1 3l4 4 4-4" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="dropdown-menu">
+          <a href="collective-tech-services.html" class="dropdown-overview active">All Collective Tech Services</a>
+          <a href="website-development.html">Website Development</a>
+          <a href="logo-designing.html">Logo Designing</a>
+          <a href="video-editing.html">Video Editing</a>
+          <a href="social-media-marketing.html">Social Media Marketing</a>
+          <a href="seo.html">Search Engine Optimization (SEO)</a>
+        </div>
+      </div>
+      <a href="pricing.html">Prices</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+        <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.6"/><path d="M12 2.5V5M12 19V21.5M4.2 4.2L6 6M18 18L19.8 19.8M2.5 12H5M19 12H21.5M4.2 19.8L6 18M18 6L19.8 4.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+      </button>
+            <a href="open-ticket.html" class="btn btn--solid">Open a Ticket</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">&#9776;</button>
+    </div>
+  </div>
+</header>
+<script>
+document.getElementById('menuToggle').addEventListener('click', function(){
+  document.getElementById('mainNav').classList.toggle('open');
+});
+document.querySelectorAll('.nav-drop-trigger').forEach(function(btn){
+  btn.addEventListener('click', function(e){
+    e.stopPropagation();
+    var item = btn.closest('.nav-item');
+    var wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.nav-item.open').forEach(function(i){ i.classList.remove('open'); });
+    if(!wasOpen){ item.classList.add('open'); }
+  });
+});
+document.addEventListener('click', function(){
+  document.querySelectorAll('.nav-item.open').forEach(function(i){ i.classList.remove('open'); });
+});
+</script>
+
+<!-- ============================================================
+     HERO
+============================================================ -->
+<section class="svc-hero" id="svcHero">
+  <div class="wrap">
+    <div class="svc-hero-copy">
+      <span class="eyebrow hero-eyebrow">Collective Tech Services</span>
+      <h1 data-text="Two crafts, one studio standard of care." data-accent-from="studio"></h1>
+      <p class="lead">
+        Beyond repair and support, our collective is where brands get built.
+        A site that loads fast and looks sharp. A mark that actually looks
+        right on a business card, a favicon, and a billboard. Pick a
+        service below to step inside the process.
+      </p>
+      <div class="svc-hero-ctas">
+        <a href="#showcase" class="btn btn--solid magnetic">Explore Services</a>
+        <a href="contact.html" class="btn btn--ghost magnetic">Start a Project</a>
+      </div>
+      <div class="svc-hero-trust hero-stats">
+        <div><div class="hero-stat-value">2</div><div class="hero-stat-label">Creative services</div></div>
+        <div><div class="hero-stat-value">1</div><div class="hero-stat-label">Point of contact</div></div>
+        <div><div class="hero-stat-value">100%</div><div class="hero-stat-label">Original work</div></div>
+      </div>
+    </div>
+
+    <div class="svc-hero-illo" id="svcHeroIllo">
+      <div class="svc-illo-glow"></div>
+      <div class="svc-illo-ring"></div>
+      <div class="svc-illo-stage" id="svcIlloStage">
+        <div class="svc-illo-panel svc-illo-panel--main">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="collGradMain" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#7c3aed"/>
+                <stop offset="100%" stop-color="#c4b5fd"/>
+              </linearGradient>
+            </defs>
+            <rect x="26" y="30" width="148" height="100" rx="14" fill="none" stroke="url(#collGradMain)" stroke-width="3"/>
+            <circle cx="40" cy="42" r="2.6" fill="#c4b5fd"/><circle cx="48" cy="42" r="2.6" fill="#c4b5fd"/><circle cx="56" cy="42" r="2.6" fill="#c4b5fd"/>
+            <rect x="40" y="56" width="120" height="60" rx="6" fill="rgba(124,58,237,0.08)"/>
+            <path d="M60 78a20 20 0 1 1 0 16" stroke="url(#collGradMain)" stroke-width="4" fill="none" stroke-linecap="round"/>
+            <rect x="96" y="76" width="46" height="6" rx="3" fill="#c4b5fd"/>
+            <rect x="96" y="88" width="34" height="6" rx="3" fill="#e8e1f7"/>
+            <rect x="70" y="148" width="60" height="8" rx="4" fill="url(#collGradMain)" opacity="0.5"/>
+          </svg>
+        </div>
+        <div class="svc-illo-panel svc-illo-panel--card1">
+          <div class="svc-mini-label">Delivered</div>
+          <div class="svc-mini-value">On Time</div>
+        </div>
+        <div class="svc-illo-panel svc-illo-panel--card2">
+          <svg viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg">
+            <rect x="18" y="16" width="64" height="18" rx="9" fill="#8b5cf6" opacity="0.85"/>
+            <rect x="18" y="42" width="44" height="18" rx="9" fill="#c4b5fd" opacity="0.85"/>
+            <circle cx="76" cy="51" r="9" fill="#7c3aed"/>
+          </svg>
+          <div class="svc-mini-label" style="margin-top:8px;">Brand Kit</div>
+        </div>
+        <div class="svc-illo-panel svc-illo-panel--badge">
+          <span class="hero-badge-dot" style="position:static;"></span>
+          <span style="font-family:var(--font-body);font-size:0.78rem;font-weight:600;color:var(--text);">Design in progress</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SHOWCASE - the two services as large interactive cards
+============================================================ -->
+<section class="section" id="showcase">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Where To Start</span>
+      <h2>Choose your next chapter</h2>
+      <p>Two services, each treated like its own small craft. Tap a card to step into the full experience.</p>
+    </div>
+
+    <div class="showcase-grid">
+
+      <!-- WEBSITE DEVELOPMENT -->
+      <a href="website-development.html" class="showcase-card reveal-scale" data-href="website-development.html">
+        <span class="showcase-card-glow"></span>
+        <span class="showcase-shape showcase-shape--1"></span>
+        <span class="showcase-shape showcase-shape--2"></span>
+        <span class="showcase-shape showcase-shape--3"></span>
+        <span class="showcase-card-tint"></span>
+        <span class="showcase-card-sweep"></span>
+        <div class="showcase-card-inner">
+          <div class="showcase-illo">
+            <span class="showcase-illo-orbit"></span>
+            <div class="showcase-illo-stage">
+              <svg viewBox="0 0 220 180" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="showWeb" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#c4b5fd"/>
+                  </linearGradient>
+                </defs>
+                <rect x="18" y="20" width="184" height="122" rx="12" fill="#fff" stroke="url(#showWeb)" stroke-width="3"/>
+                <rect x="18" y="20" width="184" height="24" rx="12" fill="rgba(124,58,237,0.08)"/>
+                <circle cx="32" cy="32" r="3.2" fill="#c4b5fd"/><circle cx="42" cy="32" r="3.2" fill="#c4b5fd"/><circle cx="52" cy="32" r="3.2" fill="#c4b5fd"/>
+                <rect x="34" y="58" width="70" height="70" rx="8" fill="rgba(124,58,237,0.1)"/>
+                <path d="M50 80l10 10-10 10M78 82h16" stroke="#7c3aed" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                <rect x="118" y="58" width="70" height="14" rx="4" fill="#c4b5fd" opacity="0.7"/>
+                <rect x="118" y="78" width="52" height="10" rx="4" fill="#e8e1f7"/>
+                <rect x="118" y="94" width="60" height="10" rx="4" fill="#e8e1f7"/>
+                <rect x="118" y="110" width="34" height="14" rx="7" fill="url(#showWeb)"/>
+                <circle cx="176" cy="150" r="18" fill="#fff" stroke="url(#showWeb)" stroke-width="2.6"/>
+                <path d="M170 150l4 4 8-9" fill="none" stroke="#7c3aed" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+          <span class="eyebrow showcase-eyebrow">Build &amp; Ship</span>
+          <h3>Website Development</h3>
+          <p class="showcase-desc">Custom-built sites and web apps that load fast, look sharp on every screen, and are genuinely easy to maintain after launch.</p>
+          <ul class="showcase-points">
+            <li>Custom Design</li>
+            <li>Responsive Build</li>
+            <li>Ongoing Support</li>
+          </ul>
+          <span class="btn btn--ghost showcase-cta">Explore Website Development <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </div>
+      </a>
+
+      <!-- LOGO DESIGNING -->
+      <a href="logo-designing.html" class="showcase-card reveal-scale" data-href="logo-designing.html">
+        <span class="showcase-card-glow"></span>
+        <span class="showcase-shape showcase-shape--1"></span>
+        <span class="showcase-shape showcase-shape--2"></span>
+        <span class="showcase-shape showcase-shape--3"></span>
+        <span class="showcase-card-tint"></span>
+        <span class="showcase-card-sweep"></span>
+        <div class="showcase-card-inner">
+          <div class="showcase-illo">
+            <span class="showcase-illo-orbit"></span>
+            <div class="showcase-illo-stage">
+              <svg viewBox="0 0 220 180" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="showLogo" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#c4b5fd"/>
+                  </linearGradient>
+                </defs>
+                <circle cx="76" cy="86" r="46" fill="none" stroke="url(#showLogo)" stroke-width="3.4"/>
+                <path d="M76 46a40 40 0 0 1 40 40" stroke="#c4b5fd" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.7"/>
+                <circle cx="76" cy="86" r="14" fill="url(#showLogo)"/>
+                <rect x="146" y="46" width="60" height="18" rx="9" fill="#8b5cf6"/>
+                <rect x="146" y="72" width="44" height="18" rx="9" fill="#c4b5fd"/>
+                <rect x="146" y="98" width="52" height="18" rx="9" fill="#e8e1f7"/>
+                <circle cx="40" cy="140" r="10" fill="#7c3aed"/>
+                <circle cx="64" cy="140" r="10" fill="#8b5cf6"/>
+                <circle cx="88" cy="140" r="10" fill="#c4b5fd"/>
+                <circle cx="112" cy="140" r="10" fill="#e8e1f7"/>
+              </svg>
+            </div>
+          </div>
+          <span class="eyebrow showcase-eyebrow">Brand &amp; Identity</span>
+          <h3>Logo Designing</h3>
+          <p class="showcase-desc">A distinct mark and a small system of color, type, and rules around it, so your brand looks like itself everywhere it shows up.</p>
+          <ul class="showcase-points">
+            <li>Concept Sketching</li>
+            <li>Multiple Revisions</li>
+            <li>Full File Delivery</li>
+          </ul>
+          <span class="btn btn--ghost showcase-cta">Explore Logo Designing <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     JOURNEY TEASER
+============================================================ -->
+<section class="section section--panel">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">How It Works</span>
+      <h2>The same simple path, either way</h2>
+      <p>Every project moves through the same four checkpoints, no matter which service you pick.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card card reveal">
+        <div class="icon-box">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 12a8 8 0 1 1 3 6.2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M4 12v5h5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Discover</h3>
+        <p>A short call to understand your goals, audience, and taste.</p>
+      </div>
+      <div class="why-card card reveal">
+        <div class="icon-box">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 12h4l2-7 4 14 2-7h4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Design</h3>
+        <p>Concepts and drafts, shared early so you can steer the direction.</p>
+      </div>
+      <div class="why-card card reveal">
+        <div class="icon-box">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 7v5l3.5 2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.7"/></svg>
+        </div>
+        <h3>Refine</h3>
+        <p>Rounds of feedback until it feels genuinely right, not just done.</p>
+      </div>
+      <div class="why-card card reveal">
+        <div class="icon-box">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 3l7 2.6v5.4c0 4.6-3 7.7-7 9-4-1.3-7-4.4-7-9V5.6L12 3z" stroke="currentColor" stroke-width="1.7"/></svg>
+        </div>
+        <h3>Deliver</h3>
+        <p>Final files, launch support, and a clean handoff when you're ready.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FINAL CTA
+============================================================ -->
+<section class="svc-final-cta">
+  <span class="svc-final-shape svc-final-shape--1"></span>
+  <span class="svc-final-shape svc-final-shape--2"></span>
+  <span class="svc-final-shape svc-final-shape--3"></span>
+  <div class="wrap">
+    <span class="eyebrow reveal">Ready To Begin</span>
+    <h2 class="reveal">Not sure which one you need?</h2>
+    <p class="reveal">Tell us where your brand is today and where you want it to go. We'll point you to the right starting service.</p>
+    <div style="display:flex;gap:16px;flex-wrap:wrap;justify-content:center;" class="reveal">
+      <a href="contact.html" class="btn btn--solid magnetic">Talk To Us</a>
+      <a href="tel:1-307-445-3178" class="btn btn--ghost magnetic">Call 1-307-445-3178</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>CONTACT US</h4>
+        <ul>
+          <li>Fusion Tech USA</li>
+          <li>Houston, TX</li>
+          <li>1-307-445-3178</li>
+          <li>fusiontechusa.1@gmail.com</li>
+        </ul>
+      </div>
+      <div>
+        <h4>NAVIGATE</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Provided Services</a></li>
+          <li><a href="open-ticket.html">Open A Ticket</a></li>
+          <li><a href="order-tools.html">Order Supplies</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>INFORMATION</h4>
+        <ul>
+          <li><a href="pricing.html">Prices</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms And Condition</a></li>
+          <li><a href="#">Join Our Team</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>FOLLOW US</h4>
+        <div class="footer-social">
+          <a href="#">FB</a><a href="#">X</a><a href="#">IN</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>&copy; 2026 Fusion Tech USA. All rights reserved. (placeholder contact details, update anytime)</div>
+    </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.16/dist/lenis.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+<script src="assets/motion.js" defer></script>
+<script src="assets/services-premium.js" defer></script>
+<script src="assets/collective-premium.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){try{var t=localStorage.getItem('ft-theme');if(!t){t=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}if(t==='dark'){document.documentElement.setAttribute('data-theme','dark');}}catch(e){}})();</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Provided Services | Fusion Tech USA</title>
+<meta name="description" content="Computer repair, networking, business IT support, device setup, server &amp; backup, and security: delivered on-site by certified technicians.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self';">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="assets/services-premium.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="social"><a href="#">FB</a><a href="#">X</a><a href="#">IN</a></div>
+    <div><span class="phone">1-307-445-3178</span> &nbsp;|&nbsp; <a href="mailto:fusiontechusa.1@gmail.com">fusiontechusa.1@gmail.com</a></div>
+  </div>
+</div>
+<header class="site-header">
+  <div class="nav-row">
+    <a href="index.html" class="logo"><img src="assets/fusiontech-logo.png" alt="Fusion Tech USA" class="logo-img" width="174" height="207"></a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html" class="active">Services</a>
+      <div class="nav-item">
+        <button class="nav-drop-trigger" type="button">Collective Tech Services <svg class="chev" width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"><path d="M1 3l4 4 4-4" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="dropdown-menu">
+          <a href="collective-tech-services.html" class="dropdown-overview">All Collective Tech Services</a>
+          <a href="website-development.html">Website Development</a>
+          <a href="logo-designing.html">Logo Designing</a>
+          <a href="video-editing.html">Video Editing</a>
+          <a href="social-media-marketing.html">Social Media Marketing</a>
+          <a href="seo.html">Search Engine Optimization (SEO)</a>
+        </div>
+      </div>
+      <a href="pricing.html">Prices</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+        <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.6"/><path d="M12 2.5V5M12 19V21.5M4.2 4.2L6 6M18 18L19.8 19.8M2.5 12H5M19 12H21.5M4.2 19.8L6 18M18 6L19.8 4.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+      </button>
+            <a href="open-ticket.html" class="btn btn--solid">Open a Ticket</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">&#9776;</button>
+    </div>
+  </div>
+</header>
+<script>
+document.getElementById('menuToggle').addEventListener('click', function(){
+  document.getElementById('mainNav').classList.toggle('open');
+});
+document.querySelectorAll('.nav-drop-trigger').forEach(function(btn){
+  btn.addEventListener('click', function(e){
+    e.stopPropagation();
+    var item = btn.closest('.nav-item');
+    var wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.nav-item.open').forEach(function(i){ i.classList.remove('open'); });
+    if(!wasOpen){ item.classList.add('open'); }
+  });
+});
+document.addEventListener('click', function(){
+  document.querySelectorAll('.nav-item.open').forEach(function(i){ i.classList.remove('open'); });
+});
+</script>
+
+<!-- ============================================================
+     HERO
+============================================================ -->
+<section class="svc-hero" id="svcHero">
+  <div class="wrap">
+    <div class="svc-hero-copy">
+      <span class="eyebrow hero-eyebrow">What We Do</span>
+      <h1 data-text="Technology support, handled with real craft." data-accent-from="handled"></h1>
+      <p class="lead">
+        Six core services, one certified technician at your door. From a single
+        cracked screen to a full office network, every job gets the same
+        premium standard of care: diagnosed honestly, fixed properly,
+        tested before we leave.
+      </p>
+      <div class="svc-hero-ctas">
+        <a href="open-ticket.html" class="btn btn--solid magnetic">Open a Ticket</a>
+        <a href="#svcGrid" class="btn btn--ghost magnetic">Explore Services</a>
+      </div>
+      <div class="svc-hero-trust hero-stats">
+        <div><div class="hero-stat-value">6</div><div class="hero-stat-label">Core services</div></div>
+        <div><div class="hero-stat-value">24/7</div><div class="hero-stat-label">Live dispatch</div></div>
+        <div><div class="hero-stat-value">1 hr</div><div class="hero-stat-label">Emergency response</div></div>
+      </div>
+    </div>
+
+    <div class="svc-hero-illo" id="svcHeroIllo">
+      <div class="svc-illo-glow"></div>
+      <div class="svc-illo-ring"></div>
+      <div class="svc-illo-stage" id="svcIlloStage">
+        <div class="svc-illo-panel svc-illo-panel--main">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="illoGradMain" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#7c3aed"/>
+                <stop offset="100%" stop-color="#c4b5fd"/>
+              </linearGradient>
+            </defs>
+            <rect x="28" y="34" width="144" height="96" rx="12" fill="none" stroke="url(#illoGradMain)" stroke-width="3"/>
+            <rect x="40" y="46" width="120" height="72" rx="6" fill="rgba(124,58,237,0.08)"/>
+            <rect x="70" y="140" width="60" height="8" rx="4" fill="url(#illoGradMain)" opacity="0.5"/>
+            <rect x="50" y="152" width="100" height="6" rx="3" fill="#e8e1f7"/>
+            <circle cx="150" cy="60" r="20" fill="#fff" stroke="url(#illoGradMain)" stroke-width="2.5"/>
+            <path d="M143 60l5 5 9-10" fill="none" stroke="#7c3aed" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M56 70h50M56 84h34M56 98h42" stroke="#c4b5fd" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="svc-illo-panel svc-illo-panel--card1">
+          <div class="svc-mini-label">Uptime</div>
+          <div class="svc-mini-value">99.9%</div>
+        </div>
+        <div class="svc-illo-panel svc-illo-panel--card2">
+          <svg viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 55 Q50 15 80 55" fill="none" stroke="#8b5cf6" stroke-width="3" stroke-linecap="round"/>
+            <path d="M28 55 Q50 28 72 55" fill="none" stroke="#c4b5fd" stroke-width="3" stroke-linecap="round"/>
+            <circle cx="50" cy="55" r="6" fill="#7c3aed"/>
+          </svg>
+          <div class="svc-mini-label" style="margin-top:8px;">Network</div>
+        </div>
+        <div class="svc-illo-panel svc-illo-panel--badge">
+          <span class="hero-badge-dot" style="position:static;"></span>
+          <span style="font-family:var(--font-body);font-size:0.78rem;font-weight:600;color:var(--text);">Technician en route</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SERVICES GRID
+============================================================ -->
+<section class="section" id="svcGrid">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Provided Services</span>
+      <h2>Six ways we keep you running</h2>
+      <p>Tap any card to jump straight to the details, or scroll to explore the full story.</p>
+    </div>
+
+    <div class="svc-grid">
+
+      <div class="svc-card card reveal" data-target="svc-computer-repair">
+        <span class="svc-sweep"></span>
+        <div class="svc-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="color:var(--accent);">
+            <rect x="3.5" y="4.5" width="17" height="11" rx="1.6" stroke="currentColor" stroke-width="1.6"/>
+            <path d="M2 18.5h20" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            <path d="M14.5 9.2l2.4 2.4-2.4 2.4M9.5 9.2 7.1 11.6l2.4 2.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3>Computer Repair</h3>
+        <p>Hardware failures, virus removal, slow performance, blue screens, and data recovery.</p>
+        <span class="svc-card-link">Learn more <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </div>
+
+      <div class="svc-card card reveal" data-target="svc-network-setup">
+        <span class="svc-sweep"></span>
+        <div class="svc-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="color:var(--accent);">
+            <path d="M4 9.5a11.5 11.5 0 0 1 16 0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            <path d="M7 13a7 7 0 0 1 10 0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            <path d="M10 16.5a3 3 0 0 1 4 0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            <circle cx="12" cy="19.2" r="1.3" fill="currentColor"/>
+          </svg>
+        </div>
+        <h3>Network Setup</h3>
+        <p>Home and business Wi-Fi, routers, firewalls, and secure remote access.</p>
+        <span class="svc-card-link">Learn more <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </div>
+
+      <div class="svc-card card reveal" data-target="svc-it-support">
+        <span class="svc-sweep"></span>
+        <div class="svc-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="color:var(--accent);">
+            <path d="M4 12a8 8 0 0 1 16 0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            <rect x="3" y="12" width="4" height="6" rx="1.4" stroke="currentColor" stroke-width="1.6"/>
+            <rect x="17" y="12" width="4" height="6" rx="1.4" stroke="currentColor" stroke-width="1.6"/>
+            <path d="M19 18v1.2a2 2 0 0 1-2 2h-3.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>Business IT Support</h3>
+        <p>Ongoing managed support, workstation rollouts, and on-call emergency response.</p>
+        <span class="svc-card-link">Learn more <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </div>
+
+      <div class="svc-card card reveal" data-target="svc-device-setup">
+        <span class="svc-sweep"></span>
+        <div class="svc-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="color:var(--accent);">
+            <rect x="3" y="5" width="12" height="9" rx="1.4" stroke="currentColor" stroke-width="1.6"/>
+            <rect x="16.5" y="8.5" width="5" height="9" rx="1.2" stroke="currentColor" stroke-width="1.6"/>
+            <path d="M2 17h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            <path d="M18.5 20h1.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>Device Setup</h3>
+        <p>New computer, printer, and smart-device setup and data migration.</p>
+        <span class="svc-card-link">Learn more <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </div>
+
+      <div class="svc-card card reveal" data-target="svc-server-backup">
+        <span class="svc-sweep"></span>
+        <div class="svc-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="color:var(--accent);">
+            <rect x="4" y="3.5" width="16" height="6" rx="1.4" stroke="currentColor" stroke-width="1.6"/>
+            <rect x="4" y="11.5" width="16" height="6" rx="1.4" stroke="currentColor" stroke-width="1.6"/>
+            <circle cx="7.5" cy="6.5" r="0.9" fill="currentColor"/>
+            <circle cx="7.5" cy="14.5" r="0.9" fill="currentColor"/>
+            <path d="M12 20.5a3.5 3.5 0 0 0 3.4-2.7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            <path d="M12 20.5a3.5 3.5 0 0 1-3.4-2.7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>Server &amp; Backup</h3>
+        <p>Server maintenance, backup configuration, and disaster recovery planning.</p>
+        <span class="svc-card-link">Learn more <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </div>
+
+      <div class="svc-card card reveal" data-target="svc-security">
+        <span class="svc-sweep"></span>
+        <div class="svc-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="color:var(--accent);">
+            <path d="M12 3.5l7 2.6v5.4c0 4.6-3 7.7-7 9-4-1.3-7-4.4-7-9V6.1l7-2.6z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+            <path d="M9 12l2.2 2.2L15.5 9.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3>Security &amp; Malware</h3>
+        <p>Malware removal, security audits, and endpoint protection installs.</p>
+        <span class="svc-card-link">Learn more <svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     1. COMPUTER REPAIR - image left / content right
+============================================================ -->
+<section class="svc-detail" id="svc-computer-repair">
+  <div class="wrap svc-detail__wrap">
+    <div class="svc-detail__media reveal-scale">
+      <span class="svc-shape svc-shape--1"></span>
+      <span class="svc-shape svc-shape--2"></span>
+      <span class="svc-shape svc-shape--3"></span>
+      <div class="svc-media-frame">
+        <div class="svc-media-glow"></div>
+        <svg viewBox="0 0 240 220" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="gRepair" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#c4b5fd"/>
+            </linearGradient>
+          </defs>
+          <rect x="35" y="30" width="170" height="110" rx="12" fill="none" stroke="url(#gRepair)" stroke-width="3.4"/>
+          <rect x="50" y="44" width="140" height="82" rx="6" fill="rgba(124,58,237,0.07)"/>
+          <path d="M62 65h60M62 80h44M62 95h50" stroke="#c4b5fd" stroke-width="4" stroke-linecap="round"/>
+          <rect x="20" y="150" width="200" height="10" rx="5" fill="url(#gRepair)" opacity="0.35"/>
+          <g transform="translate(150,95) rotate(20)">
+            <rect x="-6" y="-38" width="12" height="46" rx="4" fill="#8b5cf6"/>
+            <circle cx="0" cy="-40" r="12" fill="none" stroke="#7c3aed" stroke-width="4"/>
+          </g>
+          <circle cx="188" cy="52" r="22" fill="#fff" stroke="url(#gRepair)" stroke-width="3"/>
+          <path d="M179 52l6 6 12-13" fill="none" stroke="#7c3aed" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+    </div>
+    <div class="svc-detail__copy">
+      <span class="svc-badge reveal">Hardware &amp; Software</span>
+      <h2 class="reveal">Computer Repair</h2>
+      <p class="svc-desc reveal">
+        From a laptop that won't boot to a desktop crawling under years of
+        clutter, we diagnose the real problem first and fix it right: no guessing, no unnecessary parts.
+      </p>
+      <ul class="svc-checklist reveal">
+        <li><span class="check"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Virus &amp; malware removal</li>
+        <li><span class="check"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Blue-screen &amp; boot-failure diagnostics</li>
+        <li><span class="check"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Data recovery from failing drives</li>
+        <li><span class="check"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Hardware replacement &amp; upgrades</li>
+      </ul>
+      <div class="svc-detail-stats reveal">
+        <div><div class="svc-detail-stat-value">92%</div><div class="svc-detail-stat-label">Same-day fix rate</div></div>
+        <div><div class="svc-detail-stat-value">5,000+</div><div class="svc-detail-stat-label">Devices repaired</div></div>
+      </div>
+      <a href="open-ticket.html" class="btn btn--solid magnetic svc-detail-cta reveal">Book a Repair</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     2. NETWORK SETUP - content left / image right
+============================================================ -->
+<section class="svc-detail svc-detail--reverse svc-detail--panel" id="svc-network-setup">
+  <div class="wrap svc-detail__wrap">
+    <div class="svc-detail__copy">
+      <span class="svc-badge reveal">Connectivity</span>
+      <h2 class="reveal">Network Setup</h2>
+      <p class="svc-desc reveal">
+        A fast, stable connection is the foundation everything else runs on.
+        We design Wi-Fi and wired networks that stay up (and stay
+        secure) whether it's one apartment or a full office floor.
+      </p>
+      <ul class="svc-checklist reveal">
+        <li><span class="check"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Home &amp; business Wi-Fi design</li>
+        <li><span class="check"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Router &amp; firewall configuration</li>
+        <li><span class="check"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Secure remote access (VPN)</li>
+        <li><span class="check"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Guest &amp; staff network segmentation</li>
+      </ul>
+      <div class="svc-detail-stats reveal">
+        <div><div class="svc-detail-stat-value">2 hrs</div><div class="svc-detail-stat-label">Average setup time</div></div>
+        <div><div class="svc-detail-stat-value">99.9%</div><div class="svc-detail-stat-label">Network uptime</div></div>
+      </div>
+      <a href="open-ticket.html" class="btn btn--solid magnetic svc-detail-cta reveal">Get Connected</a>
+    </div>
+    <div class="svc-detail__media reveal-scale">
+      <span class="svc-shape svc-shape--1"></span>
+      <span class="svc-shape svc-shape--2"></span>
+      <span class="svc-shape svc-shape--3"></span>
+      <div class="svc-media-frame">
+        <div class="svc-media-glow"></div>
+        <svg viewBox="0 0 240 220" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="gNet" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#c4b5fd"/>
+            </linearGradient>
+          </defs>
+          <circle cx="120" cy="120" r="10" fill="url(#gNet)"/>
+          <g stroke="#c4b5fd" stroke-width="2.4" fill="none">
+            <path d="M120 120 L60 70"/><path d="M120 120 L180 70"/>
+            <path d="M120 120 L50 150"/><path d="M120 120 L190 150"/>
+            <path d="M120 120 L120 50"/><path d="M120 120 L120 190"/>
+          </g>
+          <g fill="#fff" stroke="url(#gNet)" stroke-width="2.6">
+            <circle cx="60" cy="70" r="14"/><circle cx="180" cy="70" r="14"/>
+            <circle cx="50" cy="150" r="14"/><circle cx="190" cy="150" r="14"/>
+            <circle cx="120" cy="50" r="14"/><circle cx="120" cy="190" r="14"/>
+          </g>
+          <path d="M100 100a28 28 0 0 1 40 0" stroke="#7c3aed" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.6"/>
+          <path d="M108 108a17 17 0 0 1 24 0" stroke="#8b5cf6" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.8"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     3. BUSINESS IT SUPPORT - image left / content right
+============================================================ -->
+<section class="svc-detail" id="svc-it-support">
+  <div class="wrap svc-detail__wrap">
+    <div class="svc-detail__media reveal-scale">
+      <span class="svc-shape svc-shape--1"></span>
+      <span class="svc-shape svc-shape--2"></span>
+      <span class="svc-shape svc-shape--3"></span>
+      <div class="svc-media-frame">
+        <div class="svc-media-glow"></div>
+        <svg viewBox="0 0 240 220" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="gSupport" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#c4b5fd"/>
+            </linearGradient>
+          </defs>
+          <rect x="45" y="35" width="150" height="98" rx="12" fill="none" stroke="url(#gSupport)" stroke-width="3.2"/>
+          <rect x="60" y="50" width="60" height="14" rx="4" fill="rgba(124,58,237,0.14)"/>
+          <rect x="60" y="76" width="14" height="36" rx="2" fill="#c4b5fd"/>
+          <rect x="80" y="90" width="14" height="22" rx="2" fill="#8b5cf6"/>
+          <rect x="100" y="82" width="14" height="30" rx="2" fill="#7c3aed"/>
+          <path d="M130 55a34 34 0 0 1 34 34" stroke="#c4b5fd" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.6"/>
+          <g transform="translate(178,165)">
+            <path d="M-22 4a22 22 0 1 1 44 0v6a6 6 0 0 1-6 6h-4v-16h10" fill="none" stroke="url(#gSupport)" stroke-width="3.2" stroke-linecap="round"/>
+            <rect x="-26" y="2" width="8" height="14" rx="3" fill="#8b5cf6"/>
+            <rect x="18" y="2" width="8" height="14" rx="3" fill="#8b5cf6"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+    <div class="svc-detail__copy">
+      <span class="svc-badge reveal">Managed IT</span>
+      <h2 class="reveal">Business IT Support</h2>
+      <p class="svc-desc reveal">
+        Ongoing, dependable IT for teams that can't afford downtime.
+        One point of contact, technicians who already know your setup,
+        and a call-out option for when something breaks mid-day.
+      </p>
+      <ul class="svc-checklist reveal">
+        <li><span class="check"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Ongoing managed support plans</li>
+        <li><span class="check"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Workstation rollouts &amp; onboarding</li>
+        <li><span class="check"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>On-call emergency response</li>
+        <li><span class="check"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Vendor &amp; software coordination</li>
+      </ul>
+      <div class="svc-detail-stats reveal">
+        <div><div class="svc-detail-stat-value">24/7</div><div class="svc-detail-stat-label">On-call coverage</div></div>
+        <div><div class="svc-detail-stat-value">98%</div><div class="svc-detail-stat-label">Client satisfaction</div></div>
+      </div>
+      <a href="open-ticket.html" class="btn btn--solid magnetic svc-detail-cta reveal">Talk To Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     4. DEVICE SETUP - content left / image right
+============================================================ -->
+<section class="svc-detail svc-detail--reverse svc-detail--panel" id="svc-device-setup">
+  <div class="wrap svc-detail__wrap">
+    <div class="svc-detail__copy">
+      <span class="svc-badge reveal">Onboarding</span>
+      <h2 class="reveal">Device Setup</h2>
+      <p class="svc-desc reveal">
+        New hardware, ready to use the same day it arrives. We unbox,
+        configure, migrate your files, and sign you into everything, so the only thing you do is start working.
+      </p>
+      <ul class="svc-checklist reveal">
+        <li><span class="check"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>New computer &amp; printer setup</li>
+        <li><span class="check"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Smart-device configuration</li>
+        <li><span class="check"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Full data &amp; file migration</li>
+        <li><span class="check"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Account &amp; app sign-in assistance</li>
+      </ul>
+      <div class="svc-detail-stats reveal">
+        <div><div class="svc-detail-stat-value">3,000+</div><div class="svc-detail-stat-label">Devices onboarded</div></div>
+        <div><div class="svc-detail-stat-value">Same day</div><div class="svc-detail-stat-label">Typical turnaround</div></div>
+      </div>
+      <a href="open-ticket.html" class="btn btn--solid magnetic svc-detail-cta reveal">Set Up My Device</a>
+    </div>
+    <div class="svc-detail__media reveal-scale">
+      <span class="svc-shape svc-shape--1"></span>
+      <span class="svc-shape svc-shape--2"></span>
+      <span class="svc-shape svc-shape--3"></span>
+      <div class="svc-media-frame">
+        <div class="svc-media-glow"></div>
+        <svg viewBox="0 0 240 220" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="gDevice" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#c4b5fd"/>
+            </linearGradient>
+          </defs>
+          <rect x="34" y="60" width="86" height="60" rx="8" fill="none" stroke="url(#gDevice)" stroke-width="3"/>
+          <rect x="42" y="68" width="70" height="44" rx="4" fill="rgba(124,58,237,0.08)"/>
+          <rect x="150" y="46" width="42" height="76" rx="9" fill="none" stroke="url(#gDevice)" stroke-width="3"/>
+          <circle cx="171" cy="108" r="3.5" fill="#8b5cf6"/>
+          <rect x="70" y="130" width="90" height="8" rx="4" fill="url(#gDevice)" opacity="0.3"/>
+          <circle cx="120" cy="165" r="26" fill="#fff" stroke="url(#gDevice)" stroke-width="3"/>
+          <path d="M112 165h16M120 157v16" stroke="#7c3aed" stroke-width="3.4" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     5. SERVER & BACKUP - image left / content right
+============================================================ -->
+<section class="svc-detail" id="svc-server-backup">
+  <div class="wrap svc-detail__wrap">
+    <div class="svc-detail__media reveal-scale">
+      <span class="svc-shape svc-shape--1"></span>
+      <span class="svc-shape svc-shape--2"></span>
+      <span class="svc-shape svc-shape--3"></span>
+      <div class="svc-media-frame">
+        <div class="svc-media-glow"></div>
+        <svg viewBox="0 0 240 220" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="gServer" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#c4b5fd"/>
+            </linearGradient>
+          </defs>
+          <rect x="40" y="110" width="100" height="30" rx="6" fill="none" stroke="url(#gServer)" stroke-width="3"/>
+          <rect x="40" y="146" width="100" height="30" rx="6" fill="none" stroke="url(#gServer)" stroke-width="3"/>
+          <circle cx="52" cy="125" r="3" fill="#8b5cf6"/><circle cx="52" cy="161" r="3" fill="#8b5cf6"/>
+          <path d="M64 125h50M64 161h50" stroke="#c4b5fd" stroke-width="3" stroke-linecap="round"/>
+          <path d="M155 60a34 34 0 0 1 34 34 22 22 0 0 1-4 44h-70a24 24 0 0 1-3-47 34 34 0 0 1 43-31z" fill="none" stroke="url(#gServer)" stroke-width="3"/>
+          <path d="M170 100v28m0-28-10 10m10-10 10 10" stroke="#7c3aed" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+    </div>
+    <div class="svc-detail__copy">
+      <span class="svc-badge reveal">Infrastructure</span>
+      <h2 class="reveal">Server &amp; Backup</h2>
+      <p class="svc-desc reveal">
+        The unglamorous stuff that saves a business when things go wrong.
+        We keep servers healthy and backups actually restorable: not
+        just running, but verified.
+      </p>
+      <ul class="svc-checklist reveal">
+        <li><span class="check"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Server maintenance &amp; monitoring</li>
+        <li><span class="check"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Automated backup configuration</li>
+        <li><span class="check"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Disaster recovery planning</li>
+        <li><span class="check"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Restore testing, on a schedule</li>
+      </ul>
+      <div class="svc-detail-stats reveal">
+        <div><div class="svc-detail-stat-value">99.9%</div><div class="svc-detail-stat-label">Backup success rate</div></div>
+        <div><div class="svc-detail-stat-value">&lt;15 min</div><div class="svc-detail-stat-label">Avg. recovery start</div></div>
+      </div>
+      <a href="open-ticket.html" class="btn btn--solid magnetic svc-detail-cta reveal">Protect My Data</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     6. SECURITY & MALWARE - content left / image right
+============================================================ -->
+<section class="svc-detail svc-detail--reverse svc-detail--panel" id="svc-security">
+  <div class="wrap svc-detail__wrap">
+    <div class="svc-detail__copy">
+      <span class="svc-badge reveal">Protection</span>
+      <h2 class="reveal">Security &amp; Malware</h2>
+      <p class="svc-desc reveal">
+        Threats don't wait for a convenient time. We remove what's already
+        gotten in, close the doors it came through, and put protection in
+        place so it doesn't happen twice.
+      </p>
+      <ul class="svc-checklist reveal">
+        <li><span class="check"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Malware &amp; ransomware removal</li>
+        <li><span class="check"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Security audits &amp; vulnerability checks</li>
+        <li><span class="check"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Endpoint protection installs</li>
+        <li><span class="check"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8l3.5 3.5L13 5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Staff security awareness training</li>
+      </ul>
+      <div class="svc-detail-stats reveal">
+        <div><div class="svc-detail-stat-value">1,200+</div><div class="svc-detail-stat-label">Threats neutralized</div></div>
+        <div><div class="svc-detail-stat-value">0</div><div class="svc-detail-stat-label">Repeat infections, tracked</div></div>
+      </div>
+      <a href="open-ticket.html" class="btn btn--solid magnetic svc-detail-cta reveal">Secure My Systems</a>
+    </div>
+    <div class="svc-detail__media reveal-scale">
+      <span class="svc-shape svc-shape--1"></span>
+      <span class="svc-shape svc-shape--2"></span>
+      <span class="svc-shape svc-shape--3"></span>
+      <div class="svc-media-frame">
+        <div class="svc-media-glow"></div>
+        <svg viewBox="0 0 240 220" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="gSec" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#c4b5fd"/>
+            </linearGradient>
+          </defs>
+          <circle cx="120" cy="110" r="72" fill="none" stroke="#e8e1f7" stroke-width="2"/>
+          <circle cx="120" cy="110" r="54" fill="none" stroke="#c4b5fd" stroke-width="2" opacity="0.7"/>
+          <path d="M120 62l34 13v27c0 22-14 37-34 44-20-7-34-22-34-44V75l34-13z" fill="#fff" stroke="url(#gSec)" stroke-width="3.4" stroke-linejoin="round"/>
+          <path d="M106 108l10 11 20-21" fill="none" stroke="#7c3aed" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     STATS
+============================================================ -->
+<section class="section section--panel">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">By The Numbers</span>
+      <h2>Reliability you can measure</h2>
+    </div>
+    <div class="svc-stats-grid">
+      <div class="svc-stat-card card reveal">
+        <div class="svc-stat-number" data-count-to="100" data-suffix="+">0</div>
+        <div class="svc-stat-label">Projects Delivered</div>
+      </div>
+      <div class="svc-stat-card card reveal">
+        <div class="svc-stat-number" data-count-to="98" data-suffix="%">0</div>
+        <div class="svc-stat-label">Client Satisfaction</div>
+      </div>
+      <div class="svc-stat-card card reveal">
+        <div class="svc-stat-number">24/7</div>
+        <div class="svc-stat-label">Support</div>
+      </div>
+      <div class="svc-stat-card card reveal">
+        <div class="svc-stat-number" data-count-to="5" data-suffix="+">0</div>
+        <div class="svc-stat-label">Years Experience</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PROCESS TIMELINE
+============================================================ -->
+<section class="section svc-timeline">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">How We Work</span>
+      <h2>From first call to confirmed fix</h2>
+      <p>Every job, big or small, moves through the same six-step process.</p>
+    </div>
+    <div class="svc-timeline-track">
+      <div class="svc-timeline-line"><div class="svc-timeline-line-fill" id="svcTimelineFill"></div></div>
+      <div class="svc-timeline-step">
+        <div class="svc-timeline-dot">1</div>
+        <h4>Discovery</h4>
+        <p>You describe the issue: call, ticket, or chat.</p>
+      </div>
+      <div class="svc-timeline-step">
+        <div class="svc-timeline-dot">2</div>
+        <h4>Diagnosis</h4>
+        <p>A technician is matched and reviews the details.</p>
+      </div>
+      <div class="svc-timeline-step">
+        <div class="svc-timeline-dot">3</div>
+        <h4>Quote</h4>
+        <p>Flat-rate pricing, confirmed before any work starts.</p>
+      </div>
+      <div class="svc-timeline-step">
+        <div class="svc-timeline-dot">4</div>
+        <h4>Dispatch</h4>
+        <p>Your tech arrives on-site, usually the same day.</p>
+      </div>
+      <div class="svc-timeline-step">
+        <div class="svc-timeline-dot">5</div>
+        <h4>Repair</h4>
+        <p>The work happens in front of you, start to finish.</p>
+      </div>
+      <div class="svc-timeline-step">
+        <div class="svc-timeline-dot">6</div>
+        <h4>Follow-Up</h4>
+        <p>We confirm everything holds after we've left.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     WHY CHOOSE US
+============================================================ -->
+<section class="section section--panel">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Why Fusion Tech USA</span>
+      <h2>What actually makes a difference</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-card card reveal">
+        <div class="icon-box">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 3l7 2.6v5.4c0 4.6-3 7.7-7 9-4-1.3-7-4.4-7-9V5.6L12 3z" stroke="currentColor" stroke-width="1.7"/></svg>
+        </div>
+        <h3>Certified &amp; Vetted</h3>
+        <p>Every technician is certified and background-checked before they ever reach your door.</p>
+      </div>
+      <div class="why-card card reveal">
+        <div class="icon-box">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 7v5l3.5 2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.7"/></svg>
+        </div>
+        <h3>Real On-Site Speed</h3>
+        <p>Same-day appointments as standard, with a one-hour emergency option when it can't wait.</p>
+      </div>
+      <div class="why-card card reveal">
+        <div class="icon-box">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 12h4l2-7 4 14 2-7h4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Flat-Rate Honesty</h3>
+        <p>You get a price before work begins, no surprise line items when the invoice arrives.</p>
+      </div>
+      <div class="why-card card reveal">
+        <div class="icon-box">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 12a8 8 0 1 1 3 6.2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/><path d="M4 12v5h5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>We Follow Up</h3>
+        <p>We test before we leave, then check back to make sure the fix actually held.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TESTIMONIALS
+============================================================ -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">What Clients Say</span>
+      <h2>Trusted by homes and businesses alike</h2>
+    </div>
+    <div class="testi-track" id="testiTrack">
+      <div class="testi-card card reveal">
+        <span class="testi-quote-mark">&ldquo;</span>
+        <p class="testi-text">Our office network went down on a Monday morning and Fusion Tech had someone on-site within the hour. Calm, fast, and they explained everything in plain English.</p>
+        <div class="testi-person">
+          <div class="testi-avatar">DM</div>
+          <div><div class="testi-name">Dana M.</div><div class="testi-role">Office Manager, Denver</div></div>
+        </div>
+      </div>
+      <div class="testi-card card reveal">
+        <span class="testi-quote-mark">&ldquo;</span>
+        <p class="testi-text">I thought my laptop and ten years of photos were gone for good. They recovered everything and set up an automatic backup so it can't happen again.</p>
+        <div class="testi-person">
+          <div class="testi-avatar">RK</div>
+          <div><div class="testi-name">Ray K.</div><div class="testi-role">Homeowner</div></div>
+        </div>
+      </div>
+      <div class="testi-card card reveal">
+        <span class="testi-quote-mark">&ldquo;</span>
+        <p class="testi-text">We switched our whole small business over to their managed support plan. Having one number to call instead of guessing what's wrong has saved us so much time.</p>
+        <div class="testi-person">
+          <div class="testi-avatar">JT</div>
+          <div><div class="testi-name">Jordan T.</div><div class="testi-role">Small Business Owner</div></div>
+        </div>
+      </div>
+      <div class="testi-card card reveal">
+        <span class="testi-quote-mark">&ldquo;</span>
+        <p class="testi-text">Fast, fair pricing, and they actually tested everything before leaving. Exactly what you want from a technician in your home.</p>
+        <div class="testi-person">
+          <div class="testi-avatar">SP</div>
+          <div><div class="testi-name">Sam P.</div><div class="testi-role">Remote Worker</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-controls">
+      <button class="testi-arrow" id="testiPrev" aria-label="Previous testimonial"><svg viewBox="0 0 16 16" fill="none"><path d="M10 3 5 8l5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      <button class="testi-arrow" id="testiNext" aria-label="Next testimonial"><svg viewBox="0 0 16 16" fill="none"><path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FAQ
+============================================================ -->
+<section class="section section--panel">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">FAQ</span>
+      <h2>Good to know before you book</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <button class="faq-q">How fast can a technician get to me? <span class="faq-icon"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">Most appointments are same-day or next-day. If it's urgent, our one-hour emergency dispatch option gets a technician moving right away.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q">Do you work on both homes and businesses? <span class="faq-icon"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">Yes, from a single home computer to full office networks and ongoing managed IT support for growing teams.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q">Will I know the price before work starts? <span class="faq-icon"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">Always. Your technician diagnoses the issue on-site and gives you a flat-rate quote before any repair begins, no surprises on the invoice.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q">What if the problem comes back? <span class="faq-icon"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">We test everything before leaving and follow up afterward. If something related resurfaces, reach out and we'll make it right.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q">Can you recover data from a drive that won't boot? <span class="faq-icon"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">In most cases, yes. Our technicians assess the drive on-site and walk you through recovery options before attempting anything.</div></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q">Do you offer ongoing support plans for businesses? <span class="faq-icon"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">Yes, our Business IT Support plans cover ongoing maintenance, workstation rollouts, and on-call emergency response for a predictable monthly rate.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FINAL CTA
+============================================================ -->
+<section class="svc-final-cta">
+  <span class="svc-final-shape svc-final-shape--1"></span>
+  <span class="svc-final-shape svc-final-shape--2"></span>
+  <span class="svc-final-shape svc-final-shape--3"></span>
+  <div class="wrap">
+    <span class="eyebrow reveal">Ready When You Are</span>
+    <h2 class="reveal">Whatever's broken, let's get it fixed today.</h2>
+    <p class="reveal">Open a ticket and describe the problem, or call us directly. A certified technician will be matched to you fast.</p>
+    <div style="display:flex;gap:16px;flex-wrap:wrap;justify-content:center;" class="reveal">
+      <a href="open-ticket.html" class="btn btn--solid magnetic">Open a Ticket</a>
+      <a href="tel:1-307-445-3178" class="btn btn--ghost magnetic">Call 1-307-445-3178</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>CONTACT US</h4>
+        <ul>
+          <li>Fusion Tech USA</li>
+          <li>Houston, TX</li>
+          <li>1-307-445-3178</li>
+          <li>fusiontechusa.1@gmail.com</li>
+        </ul>
+      </div>
+      <div>
+        <h4>NAVIGATE</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Provided Services</a></li>
+          <li><a href="open-ticket.html">Open A Ticket</a></li>
+          <li><a href="order-tools.html">Order Supplies</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>INFORMATION</h4>
+        <ul>
+          <li><a href="pricing.html">Prices</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms And Condition</a></li>
+          <li><a href="#">Join Our Team</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>FOLLOW US</h4>
+        <div class="footer-social">
+          <a href="#">FB</a><a href="#">X</a><a href="#">IN</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>&copy; 2026 Fusion Tech USA. All rights reserved. (placeholder contact details, update anytime)</div>
+    </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.16/dist/lenis.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+<script src="assets/motion.js" defer></script>
+<script src="assets/services-premium.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){try{var t=localStorage.getItem('ft-theme');if(!t){t=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}if(t==='dark'){document.documentElement.setAttribute('data-theme','dark');}}catch(e){}})();</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home | Fusion Tech USA</title>
+<meta name="description" content="On-site and remote tech repair, dispatched fast.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self';">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="social"><a href="#">FB</a><a href="#">X</a><a href="#">IN</a></div>
+    <div><span class="phone">1-307-445-3178</span> &nbsp;|&nbsp; <a href="mailto:fusiontechusa.1@gmail.com">fusiontechusa.1@gmail.com</a></div>
+  </div>
+</div>
+<header class="site-header">
+  <div class="nav-row">
+    <a href="index.html" class="logo"><img src="assets/fusiontech-logo.png" alt="Fusion Tech USA" class="logo-img" width="174" height="207"></a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <div class="nav-item">
+        <button class="nav-drop-trigger" type="button">Collective Tech Services <svg class="chev" width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"><path d="M1 3l4 4 4-4" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="dropdown-menu">
+          <a href="collective-tech-services.html" class="dropdown-overview">All Collective Tech Services</a>
+          <a href="website-development.html">Website Development</a>
+          <a href="logo-designing.html">Logo Designing</a>
+          <a href="video-editing.html">Video Editing</a>
+          <a href="social-media-marketing.html">Social Media Marketing</a>
+          <a href="seo.html">Search Engine Optimization (SEO)</a>
+        </div>
+      </div>
+      <a href="pricing.html">Prices</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+        <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.6"/><path d="M12 2.5V5M12 19V21.5M4.2 4.2L6 6M18 18L19.8 19.8M2.5 12H5M19 12H21.5M4.2 19.8L6 18M18 6L19.8 4.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+      </button>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">&#9776;</button>
+    </div>
+  </div>
+</header>
+<script>
+document.getElementById('menuToggle').addEventListener('click', function(){
+  document.getElementById('mainNav').classList.toggle('open');
+});
+document.querySelectorAll('.nav-drop-trigger').forEach(function(btn){
+  btn.addEventListener('click', function(e){
+    e.stopPropagation();
+    var item = btn.closest('.nav-item');
+    var wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.nav-item.open').forEach(function(i){ i.classList.remove('open'); });
+    if(!wasOpen){ item.classList.add('open'); }
+  });
+});
+document.addEventListener('click', function(){
+  document.querySelectorAll('.nav-item.open').forEach(function(i){ i.classList.remove('open'); });
+});
+</script>
+
+<section class="hero" id="hero">
+  <div class="hero-mesh"></div>
+  <div class="hero-spotlight" id="heroSpotlight"></div>
+  <div class="wrap" style="display:grid;grid-template-columns:1.1fr 0.9fr;gap:48px;align-items:center;padding:110px 24px 88px;">
+    <div class="hero-copy">
+      <span class="eyebrow hero-eyebrow">Same-Day &middot; On-Site &middot; 24/7 Dispatch</span>
+      <h1 style="font-size:clamp(2.4rem,5vw,3.6rem);line-height:1.05;margin-top:18px;" data-text="Your Tech Breaks. We Bring It Back."></h1>
+      <p style="font-size:1.1rem;max-width:480px;">
+        Fusion Tech USA sends a real technician to your door, home or business, and gets your computers, networks, and devices running again, usually the same day.
+      </p>
+      <div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:28px;">
+        <a href="open-ticket.html" class="btn btn--solid magnetic">Open a Ticket</a>
+        <a href="tel:1-307-445-3178" class="btn btn--ghost magnetic">Call 1-307-445-3178</a>
+      </div>
+      <div class="hero-stats">
+        <div><div class="hero-stat-value">1 hr</div><div class="hero-stat-label">Emergency response</div></div>
+        <div><div class="hero-stat-value">24/7</div><div class="hero-stat-label">Live dispatch</div></div>
+        <div><div class="hero-stat-value">50</div><div class="hero-stat-label">States covered</div></div>
+      </div>
+    </div>
+    <div class="hero-photo-tilt" id="heroTilt">
+      <div class="hero-photo-frame">
+        <div class="hero-photo-glow"></div>
+        <img src="assets/hero-tech-repair.jpg" alt="Fusion Tech USA technician repairing a desktop computer on-site" class="hero-photo" width="1100" height="732">
+        <div class="hero-badge"><span class="hero-badge-dot"></span>Certified &amp; Background-Checked Techs</div>
+      </div>
+      <p class="hero-photo-caption">REAL TECHNICIANS: ON-SITE REPAIRS</p>
+    </div>
+  </div>
+</section>
+
+<div class="signal-divider">
+  <svg viewBox="0 0 1440 56" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,28 L560,28 L580,10 L600,46 L618,20 L636,28 L1440,28"/>
+  </svg>
+</div>
+
+<section class="section" style="text-align:center;">
+  <div class="wrap" style="max-width:720px;">
+    <h2 style="font-size:clamp(1.8rem,3.5vw,2.6rem);">We're Up When Your Computer Is Down</h2>
+    <p style="font-size:1.05rem;">
+      That's not just a tagline: it's how dispatch is run. Technicians work around your
+      schedule, with same-day and next-day appointments standard, and a one-hour emergency
+      response option when it can't wait.
+    </p>
+    <p style="font-size:1.05rem;">
+      Every technician carries the tools and know-how to get you back up and running fast.
+      There's no drop-off and no waiting room. We come to your home or business and
+      resolve the issue on site.
+    </p>
+    <p style="font-family:var(--font-display);font-size:1.15rem;color:var(--coral);margin-top:32px;">
+      Call anytime, day or night, to schedule a service call
+    </p>
+    <div class="phone-big" style="margin:4px 0 24px;">1-307-445-3178</div>
+    <a href="services.html" class="btn btn--ghost">Read More</a>
+  </div>
+</section>
+
+<div class="signal-divider">
+  <svg viewBox="0 0 1440 56" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,28 L560,28 L580,10 L600,46 L618,20 L636,28 L1440,28"/>
+  </svg>
+</div>
+
+<section class="section section--panel">
+  <div class="wrap">
+    <div class="grid grid--4">
+      <div class="card reveal" style="text-align:center;">
+        <h3>Low Prices!</h3>
+        <p>Get your technology back up and running without breaking the bank.</p>
+        <a href="services.html" class="btn btn--ghost" style="margin-top:8px;">Read More</a>
+      </div>
+      <div class="card reveal" style="text-align:center;">
+        <h3>24/7 Support!</h3>
+        <p>Dispatch never closes: a technician is ready whenever you need one.</p>
+        <a href="services.html" class="btn btn--ghost" style="margin-top:8px;">Read More</a>
+      </div>
+      <div class="card reveal" style="text-align:center;">
+        <h3>On-Site Service!</h3>
+        <p>Every technician is mobile. You don't come to us. We come to you.</p>
+        <a href="services.html" class="btn btn--ghost" style="margin-top:8px;">Read More</a>
+      </div>
+      <div class="card reveal" style="text-align:center;">
+        <h3>Qualified Techs!</h3>
+        <p>Certified, background-checked technicians who get it right the first time.</p>
+        <a href="services.html" class="btn btn--ghost" style="margin-top:8px;">Read More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">How It Works</span>
+      <h2>From broken to back-online in four steps</h2>
+    </div>
+    <div class="grid grid--4">
+      <div class="card reveal"><span class="num">01 / CALL</span><h3>Tell us what's wrong</h3><p>Call, open a ticket, or chat: describe the issue and your location.</p></div>
+      <div class="card reveal"><span class="num">02 / MATCH</span><h3>We dispatch a tech</h3><p>You get matched with a certified technician near you, usually same day.</p></div>
+      <div class="card reveal"><span class="num">03 / DIAGNOSE</span><h3>On-site diagnosis</h3><p>Your tech identifies the issue and gives you a flat-rate quote before starting.</p></div>
+      <div class="card reveal"><span class="num">04 / FIX</span><h3>Confirmed working</h3><p>We test everything before we leave, and follow up to make sure it holds.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="signal-divider">
+  <svg viewBox="0 0 1440 56" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,28 L560,28 L580,10 L600,46 L618,20 L636,28 L1440,28"/>
+  </svg>
+</div>
+
+<section class="cta-band">
+  <div class="wrap">
+    <span class="eyebrow">Talk to a human, not a menu</span>
+    <div class="phone-big">1-307-445-3178</div>
+    <a href="open-ticket.html" class="btn btn--solid">Open a Ticket Instead</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>CONTACT US</h4>
+        <ul>
+          <li>Fusion Tech USA</li>
+          <li>Houston, TX</li>
+          <li>1-307-445-3178</li>
+          <li>fusiontechusa.1@gmail.com</li>
+        </ul>
+      </div>
+      <div>
+        <h4>NAVIGATE</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Provided Services</a></li>
+          <li><a href="open-ticket.html">Open A Ticket</a></li>
+          <li><a href="order-tools.html">Order Supplies</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>INFORMATION</h4>
+        <ul>
+          <li><a href="pricing.html">Prices</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms And Condition</a></li>
+          <li><a href="#">Join Our Team</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>FOLLOW US</h4>
+        <div class="footer-social">
+          <a href="#">FB</a><a href="#">X</a><a href="#">IN</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>&copy; 2026 Fusion Tech USA. All rights reserved. (placeholder contact details, update anytime)</div>
+    </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.16/dist/lenis.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+<script src="assets/motion.js" defer></script>
+</body>
+</html>
