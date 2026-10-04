@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>(function(){try{var t=localStorage.getItem('ft-theme');if(!t){t=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}if(t==='dark'){document.documentElement.setAttribute('data-theme','dark');}}catch(e){}})();</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy</title>
+<meta name="description" content="Tips, guides, and updates from Fusion Tech USA.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self';">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="social"><a href="https://www.facebook.com/profile.php?id=61592300645728" target="_blank">FB</a><a href="https://www.instagram.com/fusiontechusa.1/" target="_blank">IG</a></div>
+    <div><span class="phone">1-307-445-3178</span> &nbsp;|&nbsp; <a href="mailto:info@fusiontechusallc.com">info@fusiontechusallc.com</a></div>
+  </div>
+</div>
+<header class="site-header">
+  <div class="nav-row">
+    <a href="index.html" class="logo"><img src="assets/fusiontech-logo.png" alt="Fusion Tech USA" class="logo-img" width="174" height="207"></a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <div class="nav-item">
+        <button class="nav-drop-trigger" type="button">Collective Tech Services <svg class="chev" width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"><path d="M1 3l4 4 4-4" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="dropdown-menu">
+          <a href="collective-tech-services.html" class="dropdown-overview">All Collective Tech Services</a>
+          <a href="website-development.html">Website Development</a>
+          <a href="logo-designing.html">Logo Designing</a>
+          <a href="video-editing.html">Video Editing</a>
+          <a href="social-media-marketing.html">Social Media Marketing</a>
+          <a href="seo.html">Search Engine Optimization (SEO)</a>
+        </div>
+      </div>
+      <a href="pricing.html">Prices</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+        <svg class="theme-icon theme-icon--sun" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.6"/><path d="M12 2.5V5M12 19V21.5M4.2 4.2L6 6M18 18L19.8 19.8M2.5 12H5M19 12H21.5M4.2 19.8L6 18M18 6L19.8 4.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <svg class="theme-icon theme-icon--moon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+      </button>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">&#9776;</button>
+    </div>
+  </div>
+</header>
+<script>
+document.getElementById('menuToggle').addEventListener('click', function(){
+  document.getElementById('mainNav').classList.toggle('open');
+});
+document.querySelectorAll('.nav-drop-trigger').forEach(function(btn){
+  btn.addEventListener('click', function(e){
+    e.stopPropagation();
+    var item = btn.closest('.nav-item');
+    var wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.nav-item.open').forEach(function(i){ i.classList.remove('open'); });
+    if(!wasOpen){ item.classList.add('open'); }
+  });
+});
+document.addEventListener('click', function(){
+  document.querySelectorAll('.nav-item.open').forEach(function(i){ i.classList.remove('open'); });
+});
+</script>
+
+<body>
+<div class="wrap">
+    <div class="page-hero">
+        <header>
+            <h1>Privacy Policy</h1>
+            <p class="effective-date"><strong>Effective Date:</strong> October 4, 2026</p>
+        </header>
+    </div>
+        <section>
+            <p><strong>Fusion Tech USA LLC</strong> ("Company," "we," "us," or "our") values your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website at <a href="https://fusiontechusallc.com/" target="_blank" rel="noopener">https://fusiontechusallc.com/</a> (the "Site") or use our on-site IT support and digital services.</p>
+        </section>
+
+        <hr>
+    <div class="section">
+        <section>
+            <h2>1. Information We Collect</h2>
+            <p>We collect information that identifies, relates to, describes, or can be associated with you ("Personal Data").</p>
+
+            <h3>A. Information You Provide to Us</h3>
+            <ul>
+                <li><strong>Contact & Service Request Information:</strong> When you open a ticket, request on-site repair dispatch, or contact us via phone or email, we collect your name, physical address/service location, email address, phone number, and details regarding your technical issue.</li>
+                <li><strong>Service Orders & Payments:</strong> Billing details, service addresses, and payment information processed through secure third-party payment gateways.</li>
+                <li><strong>Job Applications:</strong> Resume details, background check consent (where applicable), and contact details if you apply under "Join Our Team."</li>
+            </ul>
+
+            <h3>B. Information Automatically Collected</h3>
+            <ul>
+                <li><strong>Device & Usage Data:</strong> When you browse our Site, we automatically collect your IP address, browser type, operating system, referring URLs, pages viewed, and access times.</li>
+                <li><strong>Cookies & Tracking Technologies:</strong> We use cookies, web beacons, and similar tools to maintain site functionality, analyze traffic patterns, and optimize user experience.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>2. How We Use Your Information</h2>
+            <p>We use the information we collect for business and operational purposes, including:</p>
+            <ul>
+                <li><strong>Service Delivery:</strong> Scheduling and dispatching certified technicians to your home or business for on-site repairs and maintenance.</li>
+                <li><strong>Communications:</strong> Responding to ticket requests, sending appointment updates, following up post-repair, and providing customer support.</li>
+                <li><strong>Business Operations:</strong> Processing payments, managing accounts, verifying identities, and conducting background checks for prospective technicians.</li>
+                <li><strong>Digital & Creative Services:</strong> Executing contracted services such as website development, logo design, video editing, social media marketing, and SEO.</li>
+                <li><strong>Website Optimization & Security:</strong> Improving site navigation, monitoring security, and preventing fraudulent activity.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>3. How We Share Your Information</h2>
+            <p>We do not sell your personal information. We share details only as necessary to provide our services:</p>
+            <ul>
+                <li><strong>Service Providers & Mobile Technicians:</strong> Independent or employee technicians assigned to fulfill your on-site repair request receive your contact and service location details.</li>
+                <li><strong>Third-Party Vendors:</strong> Payment processors, dispatch management software, analytics providers, and website hosting partners who assist in operating our business.</li>
+                <li><strong>Legal Requirements:</strong> When required by applicable law, court order, or governmental regulation, or to protect the rights, safety, and property of Fusion Tech USA LLC, our clients, or others.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>4. Cookies and Tracking Technologies</h2>
+            <p>You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, disabling cookies may limit your ability to access or use certain interactive features of our Site.</p>
+        </section>
+
+        <section>
+            <h2>5. Data Security</h2>
+            <p>We maintain physical, technical, and administrative safeguards designed to protect your personal information against unauthorized access, loss, misuse, or alteration. While we follow industry standards, no method of transmission over the Internet or electronic storage is completely secure.</p>
+        </section>
+
+        <section>
+            <h2>6. Your Data Rights</h2>
+            <p>Depending on your jurisdiction, you may have the following rights regarding your personal information:</p>
+            <ul>
+                <li><strong>Access:</strong> Request a copy of the personal data we hold about you.</li>
+                <li><strong>Correction:</strong> Request updates or corrections to incomplete or inaccurate data.</li>
+                <li><strong>Deletion:</strong> Request the removal of your personal information, subject to statutory retention obligations.</li>
+                <li><strong>Opt-Out:</strong> Unsubscribe from promotional email communications using the link in the message.</li>
+            </ul>
+            <p>To exercise these rights, contact us using the details below.</p>
+        </section>
+
+        <section>
+            <h2>7. Third-Party Links</h2>
+            <p>Our Site may contain links to third-party websites or services (e.g., social media pages). We are not responsible for the privacy practices or content of third-party platforms. We encourage you to review their privacy policies prior to interacting with them.</p>
+        </section>
+
+        <section>
+            <h2>8. Contact Us</h2>
+            <p>If you have questions, concerns, or requests regarding this Privacy Policy, please reach out to us:</p>
+            <div class="contact-info">
+                <p><strong>Company Name:</strong> Fusion Tech USA LLC</p>
+                <p><strong>Location:</strong> Houston, TX</p>
+                <p><strong>Phone:</strong> <a href="tel:13074453178">1-307-445-3178</a></p>
+                <p><strong>Email:</strong> <a href="mailto:info@fusiontechusa.com">fusiontechusa.1@gmail.com</a></p>
+                <p><strong>Website:</strong> <a href="https://fusiontechusallc.com/" target="_blank" rel="noopener">https://fusiontechusallc.com/</a></p>
+            </div>
+        </section>
+    </div>
+</div>
+</body>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>CONTACT US</h4>
+        <ul>
+          <li>Fusion Tech USA</li>
+          <li>Houston, TX</li>
+          <li>1-307-445-3178</li>
+          <li>info@fusiontechusa.com</li>
+        </ul>
+      </div>
+      <div>
+        <h4>NAVIGATE</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Provided Services</a></li>
+          <li><a href="open-ticket.html">Open A Ticket</a></li>
+          <li><a href="order-tools.html">Order Supplies</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>INFORMATION</h4>
+        <ul>
+          <li><a href="pricing.html">Prices</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms-conditions.html">Terms And Condition</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>FOLLOW US</h4>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/profile.php?id=61592300645728" target="_blank">FB</a><a href="https://www.instagram.com/fusiontechusa.1/" target="_blank">IG</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>&copy; 2026 Fusion Tech USA. All rights reserved.</div>
+    </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.16/dist/lenis.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+<script src="assets/motion.js" defer></script>
+</body>
+</html>

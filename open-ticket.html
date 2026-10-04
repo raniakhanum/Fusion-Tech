@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self';">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://api.web3forms.com; object-src 'none'; base-uri 'self'; form-action 'self' https://api.web3forms.com;">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="stylesheet" href="styles.css">
@@ -19,8 +19,8 @@
 
 <div class="topbar">
   <div class="wrap">
-    <div class="social"><a href="#">FB</a><a href="#">X</a><a href="#">IN</a></div>
-    <div><span class="phone">1-307-445-3178</span> &nbsp;|&nbsp; <a href="mailto:fusiontechusa.1@gmail.com">fusiontechusa.1@gmail.com</a></div>
+    <div class="social"><a href="https://www.facebook.com/profile.php?id=61592300645728" target="_blank">FB</a><a href="https://www.instagram.com/fusiontechusa.1/" target="_blank">IG</a></div>
+    <div><span class="phone">1-307-445-3178</span> &nbsp;|&nbsp; <a href="mailto:info@fusiontechusallc.com">info@fusiontechusallc.com</a></div>
   </div>
 </div>
 <header class="site-header">
@@ -72,40 +72,50 @@ document.addEventListener('click', function(){
 });
 </script>
 
-<section class="page-hero">
-  <div class="wrap">
-    <div class="breadcrumb"><a href="index.html">Home</a> / Open a Ticket</div>
-    <h1>Open a Ticket</h1>
-    <p style="max-width:640px;">Describe the issue and we'll match you with the right technician, usually within the hour during business hours.</p>
-  </div>
-</section>
 <section class="section">
   <div class="wrap" style="max-width:760px;">
-    <form class="form-panel">
+    <form class="form-panel" action="https://api.web3forms.com/submit" method="POST">
+      <!-- Web3Forms Access Key -->
+      <input type="hidden" name="access_key" value="8ee9bbf7-ff98-4a4d-af24-74d25aecefcb">
+
+      <!-- Form Subject Line for Email Notifications -->
+      <input type="hidden" name="subject" value="New Support Ticket Submission - Fusion Tech USA">
+
       <div class="grid grid--2">
-        <div><label>Full Name</label><input type="text" placeholder="Jane Doe" autocomplete="name"></div>
-        <div><label>Phone</label><input type="tel" placeholder="(555) 555-5555" autocomplete="tel"></div>
+        <div>
+          <label>Full Name</label>
+          <input type="text" name="full_name" placeholder="Jane Doe" autocomplete="name" required>
+        </div>
+        <div>
+          <label>Phone</label>
+          <input type="tel" name="phone" placeholder="(555) 555-5555" autocomplete="tel" required>
+        </div>
       </div>
+
       <label>Service Address</label>
-      <input type="text" placeholder="Street, City, State" autocomplete="street-address">
+      <input type="text" name="address" placeholder="Street, City, State" autocomplete="street-address" required>
+
       <label>Issue Type</label>
-      <select>
-        <option>Computer Repair</option>
-        <option>Network / Wi-Fi</option>
-        <option>Business IT Support</option>
-        <option>Device Setup</option>
-        <option>Security / Malware</option>
-        <option>Other</option>
+      <select name="issue_type" required>
+        <option value="Computer Repair">Computer Repair</option>
+        <option value="Network / Wi-Fi">Network / Wi-Fi</option>
+        <option value="Business IT Support">Business IT Support</option>
+        <option value="Device Setup">Device Setup</option>
+        <option value="Security / Malware">Security / Malware</option>
+        <option value="Other">Other</option>
       </select>
+
       <label>Urgency</label>
-      <select>
-        <option>Standard (next available)</option>
-        <option>Same Day</option>
-        <option>Emergency (1-hour response)</option>
+      <select name="urgency" required>
+        <option value="Standard (next available)">Standard (next available)</option>
+        <option value="Same Day">Same Day</option>
+        <option value="Emergency (1-hour response)">Emergency (1-hour response)</option>
       </select>
+
       <label>Describe the Issue</label>
-      <textarea rows="5" placeholder="What's happening with your device or system?"></textarea>
-      <button type="button" class="btn btn--solid" style="width:100%;justify-content:center;">Submit Ticket</button>
+      <textarea name="message" rows="5" placeholder="What's happening with your device or system?" required></textarea>
+
+      <button type="submit" class="btn btn--solid" style="width:100%;justify-content:center;">Submit Ticket</button>
     </form>
   </div>
 </section>
@@ -138,20 +148,19 @@ document.addEventListener('click', function(){
           <li><a href="pricing.html">Prices</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="contact.html">Contact Us</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms And Condition</a></li>
-          <li><a href="#">Join Our Team</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms-conditions.html">Terms And Condition</a></li>
         </ul>
       </div>
       <div>
         <h4>FOLLOW US</h4>
         <div class="footer-social">
-          <a href="#">FB</a><a href="#">X</a><a href="#">IN</a>
+          <a href="https://www.facebook.com/profile.php?id=61592300645728" target="_blank">FB</a><a href="https://www.instagram.com/fusiontechusa.1/" target="_blank">IG</a>
         </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <div>&copy; 2026 Fusion Tech USA. All rights reserved. (placeholder contact details, update anytime)</div>
+      <div>&copy; 2026 Fusion Tech USA. All rights reserved.</div>
     </div>
   </div>
 </footer>

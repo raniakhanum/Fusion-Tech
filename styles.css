@@ -511,3 +511,150 @@ form.form-panel input:focus, form.form-panel textarea:focus, form.form-panel sel
 .signal-divider svg{display:none;}
 .signal-divider::before{
   content:"";position:absolute;left:50%;top:0;width:min(680px,70%);height:1px;transform:translateX(-50%);background:linear-gradient(90deg,transparent,var(--line) 20%,var(--accent-2) 50%,var(--line) 80%,transparent);opacity:0.7}.reveal,[data-reveal]{opacity:0;transform:translateY(34px);filter:blur(6px)}.reveal.is-visible,[data-reveal].is-visible{opacity:1;transform:translateY(0);filter:blur(0px)}.reveal-scale{opacity:0;transform:scale(0.94)}.reveal-scale.is-visible{opacity:1;transform:scale(1)}@media (prefers-reduced-motion:reduce){.reveal,[data-reveal],.reveal-scale{opacity:1 !important;transform:none !important;filter:none !important}}
+
+/* Dark Mode Button Contrast Fixes */
+html[data-theme="dark"] .btn--ghost {
+  background: 
+    linear-gradient(var(--surface), var(--surface)) padding-box,
+    var(--grad) border-box;
+  color: var(--text);
+}
+
+html[data-theme="dark"] .btn--ghost:hover {
+  color: var(--lavender);
+  box-shadow: 0 12px 30px -14px rgba(124, 58, 237, 0.5);
+}
+
+html[data-theme="dark"] .btn--solid {
+  box-shadow: 0 10px 26px -10px rgba(139, 92, 246, 0.65);
+}
+
+html[data-theme="dark"] .btn--solid:hover {
+  box-shadow: 0 16px 36px -10px rgba(139, 92, 246, 0.8), 0 0 0 1px rgba(196, 181, 253, 0.25);
+}
+
+/* Topbar & Hero Layout Fixes Across All Pages */
+.topbar .wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .topbar .wrap {
+    justify-content: center;
+    font-size: 0.85rem;
+  }
+}
+
+/* Light Mode Breadcrumb Colors (Default) */
+.breadcrumb {
+  font-size: 0.9rem;
+  color: #4b5563; /* Medium grey for slashes */
+  margin-bottom: 20px;
+}
+
+.breadcrumb a {
+  color: #4b5563; /* Grey for parent links */
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.breadcrumb a:hover {
+  color: #111827; /* Dark black/grey on hover */
+}
+
+/* Active current page text stays purple in light mode */
+.breadcrumb span {
+  color: #7c3aed; 
+  font-weight: 600;
+}
+
+/* Dark Mode Overrides */
+[data-theme="dark"] .breadcrumb {
+  color: #a78bfa;
+}
+
+[data-theme="dark"] .breadcrumb a {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+[data-theme="dark"] .breadcrumb a:hover {
+  color: #ffffff;
+}
+
+[data-theme="dark"] .breadcrumb span {
+  color: #c4b5fd;
+  font-weight: 600;
+}
+
+/* Force Stacking: Breadcrumb Above, Eyebrow Below */
+.svc-hero-copy .breadcrumb {
+  display: block;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.svc-hero-copy .eyebrow {
+  display: inline-block;
+  margin-top: 0 !important;
+  margin-bottom: 16px;
+}
+
+/* Ensure card allows badge to pop out at the top */
+.bundle-card--featured {
+  position: relative;
+  overflow: visible; /* Prevents badge clipping */
+  margin-top: 15px;  /* Adds headroom so it doesn't collide with elements above */
+}
+
+/* Style and position the Recommended badge */
+.bundle-ribbon {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #7c3aed;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 4px 16px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(124, 58, 237, 0.4);
+  white-space: nowrap;
+  z-index: 2;
+}
+
+/* Eyebrow Dot Pulse Animation */
+.eyebrow::before,
+.hero-badge-dot,
+.badge-dot {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #a78bfa; /* Dot color */
+  margin-right: 8px;
+  vertical-align: middle;
+  animation: dotGlow 2s infinite ease-in-out;
+}
+
+/* Keyframes for glowing and dimming */
+@keyframes dotGlow {
+  0%, 100% {
+    opacity: 0.3;
+    box-shadow: 0 0 2px rgba(167, 139, 250, 0.2);
+    transform: scale(0.9);
+  }
+  50% {
+    opacity: 1;
+    box-shadow: 0 0 10px rgba(167, 139, 250, 0.9), 0 0 16px rgba(124, 58, 237, 0.6);
+    transform: scale(1.15);
+  }
+}
